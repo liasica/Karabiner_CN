@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Enable at only Launchbar</name>
+
+    <item>
+      <name style="important">Open LaunchBar by command-space.</name>
+      <appendix>*** Please use this setting together if you use the following settings. ***</appendix>
+      <identifier>remap.app_launchbar_open</identifier>
+      <not>LAUNCHBAR</not>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+        KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+
+        Option::KEYTOKEY_AFTER_KEYUP,
+        KeyCode::VK_OPEN_URL_APP_Launchbar,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Change semi-colon(;) to return key</name>
+      <identifier>remap.app_launchbar_semicolon_to_return</identifier>
+      <only>LAUNCHBAR</only>
+      <uielementrole_not>AXTextField</uielementrole_not>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::RETURN</autogen>
+    </item>
+
+    <item>
+      <name>Change control-L to command-right arrow</name>
+      <appendix>Assumed Control Key Navigation in LB Preferences is hkli</appendix>
+      <identifier>remap.app_launchbar_hack_Control_L</identifier>
+      <only>LAUNCHBAR</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+        Option::NOREPEAT,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Change Dot(.) to Tab Key</name>
+      <identifier>remap.app_launchbar_hack_Tab</identifier>
+      <only>LAUNCHBAR</only>
+      <uielementrole_not>AXTextField</uielementrole_not>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DOT,
+        KeyCode::TAB,
+        Option::NOREPEAT,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Change right arrow to command-right arrow</name>
+      <appendix>also, change control-L to command-right arrow.</appendix>
+      <identifier>remap.app_launchbar_right_to_command_right</identifier>
+      <only>LAUNCHBAR</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_RIGHT, ModifierFlag::NONE,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+        Option::NOREPEAT,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE,
+        KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+        Option::NOREPEAT,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Change Cmd+D to Cmd+Shift+D</name>
+      <identifier>remap.app_launchbar_cmd_d_to_cmd_shif_d</identifier>
+      <only>LAUNCHBAR</only>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::COMMAND_L, KeyCode::D, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::COMMAND_R, KeyCode::D, ModifierFlag::COMMAND_R | ModifierFlag::SHIFT_R</autogen>
+    </item>
+    <item>
+      <name>Change Cmd+R to Cmd+Shift+R</name>
+      <identifier>remap.app_launchbar_cmd_r_to_cmd_shif_r</identifier>
+      <only>LAUNCHBAR</only>
+      <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::COMMAND_L, KeyCode::R, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::COMMAND_R, KeyCode::R, ModifierFlag::COMMAND_R | ModifierFlag::SHIFT_R</autogen>
+    </item>
+    <item>
+      <name>Change Cmd+N to Cmd+Shift+N</name>
+      <identifier>remap.app_launchbar_cmd_n_to_cmd_shif_n</identifier>
+      <only>LAUNCHBAR</only>
+      <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::COMMAND_L, KeyCode::N, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::COMMAND_R, KeyCode::N, ModifierFlag::COMMAND_R | ModifierFlag::SHIFT_R</autogen>
+    </item>
+  </item>
+</root>

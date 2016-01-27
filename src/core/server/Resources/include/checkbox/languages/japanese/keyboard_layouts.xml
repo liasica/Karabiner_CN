@@ -1,0 +1,746 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change Keyboard Layout</name>
+    <item>
+      <name>Use Dvorak Keyboard Layout on Japanese Keyboard</name>
+      <item>
+        <name>Use Dvorak Keyboard Layout on Japanese Keyboard</name>
+        <identifier>remap.jis_qwerty2dvorak</identifier>
+        <include path="keyboard_layouts/dvorak.xml" />
+      </item>
+      <item>
+        <name>Use Dvorak Keyboard Layout on Japanese Keyboard</name>
+        <appendix>(英数入力のときだけDvorak配列にする)</appendix>
+        <identifier>remap.jis_qwerty2dvorak_roman_only</identifier>
+        <inputsource_only>ENGLISH</inputsource_only>
+        <include path="keyboard_layouts/dvorak.xml" />
+      </item>
+      <item>
+        <name>Use Dvorak Keyboard Layout on Japanese Keyboard</name>
+        <appendix>(英数入力のときだけDvorak配列にする)</appendix>
+        <appendix>(Command,Control,Optionを押したときはQwerty配列のまま)</appendix>
+        <identifier>remap.jis_qwerty2dvorak_roman_only_qwerty</identifier>
+        <inputsource_only>ENGLISH</inputsource_only>
+        <modifier_not>
+          ModifierFlag::COMMAND_L,
+          ModifierFlag::COMMAND_R,
+          ModifierFlag::CONTROL_L,
+          ModifierFlag::CONTROL_R,
+          ModifierFlag::OPTION_L,
+          ModifierFlag::OPTION_R
+        </modifier_not>
+        <include path="keyboard_layouts/dvorak.xml" />
+      </item>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Use Japanese Keyboard as US Keyboard</name>
+      <identifier>remap.jis_jansi</identifier>
+      <autogen>__SetKeyboardType__ KeyboardType::MACBOOK</autogen>
+      <autogen>__KeyToKey__ KeyCode::JIS_YEN, KeyCode::BACKQUOTE</autogen>
+      <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, KeyCode::BACKQUOTE</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Use US Keyboard as Japanese Keyboard</name>
+      <item>
+        <name>Use US Keyboard as Japanese Keyboard</name>
+        <identifier>remap.jis_layout_us2japanese</identifier>
+        <autogen>__SetKeyboardType__ KeyboardType::JIS_MACBOOK_2008</autogen>
+      </item>
+      <item>
+        <name>Options</name>
+        <item>
+          <name>Backquote(`) to JIS Yen(¥)</name>
+          <identifier>option.jis_layout_us2japanese_backquote2yen</identifier>
+          <autogen>__KeyToKey__ KeyCode::BACKQUOTE, KeyCode::JIS_YEN</autogen>
+        </item>
+        <item>
+          <name>Backquote(`) to Backslash</name>
+          <identifier>option.jis_layout_us2japanese_backquote2backslash</identifier>
+          <autogen>__KeyToKey__ KeyCode::BACKQUOTE, KeyCode::VK_JIS_BACKSLASH</autogen>
+        </item>
+        <item>
+          <name>Shift+Delete to Pipe(|)</name>
+          <identifier>option.jis_layout_us2japanese_shiftDelete2pipe</identifier>
+          <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE, KeyCode::VK_JIS_BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+        </item>
+        <item>
+          <name>Shift_R to Shift_R</name>
+          <appendix>(+ When you type Shift_R only, send Underscore)</appendix>
+          <identifier>option.jis_layout_us2japanese_shiftR2shiftR_underscore</identifier>
+          <autogen>__KeyOverlaidModifier__ KeyCode::SHIFT_R, KeyCode::SHIFT_R, KeyCode::JIS_UNDERSCORE</autogen>
+        </item>
+        <item>
+          <name>(Shift_L+Shift_R to Underscore)</name>
+          <identifier>option.jis_layout_us2japanese_shiftR2shiftR_shiftLshiftR2underscore</identifier>
+          <autogen>__KeyToKey__ KeyCode::SHIFT_R, ModifierFlag::SHIFT_L, KeyCode::JIS_UNDERSCORE</autogen>
+        </item>
+      </item>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Use Japanese Keyboard as Semi-US Keyboard</name>
+      <appendix>Change Shift+semicolon(;) to colon(:)</appendix>
+      <appendix>Change colon(:) to apostrophe(')</appendix>
+      <appendix>Change Shift+colon(:) to double quote(&quot;)</appendix>
+      <appendix>Change Shift+2 to plus(+)</appendix>
+      <appendix>Change Shift+7 to asterisk(*)</appendix>
+      <identifier>remap.jis_layout_semiascii</identifier>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,           KeyCode::JIS_COLON</autogen>
+      <!-- double quote(") == Shift+2 -->
+      <autogen>__KeyToKey__ KeyCode::JIS_COLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,           KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
+      <!-- apostrophe(') == Shift+7 -->
+      <autogen>__KeyToKey__ KeyCode::JIS_COLON,                     KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
+      <!-- plus(+) == Shift+; -->
+      <autogen>__KeyToKey__ KeyCode::KEY_2,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,           KeyCode::SEMICOLON, ModifierFlag::SHIFT_L</autogen>
+      <!-- asterisk(*) == Shift+: -->
+      <autogen>__KeyToKey__ KeyCode::KEY_7,     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,           KeyCode::JIS_COLON, ModifierFlag::SHIFT_L</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Use JIS X 6004</name>
+      <identifier>remap.jis_layout_jisx6004</identifier>
+      <inputsource_only>JAPANESE</inputsource_only>
+      <include path="keyboard_layouts/jisx6004.xml" />
+    </item>
+    <item>
+      <name>Use JIS X 6004 for US Keyboard</name>
+      <identifier>remap.jis_layout_jisx6004_us</identifier>
+      <inputsource_only>JAPANESE</inputsource_only>
+      <include path="keyboard_layouts/jisx6004_us.xml" />
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Oyayubi Shift Input</name>
+      <appendix>親指シフト (NICOLA)</appendix>
+      <appendix></appendix>
+      <include path="keyboard_layouts/appendix_oyayubi_shift.xml" />
+      <item>
+        <name>＜ローマ字モード＞</name>
+        <appendix>（ことえりやATOKなどを「ローマ字入力」に設定してください。）</appendix>
+        <item>
+          <name>＜ローマ字モード＞ 左シフト＝スペース, 右シフト＝かな</name>
+          <identifier>remap.oyayubi_shift_roman_space_kana</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_roman.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::SPACE</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_KANA</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item>
+          <name>＜ローマ字モード＞ 左シフト＝英数, 右シフト＝スペース</name>
+          <appendix>※下の「EISUU x2 to EISUU」を同時に使うことをおすすめします</appendix>
+          <identifier>remap.oyayubi_shift_roman_eisuu_space</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_roman.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_EISUU</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::SPACE</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item>
+          <name>＜ローマ字モード＞ 左シフト＝英数, 右シフト＝かな</name>
+          <appendix>※下の「EISUU x2 to EISUU」を同時に使うことをおすすめします</appendix>
+          <identifier>remap.oyayubi_shift_roman_eisuu_kana</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_roman.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_EISUU</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_KANA</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item>
+          <name>＜ローマ字モード＞ 左シフト＝スペース, 右シフト＝右コマンド</name>
+          <identifier>remap.oyayubi_shift_roman_space_command_r</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_roman.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::SPACE</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::COMMAND_R</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item>
+          <name>＜ローマ字モード＞ 左シフト＝左コマンド, 右シフト＝スペース</name>
+          <identifier>remap.oyayubi_shift_roman_command_l_space</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_roman.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::COMMAND_L</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::SPACE</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item>
+          <name>＜ローマ字モード＞ 左シフト＝左コマンド, 右シフト＝右コマンド</name>
+          <identifier>remap.oyayubi_shift_roman_command_l_command_r</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_roman.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::COMMAND_L</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::COMMAND_R</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item><name>──────────────────────────────</name></item>
+        <item>
+          <name>スラッシュキー（/）を素通しする</name>
+          <appendix>（スラッシュキーで÷や／が入力される場合に有効にしてください）</appendix>
+          <identifier>option.jis_oyayubishiftinput_passthrough_slash</identifier>
+        </item>
+      </item>
+      <item>
+        <name>＜かなモード＞</name>
+        <appendix>（ことえりやかわせみなどを「かな入力」に設定してください。）</appendix>
+        <item>
+          <name>＜かなモード＞ 左シフト＝スペース, 右シフト＝かな</name>
+          <identifier>remap.oyayubi_shift_kana_space_kana</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_kana_kotoeri.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::SPACE</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_KANA</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item>
+          <name>＜かなモード＞ 左シフト＝英数, 右シフト＝スペース</name>
+          <appendix>※下の「EISUU x2 to EISUU」を同時に使うことをおすすめします</appendix>
+          <identifier>remap.oyayubi_shift_kana_eisuu_space</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_kana_kotoeri.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_EISUU</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::SPACE</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item>
+          <name>＜かなモード＞ 左シフト＝英数, 右シフト＝かな</name>
+          <appendix>※下の「EISUU x2 to EISUU」を同時に使うことをおすすめします</appendix>
+          <identifier>remap.oyayubi_shift_kana_eisuu_kana</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_kana_kotoeri.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_EISUU</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_KANA</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+      </item>
+      <item>
+        <name>＜かなモード for ATOK＆かわせみ2＞</name>
+        <appendix>（ATOKを「かな入力」に設定してください。）</appendix>
+        <appendix></appendix>
+        <appendix>（かわせみ2の場合、かわせみ2側で以下の2点の設定を行ってください。）</appendix>
+        <appendix>・「かな入力」に設定。</appendix>
+        <appendix>・「入力」＞「capslock動作」を「ONで全角英字入力」に設定。</appendix>
+        <item>
+          <name>＜かなモード for ATOK＆かわせみ2＞ 左シフト＝スペース, 右シフト＝かな</name>
+          <identifier>remap.oyayubi_shift_kana_atok_space_kana</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_kana_atok.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::SPACE</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_KANA</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item>
+          <name>＜かなモード for ATOK＆かわせみ2＞ 左シフト＝英数, 右シフト＝スペース</name>
+          <appendix>※下の「EISUU x2 to EISUU」を同時に使うことをおすすめします</appendix>
+          <identifier>remap.oyayubi_shift_kana_atok_eisuu_space</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_kana_atok.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_EISUU</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::SPACE</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+        <item>
+          <name>＜かなモード for ATOK＆かわせみ2＞ 左シフト＝英数, 右シフト＝かな</name>
+          <appendix>※下の「EISUU x2 to EISUU」を同時に使うことをおすすめします</appendix>
+          <identifier>remap.oyayubi_shift_kana_atok_eisuu_kana</identifier>
+
+          <include path="keyboard_layouts/oyayubishiftinput_kana_atok.xml">
+            <replacementdef>
+              <replacementname>LEFT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_EISUU</replacementvalue>
+            </replacementdef>
+            <replacementdef>
+              <replacementname>RIGHT_THUMB</replacementname>
+              <replacementvalue>KeyCode::JIS_KANA</replacementvalue>
+            </replacementdef>
+          </include>
+
+        </item>
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>：キーをDeleteキーにする（後退キー）</name>
+        <identifier>remap.jis_oyayubishiftinput_backspace</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <include path="snippets/password_exception.xml" />
+        <autogen>__KeyToKey__ KeyCode::JIS_COLON, KeyCode::DELETE</autogen>
+      </item>
+      <item>
+        <name>］キーをEscapeキーにする（取消キー）</name>
+        <identifier>remap.jis_oyayubishiftinput_escape</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <include path="snippets/password_exception.xml" />
+        <autogen>__KeyToKey__ KeyCode::JIS_BRACKET_RIGHT, KeyCode::ESCAPE</autogen>
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>かなキーとスペースキーの位置を交換する。</name>
+        <appendix>・親指シフトキー、空白キーの位置をFKB7628-801やFMV-KB232と同じ、</appendix>
+        <appendix>「左シフト、右シフト、スペースキー」という順番にします。</appendix>
+        <appendix></appendix>
+        <appendix>・「英数キー」と「かなキー」の機能はシフトキーの2度押しで有効になります。</appendix>
+        <appendix></appendix>
+        <appendix>・親指シフトの設定は、「左シフト＝英数, 右シフト＝スペース」を指定してください。</appendix>
+        <identifier>remap.jis_oyayubi_physical_keyboard</identifier>
+        <autogen>__DoublePressModifier__ KeyCode::JIS_EISUU, KeyCode::VK_NONE, KeyCode::JIS_EISUU</autogen>
+        <autogen>__DoublePressModifier__ KeyCode::SPACE,     KeyCode::VK_NONE, KeyCode::JIS_KANA</autogen>
+        <autogen>__DoublePressModifier__ KeyCode::JIS_KANA,  KeyCode::SPACE</autogen>
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>EISUU x2 to EISUU (単発での英数キーは無視する)</name>
+        <identifier>remap.jis_eisuu2extra5_x2eisuu</identifier>
+        <autogen>__DoublePressModifier__ KeyCode::JIS_EISUU, KeyCode::VK_NONE, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>KANA x2 to KANA (単発でのかなキーは無視する)</name>
+        <identifier>remap.jis_kana2extra5_x2kana</identifier>
+        <autogen>__DoublePressModifier__ KeyCode::JIS_KANA, KeyCode::VK_NONE, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>KANA x2 to KANA</name>
+        <appendix>(+ When you type KANA only, send CONTROL_L)</appendix>
+        <identifier>remap.jis_kana2extra5_x2kana_controlL</identifier>
+        <autogen>__DoublePressModifier__ KeyCode::JIS_KANA, KeyCode::CONTROL_L, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>Reederでは親指シフトを無効にする。</name>
+        <appendix>（Reederでキーボードショートカットを使いたい人向け）</appendix>
+        <identifier>option.jis_oyayubishiftinput_ignore_apps_reeder</identifier>
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>親指シフト入力のときにショートカットをDvorakレイアウトにする</name>
+        <appendix>（Command、Control、Optionを押しているときはDvorak配列にする）</appendix>
+        <identifier>remap.jis_oyayubishiftinput_dvorak</identifier>
+        <modifier_only>
+          ModifierFlag::COMMAND_L,
+          ModifierFlag::COMMAND_R,
+          ModifierFlag::CONTROL_L,
+          ModifierFlag::CONTROL_R,
+          ModifierFlag::OPTION_L,
+          ModifierFlag::OPTION_R
+        </modifier_only>
+        <include path="keyboard_layouts/dvorak.xml" />
+      </item>
+    </item>
+
+    <item>
+      <name>Oyayubi R 1 line Shift</name>
+      <appendix>右手1行ずらし 親指シフト (NICOLA)</appendix>
+      <appendix></appendix>
+      <include path="keyboard_layouts/appendix_oyayubi_shift.xml" />
+      <item>
+        <name>＜ローマ字モード＞ 右手1行ずらし 左シフト＝スペース, 右シフト＝かな</name>
+        <identifier>remap.oyayubi_shift_roman_space_kana_migi_shift</identifier>
+
+        <include path="keyboard_layouts/r_oyayubishiftinput_roman.xml">
+          <replacementdef>
+            <replacementname>LEFT_THUMB</replacementname>
+            <replacementvalue>KeyCode::SPACE</replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>RIGHT_THUMB</replacementname>
+            <replacementvalue>KeyCode::JIS_KANA</replacementvalue>
+          </replacementdef>
+        </include>
+      </item>
+
+      <item>
+        <name>］キーをDeleteキーにする（後退キー）</name>
+        <identifier>remap.jis_oyayubishiftinput_Bracket_right_2_backspace</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <autogen>__KeyToKey__ KeyCode::JIS_BRACKET_RIGHT, KeyCode::DELETE</autogen>
+      </item>
+      <item><name>─ ATOK 設定 ────────────────────────</name></item>
+
+      <item>
+        <name>Yキーを全角カタカナ変換(”Ctrl + I”)にする。</name>
+        <identifier>remap.jis_oyayubishiftinput_Y_key_2_Ctrl+I</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::NONE, KeyCode::I, ModifierFlag::CONTROL_L,  KeyCode::VK_NONE</autogen>
+      </item>
+
+      <item>
+        <name>Hキーを半角英数 変換(”Ctrl + @”)にする。</name>
+        <identifier>remap.jis_oyayubishiftinput_H_key_2_Ctrl+@</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::NONE, KeyCode::JIS_ATMARK, ModifierFlag::CONTROL_L,  KeyCode::VK_NONE</autogen>
+      </item>
+
+      <item>
+        <name>Nキーを再変換(”Ctrl + Shift + Y”)にする。</name>
+        <identifier>remap.jis_oyayubishiftinput_N_key_2_Ctrl+SHIFT+Y</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::NONE, KeyCode::Y, ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L,  KeyCode::VK_NONE</autogen>
+      </item>
+
+      <item><name>──────────────────────────────</name></item>
+    </item>
+
+    <item>
+      <name>NICOLA on Kinesis</name>
+
+      <include path="keyboard_layouts/nicola_on_kinesis.xml">
+        <replacementdef>
+          <replacementname>JAPANESE_NICOLA_KINESIS_THUMB_LEFT</replacementname>
+          <replacementvalue>KeyCode::DELETE</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>JAPANESE_NICOLA_KINESIS_THUMB_RIGHT</replacementname>
+          <replacementvalue>KeyCode::SPACE</replacementvalue>
+        </replacementdef>
+      </include>
+
+    </item>
+    <item>
+      <name>下駄・新下駄配列（Geta, Shin-Geta Layout）</name>
+      <item>
+        <name>下駄配列（ATOK向け・ローマ字入力）</name>
+        <identifier>remap.geta_input_roman_qwerty_atok</identifier>
+        <include path="keyboard_layouts/geta.xml" />
+      </item>
+      <item>
+        <name>新下駄配列（ことえり向け・ローマ字入力）</name>
+        <identifier>remap.jis_shingeta_input_roman_qwerty_kotoeri</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <include path="snippets/password_exception.xml" />
+        <include path="keyboard_layouts/shingeta_base.xml" />
+        <include path="keyboard_layouts/shingeta_kotoeri.xml" />
+      </item>
+      <item>
+        <name>新下駄配列（ATOK向け・ローマ字入力）</name>
+        <identifier>remap.jis_shingeta_input_roman_qwerty_atok</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <include path="snippets/password_exception.xml" />
+        <include path="keyboard_layouts/shingeta_base.xml" />
+        <include path="keyboard_layouts/shingeta_atok.xml" />
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>新下駄配列（ことえり向け・ローマ字入力）</name>
+        <appendix>Dvorakユーザー向け</appendix>
+        <appendix>・アルファベット入力: Dvorak</appendix>
+        <appendix>・日本語入力: 新下駄配列</appendix>
+        <identifier>remap.jis_shingeta_input_roman_qwerty_kotoeri_for_dvorak</identifier>
+        <block>
+          <inputsource_only>JAPANESE</inputsource_only>
+          <include path="snippets/password_exception.xml" />
+          <include path="keyboard_layouts/shingeta_base.xml" />
+          <include path="keyboard_layouts/shingeta_kotoeri.xml" />
+        </block>
+        <block>
+          <inputsource_only>JAPANESE</inputsource_only>
+          <include path="snippets/password_exception.xml" />
+          <modifier_only>
+            ModifierFlag::COMMAND_L,
+            ModifierFlag::COMMAND_R,
+            ModifierFlag::CONTROL_L,
+            ModifierFlag::CONTROL_R,
+            ModifierFlag::OPTION_L,
+            ModifierFlag::OPTION_R
+          </modifier_only>
+          <include path="keyboard_layouts/dvorak.xml" />
+        </block>
+        <block>
+          <inputsource_not>JAPANESE</inputsource_not>
+          <include path="keyboard_layouts/dvorak.xml" />
+        </block>
+      </item>
+      <item>
+        <name>新下駄配列（ATOK向け・ローマ字入力）</name>
+        <appendix>Dvorakユーザー向け</appendix>
+        <appendix>・アルファベット入力: Dvorak</appendix>
+        <appendix>・日本語入力: 新下駄配列</appendix>
+        <identifier>remap.jis_shingeta_input_roman_qwerty_atok_for_dvorak</identifier>
+        <block>
+          <inputsource_only>JAPANESE</inputsource_only>
+          <include path="snippets/password_exception.xml" />
+          <include path="keyboard_layouts/shingeta_base.xml" />
+          <include path="keyboard_layouts/shingeta_atok.xml" />
+        </block>
+        <block>
+          <inputsource_only>JAPANESE</inputsource_only>
+          <include path="snippets/password_exception.xml" />
+          <modifier_only>
+            ModifierFlag::COMMAND_L,
+            ModifierFlag::COMMAND_R,
+            ModifierFlag::CONTROL_L,
+            ModifierFlag::CONTROL_R,
+            ModifierFlag::OPTION_L,
+            ModifierFlag::OPTION_R
+          </modifier_only>
+          <include path="keyboard_layouts/dvorak.xml" />
+        </block>
+        <block>
+          <inputsource_not>JAPANESE</inputsource_not>
+          <include path="keyboard_layouts/dvorak.xml" />
+        </block>
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>新下駄配列 US Keyboard 向け（ことえり向け・ローマ字入力）</name>
+        <identifier>remap.jis_shingeta_input_roman_qwerty_kotoeri_for_us</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <include path="snippets/password_exception.xml" />
+        <include path="keyboard_layouts/shingeta_base_for_us.xml" />
+        <include path="keyboard_layouts/shingeta_kotoeri.xml" />
+      </item>
+      <item>
+        <name>新下駄配列 US Keyboard 向け（ATOK向け・ローマ字入力）</name>
+        <identifier>remap.jis_shingeta_input_roman_qwerty_atok_for_us</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <include path="snippets/password_exception.xml" />
+        <include path="keyboard_layouts/shingeta_base_for_us.xml" />
+        <include path="keyboard_layouts/shingeta_atok.xml" />
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>新下駄配列 US Keyboard 向け（ことえり向け・ローマ字入力）</name>
+        <appendix>Dvorakユーザー向け</appendix>
+        <appendix>・アルファベット入力: Dvorak</appendix>
+        <appendix>・日本語入力: 新下駄配列</appendix>
+        <identifier>remap.jis_shingeta_input_roman_qwerty_kotoeri_for_dvorak_for_us</identifier>
+        <block>
+          <inputsource_only>JAPANESE</inputsource_only>
+          <include path="snippets/password_exception.xml" />
+          <include path="keyboard_layouts/shingeta_base_for_us.xml" />
+          <include path="keyboard_layouts/shingeta_kotoeri.xml" />
+        </block>
+        <block>
+          <inputsource_only>JAPANESE</inputsource_only>
+          <include path="snippets/password_exception.xml" />
+          <modifier_only>
+            ModifierFlag::COMMAND_L,
+            ModifierFlag::COMMAND_R,
+            ModifierFlag::CONTROL_L,
+            ModifierFlag::CONTROL_R,
+            ModifierFlag::OPTION_L,
+            ModifierFlag::OPTION_R
+          </modifier_only>
+          <include path="../../snippets/dvorak.xml" />
+        </block>
+        <block>
+          <inputsource_not>JAPANESE</inputsource_not>
+          <include path="../../snippets/dvorak.xml" />
+        </block>
+      </item>
+      <item>
+        <name>新下駄配列 US Keyboard 向け（ATOK向け・ローマ字入力）</name>
+        <appendix>Dvorakユーザー向け</appendix>
+        <appendix>・アルファベット入力: Dvorak</appendix>
+        <appendix>・日本語入力: 新下駄配列</appendix>
+        <identifier>remap.jis_shingeta_input_roman_qwerty_atok_for_dvorak_for_us</identifier>
+        <block>
+          <inputsource_only>JAPANESE</inputsource_only>
+          <include path="snippets/password_exception.xml" />
+          <include path="keyboard_layouts/shingeta_base_for_us.xml" />
+          <include path="keyboard_layouts/shingeta_atok.xml" />
+        </block>
+        <block>
+          <inputsource_only>JAPANESE</inputsource_only>
+          <include path="snippets/password_exception.xml" />
+          <modifier_only>
+            ModifierFlag::COMMAND_L,
+            ModifierFlag::COMMAND_R,
+            ModifierFlag::CONTROL_L,
+            ModifierFlag::CONTROL_R,
+            ModifierFlag::OPTION_L,
+            ModifierFlag::OPTION_R
+          </modifier_only>
+          <include path="../../snippets/dvorak.xml" />
+        </block>
+        <block>
+          <inputsource_not>JAPANESE</inputsource_not>
+          <include path="../../snippets/dvorak.xml" />
+        </block>
+      </item>
+    </item>
+    <item>
+      <name>Asuka Kana Hairetsu</name>
+      <appendix>飛鳥カナ配列(2010-07-13版)</appendix>
+      <item>
+        <name>＜ローマ字モード＞ 左シフト＝スペース, 右シフト＝かな</name>
+        <appendix>数字段のシフト面は未定義</appendix>
+        <identifier>remap.jis_asuka_roman_space_kana</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <include path="snippets/password_exception.xml" />
+
+        <include path="keyboard_layouts/asuka_roman.xml">
+          <replacementdef>
+            <replacementname>LEFT_THUMB</replacementname>
+            <replacementvalue>KeyCode::SPACE</replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>RIGHT_THUMB</replacementname>
+            <replacementvalue>KeyCode::JIS_KANA</replacementvalue>
+          </replacementdef>
+        </include>
+
+      </item>
+      <item>
+        <name>＜ローマ字モード＞ 左シフト＝英数, 右シフト＝スペース</name>
+        <appendix>数字段のシフト面は未定義</appendix>
+        <identifier>remap.jis_asuka_roman_eisuu_space</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <include path="snippets/password_exception.xml" />
+
+        <include path="keyboard_layouts/asuka_roman.xml">
+          <replacementdef>
+            <replacementname>LEFT_THUMB</replacementname>
+            <replacementvalue>KeyCode::JIS_EISUU</replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>RIGHT_THUMB</replacementname>
+            <replacementvalue>KeyCode::SPACE</replacementvalue>
+          </replacementdef>
+        </include>
+
+      </item>
+      <item>
+        <name>＜ローマ字モード＞ 左シフト＝英数, 右シフト＝かな</name>
+        <appendix>数字段のシフト面は未定義</appendix>
+        <identifier>remap.jis_asuka_roman_eisuu_kana</identifier>
+
+        <include path="keyboard_layouts/asuka_roman.xml">
+          <replacementdef>
+            <replacementname>LEFT_THUMB</replacementname>
+            <replacementvalue>KeyCode::JIS_EISUU</replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>RIGHT_THUMB</replacementname>
+            <replacementvalue>KeyCode::JIS_KANA</replacementvalue>
+          </replacementdef>
+        </include>
+
+      </item>
+    </item>
+    <item>
+      <name>Use Windows Kana-Input Layout on US Keyboard</name>
+      <inputsource_only>JAPANESE</inputsource_only>
+      <autogen>__KeyToKey__ KeyCode::MINUS, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::EQUAL, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::EQUAL, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::MINUS, ModifierFlag::SHIFT_L</autogen>
+
+      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE, KeyCode::EQUAL</autogen>
+      <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::NONE, KeyCode::BACKSLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::NONE, KeyCode::BRACKET_RIGHT</autogen>
+      <identifier>remap.jis_layout_windowskanainput</identifier>
+    </item>
+    <item>
+      <name>キーボード天地逆Dvorak配列（USキーボード向け）</name>
+      <appendix>http://pi200k.blog35.fc2.com/?no=70</appendix>
+      <include path="keyboard_layouts/updown_dvorak.xml" />
+      <include path="keyboard_layouts/homemoved_dvorak.xml" />
+    </item>
+    <item>
+      <name>AIU配列</name>
+      <appendix>1段目: X-EQ/ YGRWP</appendix>
+      <appendix>2段目: AIUFO HJKST</appendix>
+      <appendix>3段目: ,.CVL NMDBZ</appendix>
+      <item>
+        <name>日本語入力のときだけAIU配列にする</name>
+        <appendix>（Command+CなどのショートカットはQWERTY配列のまま）</appendix>
+        <identifier>remap.jis_layout_aiu</identifier>
+        <inputsource_only>JAPANESE, AINU</inputsource_only>
+        <modifier_not>
+          ModifierFlag::COMMAND_L,
+          ModifierFlag::COMMAND_R,
+          ModifierFlag::CONTROL_L,
+          ModifierFlag::CONTROL_R,
+          ModifierFlag::FN,
+          ModifierFlag::OPTION_L,
+          ModifierFlag::OPTION_R
+        </modifier_not>
+        <include path="keyboard_layouts/layout_aiu.xml" />
+      </item>
+      <item>
+        <name>いつでもAIU配列</name>
+        <identifier>remap.jis_layout_aiu_anytime</identifier>
+        <include path="keyboard_layouts/layout_aiu.xml" />
+      </item>
+    </item>
+  </item>
+</root>

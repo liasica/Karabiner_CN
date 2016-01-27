@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Enable at only Google Chrome</name>
+    <item>
+      <name>Tilt Wheel to Back/Forward. (Command+[, Command+])</name>
+      <identifier>remap.app_google_chrome_tilt_to_back_forward</identifier>
+      <only>GOOGLE_CHROME</only>
+      <autogen>__ScrollWheelToKey__ ScrollWheel::LEFT, ModifierFlag::NONE,
+        KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__ScrollWheelToKey__ ScrollWheel::RIGHT, ModifierFlag::NONE,
+        KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Disable Close Window shortcut. (command-shift-w)</name>
+      <identifier>remap.app_google_chrome_disable_close_window</identifier>
+      <only>GOOGLE_CHROME</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE,
+        KeyCode::VK_NONE,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Disable Close Tab shortcut (command-w) on Gmail.</name>
+      <identifier>remap.app_google_chrome_disable_close_tab_on_gmail</identifier>
+      <only>GOOGLE_CHROME</only>
+      <windowname_only>Gmail</windowname_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+        KeyCode::VK_NONE,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Disable Close Tab shortcut (command-w) on Google Calendar.</name>
+      <identifier>remap.app_google_chrome_disable_close_tab_on_google_calendar</identifier>
+      <only>GOOGLE_CHROME</only>
+      <windowname_only>Google_Calendar</windowname_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+        KeyCode::VK_NONE,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Disable Close Tab shortcut (command-w) on Google Translate.</name>
+      <identifier>remap.app_google_chrome_disable_close_tab_on_google_translate</identifier>
+      <only>GOOGLE_CHROME</only>
+      <windowname_only>Google_Translate</windowname_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+        KeyCode::VK_NONE,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Control+L to Command+L</name>
+      <identifier>remap.app_google_chrome_controlL2commandL</identifier>
+      <autogen>__KeyToKey__ KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::L, ModifierFlag::COMMAND_L</autogen>
+      <only>GOOGLE_CHROME</only>
+    </item>
+
+    <item>
+      <name>Control+T to Command+T</name>
+      <identifier>remap.app_google_chrome_controlT2commandT</identifier>
+      <autogen>__KeyToKey__ KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::T, ModifierFlag::COMMAND_L</autogen>
+      <only>GOOGLE_CHROME</only>
+    </item>
+
+    <item>
+      <name>Control+W to Command+W</name>
+      <identifier>remap.app_google_chrome_controlW2commandW</identifier>
+      <autogen>__KeyToKey__ KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::W, ModifierFlag::COMMAND_L</autogen>
+      <only>GOOGLE_CHROME</only>
+    </item>
+  </item>
+</root>

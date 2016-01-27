@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<root>
+
+  <!--
+      | <modifierdef> defines a modifier.
+      | For example, <modifierdef>EXTRA1</modifierdef> defines ModifierFlag and KeyCodes.
+      |
+      | * ModifierFlag::EXTRA1
+      | * KeyCode::VK_MODIFIER_EXTRA1
+      | * KeyCode::VK_LOCK_EXTRA1
+      | * KeyCode::VK_LOCK_EXTRA1_FORCE_ON
+      | * KeyCode::VK_LOCK_EXTRA1_FORCE_OFF
+      | * KeyCode::VK_NEGATIVE_LOCK_EXTRA1
+      | * KeyCode::VK_NEGATIVE_LOCK_EXTRA1_FORCE_ON
+      | * KeyCode::VK_NEGATIVE_LOCK_EXTRA1_FORCE_OFF
+      | * KeyCode::VK_STICKY_EXTRA1
+      | * KeyCode::VK_STICKY_EXTRA1_FORCE_ON
+      | * KeyCode::VK_STICKY_EXTRA1_FORCE_OFF
+      |
+      |
+      | You can use new modifier like this:
+      |
+      | * Change the right command key to the extra1 modifier key:
+      |
+      |   <autogen>
+      |     __KeyToKey__
+      |     KeyCode::COMMAND_R,
+      |     KeyCode::VK_MODIFIER_EXTRA1,
+      |   </autogen>
+      |
+      | * Change extra1+keys to other keys:
+      |
+      |   <autogen>
+      |     __KeyToKey__
+      |     KeyCode::A, ModifierFlag::EXTRA1,
+      |     KeyCode::KEY_1,
+      |   </autogen>
+      |   <autogen>
+      |     __KeyToKey__
+      |     KeyCode::S, ModifierFlag::EXTRA1,
+      |     KeyCode::KEY_2,
+      |   </autogen>
+      |
+  -->
+
+  <modifierdef>EXTRA1</modifierdef>
+  <modifierdef>EXTRA2</modifierdef>
+  <modifierdef>EXTRA3</modifierdef>
+  <modifierdef>EXTRA4</modifierdef>
+  <modifierdef>EXTRA5</modifierdef>
+  <modifierdef>EXTRA6</modifierdef>
+  <modifierdef>EXTRA7</modifierdef>
+  <modifierdef>EXTRA8</modifierdef>
+  <modifierdef>EXTRA9</modifierdef>
+  <modifierdef>EXTRA10</modifierdef>
+
+  <!-- For "SandS v2" -->
+  <modifierdef>SANDS2</modifierdef>
+
+  <!-- For "space_to_command" -->
+  <modifierdef>SPACE_TO_COMMAND</modifierdef>
+
+  <!-- For "Launcher Mode v2" -->
+  <modifierdef>LAUNCHER_MODE_V2</modifierdef>
+
+  <!-- For "Mouse Keys Mode v2" -->
+  <modifierdef>MOUSE_KEYS_MODE_2</modifierdef>
+  <modifierdef>MOUSE_KEYS_MODE_2_SCROLL</modifierdef>
+
+  <!-- Simple Vi Mode v2 -->
+  <modifierdef>SIMPLE_VI_MODE_2</modifierdef>
+
+  <!-- For remap.app_rdc_command_to_control -->
+  <modifierdef>RDC_COMMAND</modifierdef>
+
+  <!-- The lock and sticky modifier notification will be hidden if you set notify="false". -->
+  <modifierdef notify="false">A</modifierdef>
+  <modifierdef notify="false">B</modifierdef>
+  <modifierdef notify="false">C</modifierdef>
+  <modifierdef notify="false">D</modifierdef>
+  <modifierdef notify="false">E</modifierdef>
+  <modifierdef notify="false">F</modifierdef>
+  <modifierdef notify="false">G</modifierdef>
+  <modifierdef notify="false">H</modifierdef>
+  <modifierdef notify="false">I</modifierdef>
+  <modifierdef notify="false">J</modifierdef>
+  <modifierdef notify="false">K</modifierdef>
+  <modifierdef notify="false">L</modifierdef>
+  <modifierdef notify="false">M</modifierdef>
+  <modifierdef notify="false">N</modifierdef>
+  <modifierdef notify="false">O</modifierdef>
+  <modifierdef notify="false">P</modifierdef>
+  <modifierdef notify="false">Q</modifierdef>
+  <modifierdef notify="false">R</modifierdef>
+  <modifierdef notify="false">S</modifierdef>
+  <modifierdef notify="false">T</modifierdef>
+  <modifierdef notify="false">U</modifierdef>
+  <modifierdef notify="false">V</modifierdef>
+  <modifierdef notify="false">W</modifierdef>
+  <modifierdef notify="false">X</modifierdef>
+  <modifierdef notify="false">Y</modifierdef>
+  <modifierdef notify="false">Z</modifierdef>
+  <modifierdef notify="false">DELETE</modifierdef>
+  <modifierdef notify="false">ESCAPE</modifierdef>
+  <modifierdef notify="false">RETURN</modifierdef>
+  <modifierdef notify="false">SPACE</modifierdef>
+  <modifierdef notify="false">TAB</modifierdef>
+
+  <modifierdef notify="false">BUTTON1</modifierdef>
+  <modifierdef notify="false">BUTTON2</modifierdef>
+  <modifierdef notify="false">BUTTON3</modifierdef>
+  <modifierdef notify="false">BUTTON4</modifierdef>
+  <modifierdef notify="false">BUTTON5</modifierdef>
+
+</root>

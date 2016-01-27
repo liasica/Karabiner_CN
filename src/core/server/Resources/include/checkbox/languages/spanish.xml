@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>For Spanish</name>
+    <item>
+      <name>Change right option key+4 to ~ on Spanish input source</name>
+      <identifier>remap.pc_applicationoption4n</identifier>
+      <block>
+        <inputsource_only>SPANISH</inputsource_only>
+        <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::OPTION_R, KeyCode::SEMICOLON, ModifierFlag::OPTION_R</autogen>
+      </block>
+    </item>
+    <item>
+      <name>Change right option key+4 to ~ on U.S. input source</name>
+      <identifier>remap.option_r_4_to_tilda</identifier>
+      <block>
+        <inputsource_only>ENGLISH</inputsource_only>
+        <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::OPTION_R, KeyCode::N, ModifierFlag::OPTION_R</autogen>
+      </block>
+    </item>
+    <item>
+      <name>Swap ordinal-indicator(º) and less-than(&lt;)</name>
+      <identifier>remap.spanish_swap_ordinal_indicator_lessthan</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPANISH_ORDINAL_INDICATOR, KeyCode::SPANISH_LESS_THAN</autogen>
+      <autogen>__KeyToKey__ KeyCode::SPANISH_LESS_THAN, KeyCode::SPANISH_ORDINAL_INDICATOR</autogen>
+    </item>
+    <item>
+      <name>Change right option key+less-than(≤) to backslash(\) key for Spanish</name>
+      <appendix>Gives you the missing key combo with Alt-Gr without the ordinals</appendix>
+      <identifier>remap.spanish_option_r_as_backslash</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPANISH_LESS_THAN, ModifierFlag::OPTION_R, KeyCode::SPANISH_ORDINAL_INDICATOR, ModifierFlag::OPTION_R</autogen>
+    </item>
+    <item>
+      <name>Add ordinals with command key+less_than for Spanish</name>
+      <appendix>Gives you the missing Spanish ordinals using any of the command keys</appendix>
+      <identifier>remap.spanish_command_less_for_ordinals</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPANISH_LESS_THAN, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::SPANISH_ORDINAL_INDICATOR</autogen>
+    </item>
+    <item>
+      <name>Change keypad comma(,) to dot(.) on "Spanish" and "Spanish - ISO" Input Source</name>
+      <identifier>remap.spanish_keypad_comma_to_dot</identifier>
+      <inputsource_only>SPANISH</inputsource_only>
+      <autogen>__KeyToKey__ KeyCode::KEYPAD_DOT, KeyCode::DOT</autogen>
+    </item>
+    <item>
+      <name>Change Command_R+n to ñ</name>
+      <appendix>For Spanish in international US keyboard</appendix>
+      <identifier>remap.us_intl.ES.OptionR_n</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::N, ModifierFlag::COMMAND_R | ModifierFlag::NONE,
+        KeyCode::N, ModifierFlag::OPTION_R, KeyCode::N
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::N, ModifierFlag::COMMAND_R | ModifierFlag::SHIFT_R | ModifierFlag::NONE,
+        KeyCode::N, ModifierFlag::OPTION_R, KeyCode::N, ModifierFlag::SHIFT_R
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::N, ModifierFlag::COMMAND_R | ModifierFlag::SHIFT_L | ModifierFlag::NONE,
+        KeyCode::N, ModifierFlag::OPTION_R, KeyCode::N, ModifierFlag::SHIFT_L
+      </autogen>
+    </item>
+    <item>
+      <name>Change option-comma(,) and option-dot(.) to less-than(&lt;) and greater-than(&gt;).</name>
+      <appendix>(Enable on "Spanish" and "Spanish - ISO" Input Source.)</appendix>
+      <identifier>remap.spanish_option_comman_less_than</identifier>
+      <inputsource_only>SPANISH</inputsource_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | ModifierFlag::NONE,
+        KeyCode::BACKQUOTE, ModifierFlag::NONE
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | ModifierFlag::NONE,
+        KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L
+      </autogen>
+    </item>
+
+    <item>
+      <name>Correct Microsoft Ergonomic Keyboard 4000 Spanish configuration in "Spanish - ISO"</name>
+      <appendix>input source.</appendix>
+      <identifier>remap.spanish_map_microsoft_to_mac</identifier>
+      <inputsource_only>SPANISH_ISO</inputsource_only>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::DANISH_DOLLAR, ModifierFlag::NONE,
+        KeyCode::KEY_1, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::DANISH_DOLLAR, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,,
+        KeyCode::DANISH_DOLLAR
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::DANISH_DOLLAR, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+        KeyCode::KEY_6, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::Q, ModifierFlag::OPTION_R,
+        KeyCode::KEY_2, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::KEY_3, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::KEY_3, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::MINUS, ModifierFlag::OPTION_R,
+        KeyCode::DANISH_DOLLAR, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::EQUAL, ModifierFlag::NONE,
+        KeyCode::EQUAL, ModifierFlag::SHIFT_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::EQUAL, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::EQUAL, ModifierFlag::NONE
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_LEFT, ModifierFlag::NONE,
+        KeyCode::QUOTE
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,,
+        KeyCode::QUOTE, ModifierFlag::SHIFT_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+        KeyCode::SEMICOLON, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE, ModifierFlag::NONE,
+        KeyCode::QUOTE, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,,
+        KeyCode::BRACKET_LEFT, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::QUOTE, ModifierFlag::OPTION_R,
+        KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH, ModifierFlag::NONE,
+        KeyCode::BACKSLASH, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,,
+        KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_R
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH, ModifierFlag::OPTION_R,
+        KeyCode::BRACKET_LEFT,
+      </autogen>
+
+      <autogen>
+        __KeyToKey__
+        KeyCode::KEYPAD_DOT, ModifierFlag::NONE,
+        KeyCode::DOT
+      </autogen>
+    </item>
+
+  </item>
+</root>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+  <replacementdef>
+    <replacementname>INPUTSOURCEDEF_REPLACEMENT</replacementname>
+    <replacementvalue>
+      <![CDATA[
+        <inputsourcedef>
+          <languagecode>en</languagecode>
+        </inputsourcedef>
+        ]]>
+    </replacementvalue>
+  </replacementdef>
+</root>

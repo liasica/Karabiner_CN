@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Virtual KeyCode</name>
+    <item>
+      <name>VK_MODIFIER_EXTRA</name>
+      <appendix>Use A as ModifierFlag::EXTRA1</appendix>
+      <appendix>Use D as ModifierFlag::EXTRA5</appendix>
+      <appendix>Use F as ModifierFlag::EXTRA5 (When type only, send Space)</appendix>
+      <appendix>EXTRA1+S to B</appendix>
+      <appendix>EXTRA5+S to C</appendix>
+      <identifier>remap.samples_modifier_extra1</identifier>
+      <autogen>__KeyToKey__ KeyCode::A, KeyCode::VK_MODIFIER_EXTRA1</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, KeyCode::VK_MODIFIER_EXTRA5</autogen>
+      <autogen>__KeyOverlaidModifier__ KeyCode::F, KeyCode::VK_MODIFIER_EXTRA5, KeyCode::SPACE</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA1, KeyCode::B</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA5, KeyCode::C</autogen>
+    </item>
+    <item>
+      <name>VK_WAIT</name>
+      <appendix>Change KEY_1 to A,B,&lt;wait10ms&gt;,C</appendix>
+      <appendix>Change KEY_2 to A,B,&lt;wait50ms&gt;,C</appendix>
+      <appendix>Change KEY_3 to A,B,&lt;wait100ms&gt;,C</appendix>
+      <identifier>remap.samples_vk_wait</identifier>
+      <autogen>__KeyToKey__ KeyCode::KEY_1, KeyCode::A, KeyCode::B, KeyCode::VK_WAIT_10MS,  KeyCode::C</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEY_2, KeyCode::A, KeyCode::B, KeyCode::VK_WAIT_50MS,  KeyCode::C</autogen>
+      <autogen>__KeyToKey__ KeyCode::KEY_3, KeyCode::A, KeyCode::B, KeyCode::VK_WAIT_100MS, KeyCode::C</autogen>
+    </item>
+
+    <include path="virtual_keycodes/vk_lock.xml" />
+    <include path="virtual_keycodes/vk_sticky.xml" />
+    <include path="virtual_keycodes/vk_lazy.xml" />
+    <include path="virtual_keycodes/vk_mousekey.xml" />
+
+    <item>
+      <name>VK_PARTIAL_*</name>
+      <item>
+        <name>Description:</name>
+        <appendix>You can send only one of keyDown or keyUp event</appendix>
+        <appendix>by KeyCode::VK_PARTIAL_KEYDOWN/KeyCode::VK_PARTIAL_KEYUP.</appendix>
+        <appendix></appendix>
+        <appendix>It's useful for some apps which use a key as modifier.</appendix>
+        <appendix>For example, OmniGraffle changes the current tool to connecter tool</appendix>
+        <appendix>while you are holding down the C key.</appendix>
+        <appendix></appendix>
+        <appendix>You can send following events using KeyCode::VK_PARTIAL_*.</appendix>
+        <appendix>(1) keyDown C</appendix>
+        <appendix>(2) Left click</appendix>
+        <appendix>(3) keyUp C</appendix>
+        <appendix></appendix>
+        <appendix>Don't forget use KeyCode::VK_PARTIAL_KEYUP after you use</appendix>
+        <appendix>KeyCode::VK_PARTIAL_KEYDOWN.</appendix>
+      </item>
+      <item>
+        <name>Standard</name>
+        <appendix>Change Q to A(down), B(down), C(down), Space, A(up), B(up), C(up)</appendix>
+        <appendix>Change C to C(down), Left Click, C(up)</appendix>
+        <identifier>remap.samples_vk_partial</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::Q,
+          KeyCode::VK_PARTIAL_KEYDOWN, KeyCode::A,
+          KeyCode::VK_PARTIAL_KEYDOWN, KeyCode::B,
+          KeyCode::VK_PARTIAL_KEYDOWN, KeyCode::C,
+          KeyCode::SPACE,
+          KeyCode::VK_PARTIAL_KEYUP, KeyCode::A,
+          KeyCode::VK_PARTIAL_KEYUP, KeyCode::B,
+          KeyCode::VK_PARTIAL_KEYUP, KeyCode::C,
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::C,
+          KeyCode::VK_MOUSEKEY_BUTTON_LEFT,
+
+          Option::KEYTOKEY_BEFORE_KEYDOWN,
+          KeyCode::VK_PARTIAL_KEYDOWN, KeyCode::C,
+
+          Option::KEYTOKEY_AFTER_KEYUP,
+          KeyCode::VK_PARTIAL_KEYUP, KeyCode::C,
+        </autogen>
+      </item>
+    </item>
+
+    <item>
+      <name>VK_CHANGE_INPUTSOURCE_*</name>
+      <item>
+        <name>Standard</name>
+        <appendix>Use 1 to VK_CHANGE_INPUTSOURCE_US</appendix>
+        <appendix>Use 2 to VK_CHANGE_INPUTSOURCE_FRENCH</appendix>
+        <appendix>Use 3 to VK_CHANGE_INPUTSOURCE_GERMAN</appendix>
+        <appendix>Use 4 to VK_CHANGE_INPUTSOURCE_JAPANESE</appendix>
+        <appendix>Use 5 to VK_CHANGE_INPUTSOURCE_SWEDISH</appendix>
+        <appendix>Use 6 to VK_CHANGE_INPUTSOURCE_CANADIAN</appendix>
+        <appendix>Use 7 to VK_CHANGE_INPUTSOURCE_RUSSIAN</appendix>
+        <appendix>Use 8 to VK_CHANGE_INPUTSOURCE_RUSSIAN_TYPOGRAPHIC</appendix>
+        <appendix>Use 9 to VK_CHANGE_INPUTSOURCE_ENGLISH_TYPOGRAPHIC</appendix>
+        <appendix>Use 0 to VK_CHANGE_INPUTSOURCE_TRADITIONAL_CHINESE_YAHOO_KEYKEY</appendix>
+        <appendix>Use Q to VK_CHANGE_INPUTSOURCE_ESTONIAN</appendix>
+        <appendix>Use W to VK_CHANGE_INPUTSOURCE_FINNISH</appendix>
+        <appendix>Use E to VK_CHANGE_INPUTSOURCE_THAI</appendix>
+        <appendix>Use R to VK_CHANGE_INPUTSOURCE_DVORAK</appendix>
+        <appendix>Use T to VK_CHANGE_INPUTSOURCE_COLEMAK</appendix>
+        <appendix>Use Y to VK_CHANGE_INPUTSOURCE_UKRAINIAN</appendix>
+        <appendix>Use U to VK_CHANGE_INPUTSOURCE_UKRAINIAN_PC</appendix>
+        <identifier>remap.samples_vk_change_inputsource</identifier>
+        <autogen>__KeyToKey__ KeyCode::KEY_1, KeyCode::VK_CHANGE_INPUTSOURCE_US</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_2, KeyCode::VK_CHANGE_INPUTSOURCE_FRENCH</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_3, KeyCode::VK_CHANGE_INPUTSOURCE_GERMAN</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_4, KeyCode::VK_CHANGE_INPUTSOURCE_JAPANESE</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_5, KeyCode::VK_CHANGE_INPUTSOURCE_SWEDISH</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_6, KeyCode::VK_CHANGE_INPUTSOURCE_CANADIAN</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_7, KeyCode::VK_CHANGE_INPUTSOURCE_RUSSIAN</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_8, KeyCode::VK_CHANGE_INPUTSOURCE_RUSSIAN_TYPOGRAPHIC</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_9, KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH_TYPOGRAPHIC</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_0, KeyCode::VK_CHANGE_INPUTSOURCE_TRADITIONAL_CHINESE_YAHOO_KEYKEY</autogen>
+        <autogen>__KeyToKey__ KeyCode::Q,     KeyCode::VK_CHANGE_INPUTSOURCE_ESTONIAN</autogen>
+        <autogen>__KeyToKey__ KeyCode::W,     KeyCode::VK_CHANGE_INPUTSOURCE_FINNISH</autogen>
+        <autogen>__KeyToKey__ KeyCode::E,     KeyCode::VK_CHANGE_INPUTSOURCE_THAI</autogen>
+        <autogen>__KeyToKey__ KeyCode::R,     KeyCode::VK_CHANGE_INPUTSOURCE_DVORAK</autogen>
+        <autogen>__KeyToKey__ KeyCode::T,     KeyCode::VK_CHANGE_INPUTSOURCE_COLEMAK</autogen>
+        <autogen>__KeyToKey__ KeyCode::Y,     KeyCode::VK_CHANGE_INPUTSOURCE_UKRAINIAN</autogen>
+        <autogen>__KeyToKey__ KeyCode::U,     KeyCode::VK_CHANGE_INPUTSOURCE_UKRAINIAN_PC</autogen>
+      </item>
+      <item>
+        <name>With VK_WAIT</name>
+        <appendix>Change S to Dvorak:S, US:S ("os" will be input).</appendix>
+        <identifier>remap.samples_vk_change_inputsource_with_vk_wait</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::S,
+          KeyCode::VK_CHANGE_INPUTSOURCE_DVORAK,
+          KeyCode::VK_WAIT_10MS,
+          KeyCode::VK_WAIT_10MS,
+          KeyCode::VK_WAIT_10MS,
+          KeyCode::VK_WAIT_10MS,
+          KeyCode::S,
+          KeyCode::VK_CHANGE_INPUTSOURCE_US,
+          KeyCode::VK_WAIT_10MS,
+          KeyCode::VK_WAIT_10MS,
+          KeyCode::VK_WAIT_10MS,
+          KeyCode::VK_WAIT_10MS,
+          KeyCode::S,
+        </autogen>
+      </item>
+    </item>
+    <item>
+      <name>VK_OPEN_URL</name>
+      <appendix>Command_R+A to Launch Activity Monitor</appendix>
+      <appendix>Command_R+F to Launch Finder and Open New Window</appendix>
+      <appendix>Command_R+P to Open https://pqrs.org/</appendix>
+      <appendix>Command_R+B to Open https://pqrs.org/ in background</appendix>
+      <appendix>Command_R+S to Launch Safari</appendix>
+      <appendix>Command_R+T to Launch TextEdit</appendix>
+      <appendix></appendix>
+      <appendix>Note: Some apps ignore `background` option.</appendix>
+      <appendix>For example Google Chrome will always be in foreground.</appendix>
+      <identifier>remap.samples_vk_open_url</identifier>
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::COMMAND_R, KeyCode::VK_OPEN_URL_APP_Activity_Monitor</autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F, ModifierFlag::COMMAND_R,
+        KeyCode::VK_OPEN_URL_APP_Finder,
+        KeyCode::VK_WAIT_100MS,
+        KeyCode::N, ModifierFlag::COMMAND_R,
+        Option::NOREPEAT
+      </autogen>
+      <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::COMMAND_R, KeyCode::VK_OPEN_URL_WEB_pqrs_org</autogen>
+      <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::COMMAND_R, KeyCode::VK_OPEN_URL_WEB_pqrs_org_in_background</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::COMMAND_R, KeyCode::VK_OPEN_URL_APP_Safari</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::COMMAND_R, KeyCode::VK_OPEN_URL_APP_TextEdit</autogen>
+    </item>
+    <item>
+      <name>VK_CONFIG</name>
+      <item>
+        <name>Standard</name>
+        <item>
+          <name></name>
+          <appendix>Use A to VK_CONFIG_TOGGLE</appendix>
+          <appendix>Use S to VK_CONFIG_FORCE_ON</appendix>
+          <appendix>Use D to VK_CONFIG_FORCE_OFF</appendix>
+          <appendix>Use F to VK_CONFIG_SYNC_KEYDOWNUP</appendix>
+          <appendix>Use G to Shift_L+VK_CONFIG_SYNC_KEYDOWNUP</appendix>
+          <appendix>Use H to A,VK_CONFIG_SYNC_KEYDOWNUP</appendix>
+          <appendix>Use J to A,Shift_L+VK_CONFIG_SYNC_KEYDOWNUP</appendix>
+          <identifier>remap.samples_vk_config</identifier>
+          <autogen>__KeyToKey__ KeyCode::A, KeyCode::VK_CONFIG_TOGGLE_notsave_samples_vk_config</autogen>
+          <autogen>__KeyToKey__ KeyCode::S, KeyCode::VK_CONFIG_FORCE_ON_notsave_samples_vk_config</autogen>
+          <autogen>__KeyToKey__ KeyCode::D, KeyCode::VK_CONFIG_FORCE_OFF_notsave_samples_vk_config</autogen>
+          <autogen>__KeyToKey__ KeyCode::F, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_samples_vk_config</autogen>
+          <autogen>__KeyToKey__ KeyCode::G, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_samples_vk_config, ModifierFlag::SHIFT_L</autogen>
+          <autogen>__KeyToKey__ KeyCode::H, KeyCode::A, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_samples_vk_config</autogen>
+          <autogen>__KeyToKey__ KeyCode::J, KeyCode::A, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_samples_vk_config, ModifierFlag::SHIFT_L</autogen>
+        </item>
+        <item hidden="true">
+          <name></name>
+          <identifier vk_config="true">notsave.samples_vk_config</identifier>
+          <autogen>__ShowStatusMessage__ VK_CONFIG</autogen>
+        </item>
+        <item>
+          <name>With __KeyOverlaidModifierWithRepeat__</name>
+          <appendix>Use A to VK_CONFIG_SYNC_KEYDOWNUP (Send space if type only A key + key repeat.)</appendix>
+          <identifier>remap.samples_vk_config_keyoverlaidmodifierwithrepeat</identifier>
+          <autogen>
+            __KeyOverlaidModifierWithRepeat__
+            KeyCode::A,
+            KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_samples_vk_config,
+            KeyCode::SPACE,
+          </autogen>
+        </item>
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>Disable this setting by Key or PointingButton.</name>
+        <appendix>Change Left Click to disable this setting.</appendix>
+        <appendix>Change Shift_L to disable this setting.</appendix>
+        <identifier vk_config="true">notsave.remap_samples_vk_config_disable_self</identifier>
+        <autogen>__ShowStatusMessage__ VK_CONFIG</autogen>
+        <autogen>
+          __KeyToKey__
+          PointingButton::LEFT,
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_remap_samples_vk_config_disable_self,
+        </autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::SHIFT_L,
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_remap_samples_vk_config_disable_self,
+        </autogen>
+      </item>
+      <item>
+        <name>Change escape Key to VK_CONFIG_SYNC_KEYDOWNUP above setting.</name>
+        <identifier>remap.samples_vk_config_disable_self_escape</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::ESCAPE,
+          KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_remap_samples_vk_config_disable_self,
+        </autogen>
+      </item>
+      <item><name>──────────────────────────────</name></item>
+      <item hidden="true">
+        <identifier vk_config="true">notsave.remap_samples_vk_config_disable_self2</identifier>
+        <autogen>__ShowStatusMessage__ Disable Self(2)</autogen>
+      </item>
+      <item>
+        <name>Disable self (2)</name>
+        <appendix>Use A to disable myself.</appendix>
+        <identifier vk_config="true">remap.samples_vk_config_disable_self2</identifier>
+        <autogen>__ShowStatusMessage__ Disable Self(2)</autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::A,
+          KeyCode::VK_CONFIG_FORCE_OFF_remap_samples_vk_config_disable_self2,
+          KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_remap_samples_vk_config_disable_self2,
+        </autogen>
+      </item>
+
+      <item>
+        <name>Disable self (3)</name>
+        <appendix>Use A to disable myself.</appendix>
+        <appendix>(+ Set keyboardType = KeyboardType::JIS_MACBOOK_2008)</appendix>
+        <appendix>(+ Change CursorMove to ScrollWheel)</appendix>
+        <appendix>(+ Simultaneous (A+S) to Volume Mute)</appendix>
+        <identifier vk_config="true">remap.samples_vk_config_disable_self3</identifier>
+        <autogen>__ShowStatusMessage__ Disable Self(3)</autogen>
+        <autogen>
+          __KeyToKey__
+          KeyCode::A,
+          KeyCode::VK_CONFIG_FORCE_OFF_remap_samples_vk_config_disable_self3,
+        </autogen>
+
+        <autogen>__SetKeyboardType__ KeyboardType::JIS_MACBOOK_2008</autogen>
+        <autogen>__PointingRelativeToScroll__ PointingButton::NONE, VK_MOD_ANY</autogen>
+        <autogen>
+          __SimultaneousKeyPresses__
+
+          @begin
+          KeyCode::A, KeyCode::S,
+          @end
+
+          @begin
+          ConsumerKeyCode::VOLUME_MUTE,
+          @end
+        </autogen>
+      </item>
+
+      <item><name>──────────────────────────────</name></item>
+      <item>
+        <name>With config_only</name>
+        <appendix>Show message by pressing A and S simultaneously.</appendix>
+        <identifier>remap.samples_vk_config_config_only</identifier>
+        <config_not>notsave.samples_vk_config_config_only</config_not>
+        <autogen>
+          __SimultaneousKeyPresses__
+          __{ KeyCode::A, KeyCode::S, }__
+
+          KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_samples_vk_config_config_only,
+        </autogen>
+      </item>
+      <item hidden="true">
+        <identifier vk_config="true">notsave.samples_vk_config_config_only</identifier>
+        <include path="messages/notsave.samples_vk_config_config_only.xml" />
+      </item>
+    </item>
+    <item>
+      <name>VK_CONSUMERKEY</name>
+      <item>
+        <name>Standard</name>
+        <appendix>Use F1 to VK_CONSUMERKEY_BRIGHTNESS_DOWN</appendix>
+        <appendix>Use F2 to VK_CONSUMERKEY_BRIGHTNESS_UP</appendix>
+        <appendix>Use F3 to VK_CONSUMERKEY_KEYBOARDLIGHT_LOW</appendix>
+        <appendix>Use F4 to VK_CONSUMERKEY_KEYBOARDLIGHT_HIGH</appendix>
+        <appendix>Use F5 to VK_CONSUMERKEY_MUSIC_PREV</appendix>
+        <appendix>Use F6 to VK_CONSUMERKEY_MUSIC_PLAY</appendix>
+        <appendix>Use F7 to VK_CONSUMERKEY_MUSIC_NEXT</appendix>
+        <appendix>Use F8 to VK_CONSUMERKEY_VOLUME_MUTE</appendix>
+        <appendix>Use F9 to VK_CONSUMERKEY_VOLUME_DOWN</appendix>
+        <appendix>Use F10 to VK_CONSUMERKEY_VOLUME_UP</appendix>
+        <appendix>Use F11 to VK_CONSUMERKEY_EJECT</appendix>
+        <appendix>Use F12 to VK_CONSUMERKEY_POWER</appendix>
+        <identifier>remap.samples_vk_consumerkey</identifier>
+        <autogen>__KeyToKey__ KeyCode::F1, KeyCode::VK_CONSUMERKEY_BRIGHTNESS_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::F2, KeyCode::VK_CONSUMERKEY_BRIGHTNESS_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::F3, KeyCode::VK_CONSUMERKEY_KEYBOARDLIGHT_LOW</autogen>
+        <autogen>__KeyToKey__ KeyCode::F4, KeyCode::VK_CONSUMERKEY_KEYBOARDLIGHT_HIGH</autogen>
+        <autogen>__KeyToKey__ KeyCode::F5, KeyCode::VK_CONSUMERKEY_MUSIC_PREV</autogen>
+        <autogen>__KeyToKey__ KeyCode::F6, KeyCode::VK_CONSUMERKEY_MUSIC_PLAY</autogen>
+        <autogen>__KeyToKey__ KeyCode::F7, KeyCode::VK_CONSUMERKEY_MUSIC_NEXT</autogen>
+        <autogen>__KeyToKey__ KeyCode::F8, KeyCode::VK_CONSUMERKEY_VOLUME_MUTE</autogen>
+        <autogen>__KeyToKey__ KeyCode::F9, KeyCode::VK_CONSUMERKEY_VOLUME_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::F10, KeyCode::VK_CONSUMERKEY_VOLUME_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::F11, KeyCode::VK_CONSUMERKEY_EJECT</autogen>
+        <autogen>__KeyToKey__ KeyCode::F12, KeyCode::VK_CONSUMERKEY_POWER</autogen>
+      </item>
+      <item>
+        <name>Combination with key repeat</name>
+        <appendix>Use 1 to VK_CONSUMERKEY_BRIGHTNESS_DOWN, Space</appendix>
+        <appendix>Use 2 to VK_CONSUMERKEY_BRIGHTNESS_UP, Space</appendix>
+        <identifier>remap.samples_vk_consumerkey_combination</identifier>
+        <autogen>__KeyToKey__ KeyCode::KEY_1, KeyCode::VK_CONSUMERKEY_BRIGHTNESS_DOWN, KeyCode::SPACE</autogen>
+        <autogen>__KeyToKey__ KeyCode::KEY_2, KeyCode::VK_CONSUMERKEY_BRIGHTNESS_UP, KeyCode::SPACE</autogen>
+      </item>
+    </item>
+    <item>
+      <name>VK_IOHIDPOSTEVENT</name>
+      <item>
+        <name>Standard</name>
+        <appendix>Note:</appendix>
+        <appendix>You don't need to speficy VK_IOHIDPOSTEVENT_*.</appendix>
+        <appendix></appendix>
+        <appendix>These key code are used automatically at </appendix>
+        <appendix>ConsumerKeyCode::* or KeyCode::VK_CONSUMERKEY_*</appendix>
+        <appendix>when no consumer device is found.</appendix>
+        <appendix></appendix>
+        <appendix>We provide this setting only for test.</appendix>
+        <appendix></appendix>
+        <appendix>Use F1 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_SOUND_UP</appendix>
+        <appendix>Use F2 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_SOUND_DOWN</appendix>
+        <appendix>Use F3 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_BRIGHTNESS_UP</appendix>
+        <appendix>Use F4 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_BRIGHTNESS_DOWN</appendix>
+        <appendix>Use F5 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_MUTE</appendix>
+        <appendix>Use F6 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_PLAY</appendix>
+        <appendix>Use F7 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_NEXT</appendix>
+        <appendix>Use F8 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_PREVIOUS</appendix>
+        <appendix>Use F9 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_ILLUMINATION_UP</appendix>
+        <appendix>Use F10 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_ILLUMINATION_DOWN</appendix>
+        <appendix>Use F11 to VK_IOHIDPOSTEVENT_NX_KEYTYPE_ILLUMINATION_TOGGLE</appendix>
+        <appendix>Use F12 to VK_IOHIDPOSTEVENT_NX_POWER_KEY</appendix>
+        <identifier>remap.samples_vk_iohidpostevent</identifier>
+        <autogen>__KeyToKey__ KeyCode::F1,  KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_SOUND_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::F2,  KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_SOUND_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::F3,  KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_BRIGHTNESS_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::F4,  KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_BRIGHTNESS_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::F5,  KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_MUTE</autogen>
+        <autogen>__KeyToKey__ KeyCode::F6,  KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_PLAY</autogen>
+        <autogen>__KeyToKey__ KeyCode::F7,  KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_NEXT</autogen>
+        <autogen>__KeyToKey__ KeyCode::F8,  KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_PREVIOUS</autogen>
+        <autogen>__KeyToKey__ KeyCode::F9,  KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_ILLUMINATION_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::F10, KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_ILLUMINATION_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::F11, KeyCode::VK_IOHIDPOSTEVENT_NX_KEYTYPE_ILLUMINATION_TOGGLE</autogen>
+        <autogen>__KeyToKey__ KeyCode::F12, KeyCode::VK_IOHIDPOSTEVENT_NX_POWER_KEY</autogen>
+      </item>
+    </item>
+    <item>
+      <name>VK_IOHIKEYBOARD_TOGGLE_NUMLOCK</name>
+      <item>
+        <name>Change fn-escape to VK_IOHIKEYBOARD_TOGGLE_NUMLOCK</name>
+        <appendix>(The jkl keys on MacBook will be changed to 123 when numlock is on.)</appendix>
+        <identifier>remap.samples_VK_IOHIKEYBOARD_TOGGLE_NUMLOCK</identifier>
+        <autogen>
+          __KeyToKey__
+          KeyCode::ESCAPE, ModifierFlag::FN,
+          KeyCode::VK_IOHIKEYBOARD_TOGGLE_NUMLOCK,
+        </autogen>
+      </item>
+    </item>
+    <include path="virtual_keycodes/vk_jis.xml" />
+  </item>
+</root>

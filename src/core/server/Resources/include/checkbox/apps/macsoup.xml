@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Enable at only MacSOUP</name>
+    <item>
+      <name>Change Option_R to Enter</name>
+      <identifier>remap.app_macsoup_optionR2enter</identifier>
+      <only>MACSOUP</only>
+      <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::ENTER</autogen>
+    </item>
+  </item>
+</root>

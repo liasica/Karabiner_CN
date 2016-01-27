@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>For Bulgarian</name>
+
+    <item>
+      <name>Bulgarian Phonetic map 'ч' to ± </name>
+      <appendix>Bulgarian Phonetic map 'ч' from '`' to ±.</appendix>
+      <appendix>This is valid when you get used with US layout and then switch to UK</appendix>
+      <identifier>remap.bulgarina.phonetic</identifier>
+      <inputsource_only>BULGARIAN_PHONETIC</inputsource_only>
+      <autogen>__KeyToKey__ KeyCode::DANISH_DOLLAR, KeyCode::BACKQUOTE</autogen>
+    </item>
+
+    <item>
+      <name>Change underscore(_) on Japanese keyboard to ч</name>
+      <appendix>(For Bulgarian-Phonetic)</appendix>
+      <identifier>remap.bulgarian_jis_underscore_to_backquote</identifier>
+      <inputsource_only>BULGARIAN_PHONETIC</inputsource_only>
+      <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, KeyCode::BACKQUOTE</autogen>
+    </item>
+  </item>
+</root>

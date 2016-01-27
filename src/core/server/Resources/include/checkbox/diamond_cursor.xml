@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Diamond Cursor</name>
+    <item>
+      <name>Control_L+WSAD to Up/Down/Left/Right</name>
+      <identifier>remap.diamond_cursor_controlL_wsad</identifier>
+      <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item>
+      <name>Control_R+WSAD to Up/Down/Left/Right</name>
+      <identifier>remap.diamond_cursor_controlR_wsad</identifier>
+      <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::CONTROL_R, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_R, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::CONTROL_R, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_R, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>ModifierFlag::EXTRA1+WXSD to Up/Down/Left/Right</name>
+      <appendix>(+ ModifierFlag::EXTRA1+A to Command_L+Left)</appendix>
+      <appendix>(+ ModifierFlag::EXTRA1+F to Command_L+Right)</appendix>
+      <identifier>remap.diamond_cursor_extra1_exsd</identifier>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA1, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::EXTRA1, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT,  ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Control_L+EXSD to Up/Down/Left/Right</name>
+      <identifier>remap.diamond_cursor_controlL_exsd</identifier>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item>
+      <name>Control_R+EXSD to Up/Down/Left/Right</name>
+      <identifier>remap.diamond_cursor_controlR_exsd</identifier>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::CONTROL_R, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::CONTROL_R, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_R, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_R, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Control_L+RVDF to Up/Down/Left/Right</name>
+      <identifier>remap.diamond_cursor_controlL_rvdf</identifier>
+      <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Control_L+ESDF to Up/Down/Left/Right</name>
+      <identifier>remap.diamond_cursor_controlL_esdf</identifier>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item>
+      <name>Control_R+ESDF to Up/Down/Left/Right</name>
+      <identifier>remap.diamond_cursor_controlR_esdf</identifier>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::CONTROL_R, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_R, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_R, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::CONTROL_R, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Control_L+ESDF to Shift+Up/Down/Left/Right</name>
+      <appendix>+ Control_L+AG to beginning-of-line/end-of-line (Command+Shift+Left/Right)</appendix>
+      <identifier>remap.diamond_cursor_controlL_esdf_selection</identifier>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP,    ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN,  ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT,  ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT,  ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L</autogen>
+    </item>
+    <item>
+      <name>Control_R+ESDF to Shift+Up/Down/Left/Right</name>
+      <appendix>+ Control_R+AG to beginning-of-line/end-of-line (Command+Shift+Left/Right)</appendix>
+      <identifier>remap.diamond_cursor_controlR_esdf_selection</identifier>
+      <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::CONTROL_R, KeyCode::CURSOR_UP,    ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::CONTROL_R, KeyCode::CURSOR_DOWN,  ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::CONTROL_R, KeyCode::CURSOR_LEFT,  ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::CONTROL_R, KeyCode::CURSOR_RIGHT, ModifierFlag::SHIFT_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::CONTROL_R, KeyCode::CURSOR_LEFT,  ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::CONTROL_R, KeyCode::CURSOR_RIGHT, ModifierFlag::SHIFT_L | ModifierFlag::COMMAND_L</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Control_L+IKJL to Up/Down/Left/Right</name>
+      <identifier>option.extra_cursor_controlL_jkil</identifier>
+      <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Control_L+IKJL to Up/Down/Left/Right</name>
+      <appendix>+ Control_L+H/Control_L+; to beginning-of-line/end-of-line (Command+Shift+Left/Right)</appendix>
+      <identifier>option.extra_cursor_controlL_jkil_hsemicolon</identifier>
+      <autogen>__KeyToKey__ KeyCode::I,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::K,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::J,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::L,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::H,         ModifierFlag::CONTROL_L, KeyCode::CURSOR_LEFT,  ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::CONTROL_L, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+    </item>
+    <item>
+      <name>Control_R+IKJL to Up/Down/Left/Right</name>
+      <appendix>+ Control_R+H/Control_R+; to beginning-of-line/end-of-line (Command+Shift+Left/Right)</appendix>
+      <identifier>option.extra_cursor_controlR_jkil_hsemicolon</identifier>
+      <autogen>__KeyToKey__ KeyCode::I,         ModifierFlag::CONTROL_R, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::K,         ModifierFlag::CONTROL_R, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::J,         ModifierFlag::CONTROL_R, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::L,         ModifierFlag::CONTROL_R, KeyCode::CURSOR_RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::H,         ModifierFlag::CONTROL_R, KeyCode::CURSOR_LEFT,  ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::CONTROL_R, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>fn+WSAD to Arrow Keys</name>
+      <identifier>remap.fn_wsad_to_arrow_keys</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::A, ModifierFlag::FN,
+        KeyCode::CURSOR_LEFT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::S, ModifierFlag::FN,
+        KeyCode::CURSOR_DOWN
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::D, ModifierFlag::FN,
+        KeyCode::CURSOR_RIGHT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::W, ModifierFlag::FN,
+        KeyCode::CURSOR_UP
+      </autogen>
+    </item>
+    <item>
+      <name>fn+JKLI to Arrow Keys</name>
+      <identifier>remap.fn_jkli_to_arrow_keys</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::J, ModifierFlag::FN,
+        KeyCode::CURSOR_LEFT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::K, ModifierFlag::FN,
+        KeyCode::CURSOR_DOWN
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::L, ModifierFlag::FN,
+        KeyCode::CURSOR_RIGHT
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::I, ModifierFlag::FN,
+        KeyCode::CURSOR_UP
+      </autogen>
+    </item>
+    <item><name>──────────────────────────────</name></item>
+    <item>
+      <name>Option_L+IKJL to Up/Down/Left/Right</name>
+      <identifier>option.extra_cursor_optionL_jkil</identifier>
+      <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::OPTION_L, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::OPTION_L, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::OPTION_L, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::OPTION_L, KeyCode::CURSOR_RIGHT</autogen>
+    </item>
+  </item>
+</root>

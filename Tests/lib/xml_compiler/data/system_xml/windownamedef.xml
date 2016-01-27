@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+  {{ WINDOWNAMEDEF_REPLACEMENT }}
+
+  <windownamedef>
+    <name>Gmail</name>
+    <regex> - Gmail$</regex>
+  </windownamedef>
+
+  <windownamedef>
+    <name>Google</name>
+    <regex> - Gmail$</regex>
+    <regex>^Google Translate$</regex>
+    <regex>^Google Calendar$</regex>
+  </windownamedef>
+
+</root>

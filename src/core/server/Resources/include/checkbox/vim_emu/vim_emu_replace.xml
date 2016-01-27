@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<root>
+  <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <!--
+  <autogen>__KeyToKey__ KeyCode::CURSOR_UP, ModifierFlag::NONE,    {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::CURSOR_DOWN, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::PAGEUP, ModifierFlag::NONE,       {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::PAGEDOWN, ModifierFlag::NONE,     {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::HOME, ModifierFlag::NONE,         {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::END, ModifierFlag::NONE,          {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F1, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F2, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F3, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F9, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F10, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F11, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F12, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F13, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F14, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F15, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F16, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F17, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F18, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::F19, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::UK_SECTION, ModifierFlag::NONE,          {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::GERMAN_PC_LESS_THAN, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  -->
+  <!--
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_0, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_1, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_2, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_3, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_4, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_5, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_6, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_7, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_8, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_9, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_COMMA, ModifierFlag::NONE,    {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_DOT, ModifierFlag::NONE,      {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_EQUAL, ModifierFlag::NONE,    {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_MINUS, ModifierFlag::NONE,    {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_MULTIPLY, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, ModifierFlag::NONE,     {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_SLASH, ModifierFlag::NONE,    {{VIM_EMU_REPLACE}}</autogen>
+  -->
+  <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEY_5, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEY_7, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEY_8, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEY_9, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <!--
+  <autogen>__KeyToKey__ KeyCode::DELETE, ModifierFlag::NONE,          {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::ENTER, ModifierFlag::NONE,           {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::ENTER_POWERBOOK, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::ESCAPE, ModifierFlag::NONE,          {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::FORWARD_DELETE, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::HELP, ModifierFlag::NONE,            {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::RETURN, ModifierFlag::NONE,          {{VIM_EMU_REPLACE}}</autogen>
+  -->
+  <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::NONE,           {{VIM_EMU_REPLACE}}</autogen>
+  <!--
+  <autogen>__KeyToKey__ KeyCode::TAB, ModifierFlag::NONE,             {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::KEYPAD_CLEAR, ModifierFlag::NONE,    {{VIM_EMU_REPLACE}}</autogen>
+  -->
+  <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::NONE,     {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::NONE,     {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::NONE,  {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::NONE,         {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::NONE,           {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::NONE,         {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::NONE,         {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::QUOTE, ModifierFlag::NONE,         {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE,     {{VIM_EMU_REPLACE}}</autogen>
+  <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::NONE,         {{VIM_EMU_REPLACE}}</autogen>
+</root>

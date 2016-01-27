@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change Delete Key</name>
+    <item>
+      <name>Delete to Backquote(`)</name>
+      <identifier>remap.delete2backquote</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::BACKQUOTE</autogen>
+    </item>
+    <item>
+      <name>Delete to Backslash(\)</name>
+      <identifier>remap.delete2backslash</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::BACKSLASH</autogen>
+    </item>
+    <item>
+      <name>Delete to CapsLock</name>
+      <identifier>remap.delete2capslock</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::CAPSLOCK</autogen>
+    </item>
+    <item>
+      <name>Command+Delete to Option_L+Delete</name>
+      <identifier>remap.commandDelete2optionLdelete</identifier>
+      <block>
+        <!-- preserve command-delete at delete-selected-files in Finder -->
+        <only>FINDER</only>
+        <uielementrole_not>{{ UIELEMENTROLES_EDITING_IN_FINDER }}</uielementrole_not>
+        <autogen>
+          __KeyToKey__
+          KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+          KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        </autogen>
+      </block>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::DELETE, ModifierFlag::OPTION_L,
+      </autogen>
+    </item>
+    <item>
+      <name>Control+Delete to Command_L+Delete</name>
+      <identifier>remap.controlDelete2commandLdelete</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::DELETE, ModifierFlag::COMMAND_L</autogen>
+    </item>
+    <item>
+      <name>Option+Delete to Command_L+Delete</name>
+      <identifier>remap.optionDelete2commandLdelete</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::DELETE, ModifierFlag::COMMAND_L</autogen>
+    </item>
+    <item>
+      <name>Delete to Forward Delete</name>
+      <identifier>remap.delete2forwarddelete</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::FORWARD_DELETE</autogen>
+    </item>
+    <item>
+      <name>Delete to Forward Delete</name>
+      <appendix>(Fn+Delete to Delete)</appendix>
+      <identifier>remap.delete2forwarddelete_fnDelete2delete</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, ModifierFlag::FN, KeyCode::DELETE</autogen>
+      <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::FORWARD_DELETE</autogen>
+    </item>
+    <item>
+      <name>Command_R+Delete to Forward Delete</name>
+      <appendix>(Right Command+Delete to Forward Delete)</appendix>
+      <identifier>remap.command_r_delete_to_forward_delete</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, ModifierFlag::COMMAND_R, KeyCode::FORWARD_DELETE</autogen>
+    </item>
+    <item>
+      <name>Control+Delete to Forward Delete</name>
+      <identifier>remap.controlDelete2forwarddelete</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::FORWARD_DELETE</autogen>
+    </item>
+    <item>
+      <name>Option+Delete to Forward Delete</name>
+      <identifier>remap.optionDelete2forwarddelete</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::FORWARD_DELETE</autogen>
+    </item>
+    <item>
+      <name>Shift+Delete to Forward Delete</name>
+      <identifier>remap.shiftDelete2forwarddelete</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::FORWARD_DELETE,
+      </autogen>
+    </item>
+    <item>
+      <name>Shift+Delete to Forward Delete (if no other modifiers pressed)</name>
+      <identifier>remap.shiftDelete2forwarddelete_nomodifiers</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE,
+        KeyCode::FORWARD_DELETE,
+      </autogen>
+    </item>
+    <item>
+      <name>Shift+Delete to Help</name>
+      <identifier>remap.shiftdelete2help</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::HELP,
+      </autogen>
+    </item>
+    <item>
+      <name>Shift+Delete to Pipe(|)</name>
+      <identifier>remap.shiftDelete2pipe</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::BACKSLASH, ModifierFlag::SHIFT_L,
+      </autogen>
+    </item>
+    <item>
+      <name>Delete to Quote(')</name>
+      <identifier>remap.delete_to_quote</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::QUOTE</autogen>
+    </item>
+    <item>
+      <name>Delete to Return</name>
+      <identifier>remap.delete_to_return</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::RETURN</autogen>
+    </item>
+    <item>
+      <name>Delete to Tab</name>
+      <identifier>remap.delete_to_tab</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::TAB</autogen>
+    </item>
+    <item>
+      <name>Shift+Delete to Tilde(~)</name>
+      <identifier>remap.shiftDelete2tilde</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L,
+      </autogen>
+    </item>
+    <item>
+      <name>Close window or tab by command-delete</name>
+      <appendix>(Change command-delete to command-w)</appendix>
+      <identifier>remap.command_delete_to_command_w</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+      </autogen>
+    </item>
+    <item>
+      <name>Disable Delete</name>
+      <identifier>remap.drop_delete</identifier>
+      <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::VK_NONE</autogen>
+    </item>
+  </item>
+</root>

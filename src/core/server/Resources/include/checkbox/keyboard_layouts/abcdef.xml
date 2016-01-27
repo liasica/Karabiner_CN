@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change QWERTY to ABCDEF layout</name>
+    <appendix>qwertyuiop &#8594; abcdefghij</appendix>
+    <appendix>asdfghjkl &#8594; klmnopqrs</appendix>
+    <appendix>zxcvbnm &#8594; tuvwxyz</appendix>
+    <identifier>remap.qwerty2abcdef</identifier>
+    <include path="common/keypad_redefinition.xml" />
+    <autogen>__KeyToKey__ KeyCode::Q, KeyCode::A</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, KeyCode::B</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, KeyCode::C</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, KeyCode::D</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, KeyCode::E</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, KeyCode::F</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, KeyCode::G</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, KeyCode::H</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, KeyCode::I</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, KeyCode::J</autogen>
+
+    <autogen>__KeyToKey__ KeyCode::A, KeyCode::K</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, KeyCode::L</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, KeyCode::M</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, KeyCode::N</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, KeyCode::O</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, KeyCode::P</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, KeyCode::Q</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, KeyCode::R</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, KeyCode::S</autogen>
+
+    <autogen>__KeyToKey__ KeyCode::Z, KeyCode::T</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, KeyCode::U</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, KeyCode::V</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, KeyCode::W</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, KeyCode::X</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, KeyCode::Y</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, KeyCode::Z</autogen>
+  </item>
+</root>

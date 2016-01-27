@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<root>
+  {{ VKOPENURLDEF_REPLACEMENT }}
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_WEB_pqrs_org</name>
+    <url>https://pqrs.org/</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_TextEdit</name>
+    <url>file:///Applications/TextEdit.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_date_pbcopy</name>
+    <url type="shell">
+      /bin/date | /usr/bin/pbcopy
+    </url>
+  </vkopenurldef>
+
+</root>

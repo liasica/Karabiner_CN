@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change Backslash(\) Key</name>
+    <item>
+      <name>Backslash(\) to Fn</name>
+      <appendix>(+ Fn+Backslash(\) to Backslash(\))</appendix>
+      <identifier>remap.backslash_to_fn</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::FN, KeyCode::BACKSLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH,                   KeyCode::FN</autogen>
+    </item>
+    <item>
+      <name>Backslash(\) to Delete</name>
+      <identifier>remap.backslash2delete</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::DELETE</autogen>
+    </item>
+    <item>
+      <name>Backslash(\) to Delete</name>
+      <appendix>(+ Fn+Backslash(\) to Backslash(\))</appendix>
+      <appendix>(+ retain Shift+Backslash(\))</appendix>
+      <identifier>remap.backslash2delete_retain_shiftbackslash</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::FN, KeyCode::BACKSLASH</autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::BACKSLASH, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::DELETE</autogen>
+    </item>
+    <item>
+      <name>Backslash(\) to Enter</name>
+      <identifier>remap.backslash2enter</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::ENTER</autogen>
+    </item>
+    <item>
+      <name>Backslash(\) to Forward Delete</name>
+      <appendix>(+ Fn+Backslash(\) to Backslash(\))</appendix>
+      <identifier>remap.backslash2forwarddelete</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::FN, KeyCode::BACKSLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::FORWARD_DELETE</autogen>
+    </item>
+    <item>
+      <name>Backslash(\) to Forward Delete</name>
+      <appendix>(+ Fn+Backslash(\) to Backslash(\))</appendix>
+      <appendix>(+ retain Shift+Backslash(\))</appendix>
+      <identifier>remap.backslash2forwarddelete_retain_shiftbackslash</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::FN, KeyCode::BACKSLASH</autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::BACKSLASH, ModifierFlag::SHIFT_L,
+      </autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::FORWARD_DELETE</autogen>
+    </item>
+    <item>
+      <name>Backslash(\) to Forward Delete</name>
+      <appendix>(+ Fn+Backslash(\) to Backslash(\))</appendix>
+      <appendix>(+ Command+Backslash to delete word)</appendix>
+      <identifier>remap.backslash_to_forward_delete_command_backslash_delete_word</identifier>
+
+      <!-- command-backslash to delete word -->
+      <block>
+        <only>WORD</only>
+        <autogen>
+          __KeyToKey__
+          KeyCode::BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+          KeyCode::FORWARD_DELETE, ModifierFlag::COMMAND_L,
+        </autogen>
+      </block>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+        KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L,
+      </autogen>
+
+      <!-- fn-backslash to backslash -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH, ModifierFlag::FN,
+        KeyCode::BACKSLASH
+      </autogen>
+      <!-- backslash to forward delete -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::BACKSLASH,
+        KeyCode::FORWARD_DELETE,
+      </autogen>
+    </item>
+    <item>
+      <name>Backslash(\) to Forward Delete (if no other modifiers pressed)</name>
+      <identifier>remap.backslash2forwarddelete_nomods</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::NONE, KeyCode::FORWARD_DELETE</autogen>
+    </item>
+    <item>
+      <name>Fn+Backslash(\) to Home</name>
+      <identifier>remap.fn_backslash_to_home</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::FN, KeyCode::HOME</autogen>
+    </item>
+    <item>
+      <name>Backslash(\) to Return</name>
+      <identifier>remap.backslash2return</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::RETURN</autogen>
+    </item>
+    <item>
+      <name>Backslash(\) to Return</name>
+      <appendix>(+ Fn+Backslash(\) to Backslash(\))</appendix>
+      <identifier>remap.backslash2return_fnbackslash</identifier>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, ModifierFlag::FN, KeyCode::BACKSLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH, KeyCode::RETURN</autogen>
+    </item>
+  </item>
+</root>

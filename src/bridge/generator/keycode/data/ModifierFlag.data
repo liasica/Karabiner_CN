@@ -1,0 +1,17 @@
+ZERO      0
+
+CAPSLOCK  --AUTO--
+SHIFT_L   --AUTO--
+SHIFT_R   --AUTO--
+CONTROL_L --AUTO--
+CONTROL_R --AUTO--
+OPTION_L  --AUTO--
+OPTION_R  --AUTO--
+COMMAND_L --AUTO--
+COMMAND_R --AUTO--
+NUMPAD    --AUTO--
+FN        --AUTO--
+
+NONE      --AUTO--
+
+// Please define other ModifierFlag by modifierdef.xml.

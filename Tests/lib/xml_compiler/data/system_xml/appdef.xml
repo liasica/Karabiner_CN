@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<root>
+  {{ APPDEF_REPLACEMENT }}
+
+  <appdef>
+    <appname>EMACS</appname>
+    <equal>org.gnu.Emacs</equal>
+    <equal>org.gnu.AquamacsEmacs</equal>
+    <equal>org.gnu.Aquamacs</equal>
+    <equal>org.pqrs.unknownapp.conkeror</equal>
+  </appdef>
+
+  <appdef>
+    <appname>VI</appname>
+    <prefix>org.vim.</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>TERMINAL</appname>
+    <equal>com.apple.Terminal</equal>
+    <equal>iTerm</equal>
+    <equal>net.sourceforge.iTerm</equal>
+    <equal>com.googlecode.iterm2</equal>
+  </appdef>
+
+  <appdef>
+    <appname>
+      SPACE_   IS_   IGNORED
+    </appname>
+    <equal>
+      keep space
+    </equal>
+  </appdef>
+
+  <appdef>
+    <appname>PREFIX_TEST</appname>
+    <prefix>org.pqrs.prefix.test</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>SUFFIX_TEST</appname>
+    <suffix>test.suffix.pqrs.org</suffix>
+  </appdef>
+</root>

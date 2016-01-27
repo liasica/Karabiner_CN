@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root>
+  <autogen>
+    __KeyOverlaidModifier__
+    KeyCode::CONTROL_R,
+    KeyCode::CONTROL_R,
+    KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_ON,
+    KeyCode::VK_STICKY_CONTROL_R,
+  </autogen>
+</root>

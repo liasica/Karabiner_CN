@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Enable at only Remote Desktop</name>
+
+    <item>
+      <name>Change command key to control key in Remote Desktop.</name>
+      <appendix>+ Change command-tab to alt-tab.</appendix>
+      <appendix>+ Send Windows key event when you pressed the command key alone.</appendix>
+      <identifier>remap.app_rdc_command_to_control</identifier>
+      <only>REMOTEDESKTOPCONNECTION</only>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::COMMAND_L,
+
+        @begin
+        KeyCode::CONTROL_L, ModifierFlag::RDC_COMMAND,
+        @end
+
+        @begin
+        KeyCode::COMMAND_L,
+        @end
+
+        Option::KEYTOKEY_AFTER_KEYUP,
+        KeyCode::VK_NEGATIVE_LOCK_ALL_FORCE_OFF,
+        KeyCode::VK_LOCK_OPTION_L_FORCE_OFF,
+      </autogen>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::COMMAND_R,
+
+        @begin
+        KeyCode::CONTROL_R, ModifierFlag::RDC_COMMAND,
+        @end
+
+        @begin
+        KeyCode::COMMAND_R,
+        @end
+
+        Option::KEYTOKEY_AFTER_KEYUP,
+        KeyCode::VK_NEGATIVE_LOCK_ALL_FORCE_OFF,
+        KeyCode::VK_LOCK_OPTION_L_FORCE_OFF,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::TAB, ModifierFlag::RDC_COMMAND,
+        KeyCode::TAB, ModifierFlag::OPTION_L | ModifierFlag::RDC_COMMAND,
+        <!-- Use lock to enable arrow keys in command-tab -->
+        KeyCode::VK_LOCK_OPTION_L_FORCE_ON,
+
+        Option::KEYTOKEY_BEFORE_KEYDOWN,
+        KeyCode::VK_NEGATIVE_LOCK_CONTROL_L_FORCE_ON,
+        KeyCode::VK_NEGATIVE_LOCK_CONTROL_R_FORCE_ON,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Change command key to control key in Remote Desktop.</name>
+      <appendix>+ Keep command-tab.</appendix>
+      <appendix>+ Send Windows key event when you pressed the command key alone.</appendix>
+      <identifier>remap.app_rdc_command_to_control_keep_command_tab</identifier>
+      <only>REMOTEDESKTOPCONNECTION</only>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::COMMAND_L,
+
+        @begin
+        KeyCode::CONTROL_L, ModifierFlag::RDC_COMMAND,
+        @end
+
+        @begin
+        KeyCode::COMMAND_L,
+        @end
+
+        Option::KEYTOKEY_AFTER_KEYUP,
+        KeyCode::VK_NEGATIVE_LOCK_ALL_FORCE_OFF,
+        KeyCode::VK_LOCK_COMMAND_L_FORCE_OFF,
+      </autogen>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::COMMAND_R,
+
+        @begin
+        KeyCode::CONTROL_R, ModifierFlag::RDC_COMMAND,
+        @end
+
+        @begin
+        KeyCode::COMMAND_R,
+        @end
+
+        Option::KEYTOKEY_AFTER_KEYUP,
+        KeyCode::VK_NEGATIVE_LOCK_ALL_FORCE_OFF,
+        KeyCode::VK_LOCK_COMMAND_L_FORCE_OFF,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::TAB, ModifierFlag::RDC_COMMAND,
+        KeyCode::TAB, ModifierFlag::COMMAND_L | ModifierFlag::RDC_COMMAND,
+        <!-- Use lock to enable arrow keys in command-tab -->
+        KeyCode::VK_LOCK_COMMAND_L_FORCE_ON,
+
+        Option::KEYTOKEY_BEFORE_KEYDOWN,
+        KeyCode::VK_NEGATIVE_LOCK_CONTROL_L_FORCE_ON,
+        KeyCode::VK_NEGATIVE_LOCK_CONTROL_R_FORCE_ON,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Command+Tab to Option+Tab</name>
+      <appendix>(only in Remote Desktop)</appendix>
+      <identifier>remap.app_rdc_commandTab2optionTab</identifier>
+      <only>REMOTEDESKTOPCONNECTION</only>
+      <autogen>__KeyToKey__ KeyCode::TAB, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, ModifierFlag::OPTION_L</autogen>
+    </item>
+    <item>
+      <name>Command+XCVSZWF to Ctrl+XCVSZWF (only in Remote Desktop)</name>
+      <appendix>(Use the following "lazy command keys" together.)</appendix>
+      <identifier>remap.app_rdc_commandXCVSZWF2controlXCVSZWF</identifier>
+      <only>REMOTEDESKTOPCONNECTION</only>
+      <autogen>__KeyToKey__ KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::X, ModifierFlag::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::C, ModifierFlag::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::V, ModifierFlag::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::S, ModifierFlag::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::Z, ModifierFlag::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::Y, ModifierFlag::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::W, ModifierFlag::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::F, ModifierFlag::CONTROL_L</autogen>
+    </item>
+    <item>
+      <name>Command+SPACE to Ctrl+SPACE (only in Remote Desktop)</name>
+      <appendix>(Use the following "lazy command keys" together.)</appendix>
+      <identifier>remap.app_rdc_commandSpace2controlSpace</identifier>
+      <only>REMOTEDESKTOPCONNECTION</only>
+      <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::SPACE, ModifierFlag::CONTROL_L</autogen>
+    </item>
+    <item>
+      <name>Change command keys to lazy command keys.</name>
+      <identifier>remap.app_rdc_command_to_lazy</identifier>
+      <only>REMOTEDESKTOPCONNECTION</only>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::COMMAND_L,
+        KeyCode::VK_LAZY_COMMAND_L,
+        KeyCode::COMMAND_L,
+      </autogen>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::COMMAND_R,
+        KeyCode::VK_LAZY_COMMAND_R,
+        KeyCode::COMMAND_R,
+      </autogen>
+    </item>
+    <item>
+      <name>Use F12 as Insert</name>
+      <appendix>(Press F12 to simulate pressing Insert key.)</appendix>
+      <appendix>(Works well with CoRD.)</appendix>
+      <identifier>remap.app_rdc_f12_to_insert</identifier>
+      <only>REMOTEDESKTOPCONNECTION</only>
+      <autogen>__KeyToKey__ KeyCode::F12, KeyCode::PC_INSERT</autogen>
+    </item>
+  </item>
+</root>

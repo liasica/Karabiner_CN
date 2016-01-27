@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<root>
+  <autogen>
+    __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+    {{VIM_EMU_BEFORE_MOVE}},
+    {{VIM_EMU_REPEAT_OUTPUT}},
+    {{VIM_EMU_AFTER_MOVE}}
+  </autogen>
+</root>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<root>
+
+  <item>
+    <name>Change Power Button/Power Key</name>
+    <item>
+      <name style="caution">Caution:</name>
+      <appendix>Karabiner has removed power button support since OS X 10.9.</appendix>
+      <appendix>You can no longer change the power button on MacBook.</appendix>
+    </item>
+
+    <item>
+      <name>For Power Key on old ADB keyboard</name>
+      <item>
+        <name>Power Key to Command_L</name>
+        <identifier>remap.power2commandL</identifier>
+        <autogen>__KeyToKey__ ConsumerKeyCode::POWER, KeyCode::COMMAND_L</autogen>
+      </item>
+      <item>
+        <name>Power Key to Fn</name>
+        <appendix>(+ Fn+Power to Power)</appendix>
+        <identifier>remap.power2fn</identifier>
+        <autogen>__KeyToKey__ ConsumerKeyCode::POWER, ModifierFlag::FN, ConsumerKeyCode::POWER</autogen>
+        <autogen>__KeyToKey__ ConsumerKeyCode::POWER, KeyCode::FN</autogen>
+      </item>
+    </item>
+  </item>
+
+</root>

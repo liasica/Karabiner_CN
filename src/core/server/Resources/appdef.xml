@@ -1,0 +1,624 @@
+<?xml version="1.0"?>
+<root>
+
+  <appdef>
+    <appname>EMACS</appname>
+    <equal>org.gnu.Emacs</equal>
+    <equal>org.gnu.AquamacsEmacs</equal>
+    <equal>org.gnu.Aquamacs</equal>
+    <equal>org.pqrs.unknownapp.conkeror</equal>
+  </appdef>
+
+  <appdef>
+    <appname>VI</appname>
+    <prefix>org.vim.</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>TEXTMATE</appname>
+    <prefix>com.macromates.textmate</prefix>
+    <prefix>com.macromates.TextMate</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>SUBLIMETEXT</appname>
+    <equal>com.sublimetext.3</equal>
+    <equal>com.sublimetext.2</equal>
+  </appdef>
+
+  <appdef>
+    <appname>TERMINAL</appname>
+    <equal>com.apple.Terminal</equal>
+    <equal>iTerm</equal>
+    <equal>net.sourceforge.iTerm</equal>
+    <equal>com.googlecode.iterm2</equal>
+  </appdef>
+
+  <appdef>
+    <appname>VIRTUALMACHINE</appname>
+    <equal>com.vmware.fusion</equal>
+    <equal>com.vmware.horizon</equal>
+    <equal>com.vmware.view</equal>
+    <equal>com.parallels.desktop</equal>
+    <equal>com.parallels.vm</equal>
+    <equal>com.parallels.desktop.console</equal>
+    <equal>org.virtualbox.app.VirtualBoxVM</equal>
+    <prefix>com.vmware.proxyApp.</prefix>
+    <prefix>com.parallels.winapp.</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>REMOTEDESKTOPCONNECTION</appname>
+    <equal>com.microsoft.rdc</equal>
+    <equal>com.microsoft.rdc.mac</equal>
+    <equal>net.sf.cord</equal>
+    <equal>com.thinomenon.RemoteDesktopConnection</equal>
+    <equal>com.itap-mobile.qmote</equal>
+    <equal>com.nulana.remotixmac</equal>
+    <equal>com.p5sys.jump.mac.viewer</equal>
+    <equal>com.p5sys.jump.mac.viewer.web</equal>
+    <equal>com.vmware.horizon</equal>
+    <equal>com.2X.Client.Mac</equal>
+  </appdef>
+
+  <appdef>
+    <appname>X11</appname>
+    <equal>org.x.X11</equal>
+    <equal>com.apple.x11</equal>
+    <equal>org.macosforge.xquartz.X11</equal>
+    <equal>org.macports.X11</equal>
+  </appdef>
+
+  <appdef>
+    <appname>FINDER</appname>
+    <equal>com.apple.finder</equal>
+  </appdef>
+
+  <appdef>
+    <appname>SAFARI</appname>
+    <equal>com.apple.Safari</equal>
+  </appdef>
+
+  <appdef>
+    <appname>FIREFOX</appname>
+    <equal>org.mozilla.firefox</equal>
+    <equal>org.mozilla.aurora</equal>
+    <!-- Firefox Nightly Builds -->
+    <equal>org.mozilla.nightly</equal>
+    <equal>org.mozilla.firefoxdeveloperedition</equal>
+  </appdef>
+
+  <appdef>
+    <appname>THUNDERBIRD</appname>
+    <equal>org.mozilla.thunderbird</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ICHAT</appname>
+    <equal>com.apple.iChat</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ADIUMX</appname>
+    <equal>com.adiumX.adiumX</equal>
+  </appdef>
+
+  <appdef>
+    <appname>SKYPE</appname>
+    <equal>com.skype.skype</equal>
+  </appdef>
+
+  <appdef>
+    <appname>MAIL</appname>
+    <equal>com.apple.mail</equal>
+  </appdef>
+
+  <appdef>
+    <appname>EDITOR</appname>
+    <equal>com.apple.TextEdit</equal>
+  </appdef>
+
+  <appdef>
+    <appname>PHOTOSHOP</appname>
+    <equal>com.adobe.Photoshop</equal>
+    <equal>com.adobe.Photoshop.Elements</equal>
+    <equal>com.adobe.PhotoshopElements</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ILLUSTRATOR</appname>
+    <equal>com.adobe.illustrator</equal>
+  </appdef>
+
+  <appdef>
+    <appname>DREAMWEAVER</appname>
+    <!-- com.adobe.dreamweaver-11.5 -->
+    <prefix>com.adobe.dreamweaver</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>LIGHTROOM4</appname>
+    <equal>com.adobe.Lightroom4</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ADOBE</appname>
+    <prefix>com.adobe.</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>EXCEL</appname>
+    <equal>com.microsoft.Excel</equal>
+  </appdef>
+
+  <appdef>
+    <appname>POWERPOINT</appname>
+    <equal>com.microsoft.Powerpoint</equal>
+  </appdef>
+
+  <appdef>
+    <appname>WORD</appname>
+    <equal>com.microsoft.Word</equal>
+  </appdef>
+
+  <appdef>
+    <appname>OUTLOOK</appname>
+    <equal>com.microsoft.Outlook</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ENTOURAGE</appname>
+    <equal>com.microsoft.Entourage</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ECLIPSE</appname>
+    <equal>org.eclipse.eclipse</equal>
+    <equal>org.eclipse.platform.ide</equal>
+    <equal>org.eclipse.sdk.ide</equal>
+    <equal>com.springsource.sts</equal>
+    <equal>org.springsource.sts.ide</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ANDROID_STUDIO</appname>
+    <equal>com.google.android.studio</equal>
+  </appdef>
+
+  <appdef>
+    <appname>MACSOUP</appname>
+    <equal>org.pqrs.unknownapp.MacSOUP</equal>
+  </appdef>
+
+  <appdef>
+    <appname>VIENNA</appname>
+    <equal>uk.co.opencommunity.vienna2</equal>
+  </appdef>
+
+  <appdef>
+    <appname>XCODE</appname>
+    <equal>com.apple.Xcode</equal>
+    <equal>com.apple.dt.Xcode</equal>
+  </appdef>
+
+  <appdef>
+    <appname>OPERA</appname>
+    <equal>com.operasoftware.Opera</equal>
+    <equal>com.operasoftware.OperaNext</equal>
+  </appdef>
+
+  <appdef>
+    <appname>GOOGLE_CHROME</appname>
+    <equal>com.google.Chrome</equal>
+    <equal>com.google.Chrome.canary</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Chromium</appname>
+    <prefix>org.chromium.Chromium</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>TEAMVIEWER</appname>
+    <equal>com.TeamViewer.TeamViewer</equal>
+    <equal>com.teamviewer.TeamViewer</equal>
+  </appdef>
+
+  <appdef>
+    <appname>CHEETAH_3D</appname>
+    <equal>de.wengenmayer.Cheetah3D</equal>
+  </appdef>
+
+  <appdef>
+    <appname>PASSWORD</appname>
+    <equal>com.apple.securityagent</equal>
+    <equal>com.apple.SecurityAgent</equal>
+
+    <!--
+        Note:
+        com.apple.loginwindow is displayed when screen saver requires password.
+        If OS X version <= 10.7, we cannot get a NSWorkspaceDidActivateApplicationNotification for com.apple.loginwindow.
+        Therefore, we cannot use <only> and <not> filter on com.apple.loginwindow.
+        Unfortunately, this <equal> entry of com.apple.loginwindow is "dummy" at OS X version <= 10.7.
+    -->
+    <equal>com.apple.loginwindow</equal>
+  </appdef>
+
+  <appdef>
+    <appname>GRUML</appname>
+    <equal>com.sakya.Gruml</equal>
+  </appdef>
+
+  <appdef>
+    <appname>IPHOTO</appname>
+    <equal>com.apple.iPhoto</equal>
+  </appdef>
+
+  <appdef>
+    <appname>STICKIES</appname>
+    <equal>com.apple.Stickies</equal>
+  </appdef>
+
+  <appdef>
+    <appname>WEBIDE</appname>
+    <equal>com.jetbrains.webide</equal>
+  </appdef>
+
+  <appdef>
+    <appname>LAUNCHBAR</appname>
+    <equal>at.obdev.LaunchBar</equal>
+  </appdef>
+
+  <appdef>
+    <appname>SCREEN_SHARING</appname>
+    <equal>com.apple.ScreenSharing</equal>
+  </appdef>
+
+  <appdef>
+    <appname>VNC</appname>
+    <equal>com.geekspiff.chickenofthevnc</equal>
+    <equal>net.sourceforge.chicken</equal>
+    <prefix>de.jinx.JollysFastVNC</prefix>
+    <prefix>com.realvnc.vncviewer</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>IWORK_PAGES</appname>
+    <equal>com.apple.iWork.Pages</equal>
+  </appdef>
+
+  <appdef>
+    <appname>IWORK_NUMBERS</appname>
+    <equal>com.apple.iWork.Numbers</equal>
+  </appdef>
+
+  <appdef>
+    <appname>IWORK_KEYNOTE</appname>
+    <equal>com.apple.iWork.Keynote</equal>
+  </appdef>
+
+  <appdef>
+    <appname>MODO</appname>
+    <equal>com.luxology.modo</equal>
+  </appdef>
+
+  <appdef>
+    <appname>WORLD_OF_WARCRAFT</appname>
+    <equal>com.blizzard.worldofwarcraft</equal>
+  </appdef>
+
+  <appdef>
+    <appname>STARCRAFT2</appname>
+    <equal>com.blizzard.starcraft2</equal>
+  </appdef>
+
+  <appdef>
+    <appname>WARCRAFTIII</appname>
+    <equal>com.blizzard.WarcraftIII</equal>
+  </appdef>
+
+  <appdef>
+    <appname>FOXTROT</appname>
+    <prefix>com.ctmdev.FoxTrot</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>FORKLIFT</appname>
+    <prefix>com.binarynights.ForkLift</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>LIMECHAT</appname>
+    <equal>net.limechat.LimeChat</equal>
+  </appdef>
+
+  <appdef>
+    <appname>LIGHTWAVE</appname>
+    <prefix>com.newtek.LightWave</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>LIBREOFFICE</appname>
+    <equal>org.libreoffice.script</equal>
+  </appdef>
+
+  <appdef>
+    <appname>VLC</appname>
+    <equal>org.videolan.vlc</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ITUNES</appname>
+    <equal>com.apple.iTunes</equal>
+  </appdef>
+
+  <appdef>
+    <appname>DICTIONARY</appname>
+    <equal>com.apple.Dictionary</equal>
+  </appdef>
+
+  <appdef>
+    <appname>PREVIEW</appname>
+    <equal>com.apple.Preview</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ORACLE_SQL_DEVELOPER</appname>
+    <equal>com.oracle.SQLDeveloper</equal>
+  </appdef>
+
+  <appdef>
+    <appname>SYSTEM_PREFERENCES</appname>
+    <equal>com.apple.systempreferences</equal>
+  </appdef>
+
+  <appdef>
+    <appname>CITRIX_ONLINE_PLUG_IN</appname>
+    <equal>com.citrix.ICAClient</equal>
+  </appdef>
+
+  <appdef>
+    <appname>CITRIX_XEN_APP_VIEWER</appname>
+    <equal>com.citrix.XenAppViewer</equal>
+  </appdef>
+
+  <appdef>
+    <appname>MAME</appname>
+    <equal>net.mame.mameosx</equal>
+  </appdef>
+
+  <appdef>
+    <appname>BLENDER</appname>
+    <equal>org.blenderfoundation.blender</equal>
+  </appdef>
+
+  <appdef>
+    <appname>PULP</appname>
+    <equal>com.acrylic.Pulp</equal>
+  </appdef>
+
+  <appdef>
+    <appname>RSA_SECURID_SOFTWARE_TOKEN</appname>
+    <equal>com.rsa.securid.softwaretoken</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ALFRED</appname>
+    <equal>com.alfredapp.Alfred</equal>
+    <equal>com.runningwithcrayons.Alfred-2</equal>
+  </appdef>
+
+  <appdef>
+    <appname>TWEETDECK</appname>
+    <equal>TweetDeckFast.FFF259DC0CE2657847BBB4AFF0E62062EFC56543.1</equal>
+  </appdef>
+
+  <appdef>
+    <appname>CATHODE</appname>
+    <equal>com.secretgeometry.Cathode</equal>
+  </appdef>
+
+  <appdef>
+    <appname>PSPAD</appname>
+    <equal>org.kronenberg.WineBottler_PSPad</equal>
+  </appdef>
+
+  <appdef>
+    <appname>SAP</appname>
+    <equal>com.sap.platin</equal>
+  </appdef>
+
+  <appdef>
+    <appname>NEWSRACK</appname>
+    <equal>com.omzsoftware.newsrackmac</equal>
+  </appdef>
+
+  <appdef>
+    <appname>APTANA_STUDIO</appname>
+    <equal>com.aptana.studio3</equal>
+  </appdef>
+
+  <appdef>
+    <appname>BLUEFISH</appname>
+    <equal>nl.openoffice.bluefish</equal>
+  </appdef>
+
+  <appdef>
+    <appname>REEDER</appname>
+    <equal>com.reederapp.mac</equal>
+  </appdef>
+
+  <appdef>
+    <appname>WINESKIN</appname>
+    <suffix>.wineskin.prefs</suffix>
+  </appdef>
+
+  <appdef>
+    <appname>MAYA</appname>
+    <equal>com.autodesk.Maya.2010</equal>
+  </appdef>
+
+  <appdef>
+    <appname>CALCULATOR</appname>
+    <equal>com.apple.calculator</equal>
+  </appdef>
+
+  <appdef>
+    <appname>MI</appname>
+    <equal>net.mimikaki.mi</equal>
+  </appdef>
+
+  <appdef>
+    <appname>EGWORD</appname>
+    <equal>jp.co.ergo.egword_universal</equal>
+  </appdef>
+
+  <appdef>
+    <appname>ProPresenter5</appname>
+    <equal>com.renewedvision.ProPresenter5</equal>
+  </appdef>
+
+  <appdef>
+    <appname>muCommander</appname>
+    <equal>com.mucommander.muCommander</equal>
+  </appdef>
+
+  <appdef>
+    <appname>JeditX</appname>
+    <prefix>jp.co.artman21.JeditX</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>SCHISMTRACKER</appname>
+    <equal>org.schismtracker.SchismTracker</equal>
+  </appdef>
+
+  <appdef>
+    <appname>DigitalColorMeter</appname>
+    <equal>com.apple.DigitalColorMeter</equal>
+  </appdef>
+
+  <appdef>
+    <appname>FILEZILLA</appname>
+    <equal>de.filezilla</equal>
+  </appdef>
+
+  <appdef>
+    <appname>LOGMEIN</appname>
+    <equal>com.logmein.logmeinpluginhost</equal>
+  </appdef>
+
+  <appdef>
+    <appname>LeagueofLegends</appname>
+    <equal>com.riotgames.LeagueofLegends.GameClient</equal>
+  </appdef>
+
+  <appdef>
+    <appname>WebKit_PluginProcess</appname>
+    <equal>com.apple.WebKit.PluginProcess</equal>
+  </appdef>
+
+  <appdef>
+    <appname>EYETV</appname>
+    <equal>com.elgato.eyetv</equal>
+  </appdef>
+
+  <appdef>
+    <appname>QUICKTIME</appname>
+    <equal>com.apple.QuickTimePlayerX</equal>
+  </appdef>
+
+  <appdef>
+    <appname>NetBeans</appname>
+    <prefix>org.netbeans.ide.baseide.</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>JAVA</appname>
+    <equal>com.apple.javajdk16.cmd</equal>
+    <equal>net.java.openjdk.cmd</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Atom</appname>
+    <equal>com.github.atom</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Activity_Monitor</appname>
+    <equal>com.apple.ActivityMonitor</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Dock</appname>
+    <equal>com.apple.dock</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Karabiner</appname>
+    <equal>org.pqrs.Karabiner</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Seil</appname>
+    <equal>org.pqrs.Seil</equal>
+  </appdef>
+
+  <appdef>
+    <appname>iPhoneSimulator</appname>
+    <equal>com.apple.iphonesimulator</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Avid_MediaComposer</appname>
+    <equal>com.avid.mediacomposer</equal>
+  </appdef>
+
+  <appdef>
+    <appname>NoMachine</appname>
+    <equal>com.nomachine.nxdock</equal>
+  </appdef>
+
+  <appdef>
+    <appname>PhpStorm</appname>
+    <prefix>com.jetbrains.PhpStorm</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>RubyMine</appname>
+    <prefix>com.jetbrains.rubymine</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>IntelliJ</appname>
+    <prefix>com.jetbrains.intellij</prefix>
+  </appdef>
+
+  <appdef>
+    <appname>SKIM</appname>
+    <equal>net.sourceforge.skim-app.skim</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Slack</appname>
+    <equal>com.tinyspeck.slackmacgap</equal>
+  </appdef>
+
+  <appdef>
+    <appname>BBEdit</appname>
+    <equal>com.barebones.bbedit</equal>
+    <equal>com.barebones.textwrangler</equal>
+  </appdef>
+
+  <appdef>
+    <appname>Twitter</appname>
+    <equal>com.twitter.twitter-mac</equal>
+  </appdef>
+
+  <!-- fallback -->
+  <appdef>
+    <appname>JetBrainsApps</appname>
+    <prefix>com.jetbrains.</prefix>
+  </appdef>
+
+</root>

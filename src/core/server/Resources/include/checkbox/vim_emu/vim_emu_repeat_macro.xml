@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root>
+  <autogen>
+    __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+    KeyCode::KEY_8, VK_CONTROL|
+    VK_SHIFT|VK_COMMAND,
+  </autogen>
+</root>

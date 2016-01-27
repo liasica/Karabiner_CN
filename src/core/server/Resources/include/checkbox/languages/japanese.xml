@@ -1,0 +1,1210 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>For Japanese</name>
+    <item>
+      <name>左右のコマンドキー（⌘）を「英数／かな」としても使う</name>
+      <appendix>（左コマンドキーを英数キーにする）</appendix>
+      <appendix>（右コマンドキーをかなキーにする）</appendix>
+
+      <item>
+        <name>以下の中からいずれか一つを選択してください。</name>
+        <appendix>複数の設定を有効した場合、上にある設定のほうが優先されます。</appendix>
+      </item>
+
+      <item><name>──────────────────────────────</name></item>
+
+      <item>
+        <name>コマンドキーの動作を優先モード （★おすすめ）</name>
+        <appendix>（コマンドキーの空打ちで「英数／かな」）</appendix>
+        <appendix>（コマンドキーを押している間に他のキーを打つと通常のコマンドキーとして動作）</appendix>
+        <identifier>remap.jis_command2eisuukana_prefer_command</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, KeyCode::COMMAND_R, KeyCode::JIS_KANA</autogen>
+      </item>
+
+      <item><name>──────────────────────────────</name></item>
+
+      <item>
+        <name>コマンドキーの動作を優先モード（＋意図しないコマンドキーを防止）</name>
+        <appendix>（コマンドキーの空打ちで「英数／かな」）</appendix>
+        <appendix>（コマンドキーを押している間に他のキーを打つと通常のコマンドキーとして動作。</appendix>
+        <appendix>ただし、他のキーを離す前にコマンドキーを離した場合は「英数／かな」として扱う。）</appendix>
+        <identifier>remap.japanese_command2eisuukana_prefer_command_v2</identifier>
+        <autogen>
+          __KeyOverlaidModifier__
+          KeyCode::COMMAND_L,
+          KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_japanese_command2eisuukana_prefer_command_v2, ModifierFlag::COMMAND_L,
+          KeyCode::JIS_EISUU,
+        </autogen>
+        <autogen>
+          __KeyOverlaidModifier__
+          KeyCode::COMMAND_R,
+          KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_japanese_command2eisuukana_prefer_command_v2, ModifierFlag::COMMAND_R,
+          KeyCode::JIS_KANA,
+        </autogen>
+      </item>
+      <item hidden="true">
+        <identifier vk_config="true">notsave.japanese_command2eisuukana_prefer_command_v2</identifier>
+        <autogen>__BlockUntilKeyUp__ KeyCode::COMMAND_L</autogen>
+        <autogen>__BlockUntilKeyUp__ KeyCode::COMMAND_R</autogen>
+      </item>
+
+      <item>
+        <name>──────────────────────────────</name>
+        <identifier vk_config="true">notsave.jis_command2eisuukana_prefer_eisuukana</identifier>
+        <autogen>__ShowStatusMessage__ Command</autogen>
+      </item>
+      <item>
+        <name>英数／かなキーの動作を優先モード</name>
+        <appendix>（基本的に英数／かなキーとして動作させる）</appendix>
+        <appendix>（コマンドキーとして動作させるにはコマンドキーを長押しする）</appendix>
+        <appendix>（長押しの時間はParametersタブのHolding Key to Key &gt; Holding Thresholdで指定します）</appendix>
+        <identifier>remap.jis_command2eisuukana_prefer_eisuukana</identifier>
+        <autogen>__HoldingKeyToKey__ KeyCode::COMMAND_L, KeyCode::JIS_EISUU, KeyCode::VK_NONE, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_jis_command2eisuukana_prefer_eisuukana, ModifierFlag::COMMAND_L</autogen>
+        <autogen>__HoldingKeyToKey__ KeyCode::COMMAND_R, KeyCode::JIS_KANA,  KeyCode::VK_NONE, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_jis_command2eisuukana_prefer_eisuukana, ModifierFlag::COMMAND_R</autogen>
+      </item>
+    </item>
+
+    <item>
+      <name>Change Backquote(`) Key</name>
+      <item>
+        <name>Backquote(`) to KANA/EISUU (toggle)</name>
+        <identifier>remap.jis_backquote_kana_eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::BACKQUOTE, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Command_L Key</name>
+      <item>
+        <name>Command_L to EISUU</name>
+        <identifier>remap.jis_commandL2eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Command_L to Command_L</name>
+        <appendix>(+ When you type Command_L only, send EISUU)</appendix>
+        <identifier>remap.jis_commandL2commandL_eisuu</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Command_L to Command_L</name>
+        <appendix>(+ When you type Command_L only, send EISUU)</appendix>
+        <appendix>(+ When you type Any modifiers+Command_L only, send EISUU)</appendix>
+        <identifier>remap.jis_commandL2commandL_eisuu_ex</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, MODIFIERFLAGS_ANY, KeyCode::COMMAND_L, MODIFIERFLAGS_ANY, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Command_L to Command_L (except Terminal)</name>
+        <appendix>(+ When you type Command_L only, send EISUU)</appendix>
+        <identifier>remap.jis_commandL2commandL_eisuu_ex_term</identifier>
+        <not>TERMINAL</not>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Command_L to Command_L</name>
+        <appendix>(+ When you type Command_L only, send KANA/EISUU (toggle))</appendix>
+        <identifier>remap.jis_commandL2commandL_toggle_kana_eisuu</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::COMMAND_L, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+      <item>
+        <name>Command_L to Control_L</name>
+        <appendix>(+ When you type Command_L only, send EISUU)</appendix>
+        <identifier>remap.jis_commandL2controlL_eisuu</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::CONTROL_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Command_L to Control_L</name>
+        <appendix>(+ When you type Command_L only, send EISUU)</appendix>
+        <appendix>(+ When you type Shift+Command_L only, send ESCAPE)</appendix>
+        <identifier>remap.jis_commandL2controlL_eisuu_escape</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::CONTROL_L, ModifierFlag::SHIFT_L, KeyCode::ESCAPE</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::CONTROL_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Command_L to Option_L</name>
+        <appendix>(+ When you type Command_L only, send EISUU)</appendix>
+        <identifier>remap.jis_commandL2optionL_eisuu</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::OPTION_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Command_L x2 to EISUU</name>
+        <identifier>remap.jis_commandL_x2_to_eisuu</identifier>
+        <autogen>__DoublePressModifier__ KeyCode::COMMAND_L, KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Command_L x2 to EISUU x2 (for Kotoeri Users)</name>
+        <identifier>remap.jis_commandL_x2_to_eisuu_x2</identifier>
+        <autogen>__DoublePressModifier__ KeyCode::COMMAND_L, KeyCode::COMMAND_L, KeyCode::JIS_EISUU, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Use Command_L as KANA/EISUU (toggle)</name>
+        <identifier>remap.jis_unify_kana_eisuu_to_commandL</identifier>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Command_R Key</name>
+      <item>
+        <name>Command_R to EISUU</name>
+        <identifier>remap.jis_commandR2eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Command_R to KANA</name>
+        <identifier>remap.jis_commandR2kana</identifier>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Command_R to KANA</name>
+        <appendix>(+ Any modifiers+Command_R to KANA)</appendix>
+        <identifier>remap.jis_commandR2kana_ex</identifier>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_R, MODIFIERFLAGS_ANY, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Command_R to Shift_L+KANA</name>
+        <identifier>remap.jis_commandR2shiftLkana</identifier>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::JIS_KANA, ModifierFlag::SHIFT_L</autogen>
+      </item>
+      <item>
+        <name>Command_R to Command_R</name>
+        <appendix>(+ When you type Command_R only, send KANA)</appendix>
+        <identifier>remap.jis_commandR2commandR_kana</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, KeyCode::COMMAND_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Command_R to Command_R</name>
+        <appendix>(+ When you type Command_R only, send KANA/EISUU (toggle))</appendix>
+        <identifier>remap.jis_commandR2commandR_toggle_kana_eisuu</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, KeyCode::COMMAND_R, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+      <item>
+        <name>Command_R to Command_R</name>
+        <appendix>(+ When you type Command_R only, send KANA)</appendix>
+        <appendix>(+ When you type Shift+Command_R only, send Return)</appendix>
+        <identifier>remap.jis_commandR2commandR_kana_return</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::COMMAND_R, ModifierFlag::SHIFT_L, KeyCode::RETURN</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, KeyCode::COMMAND_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Command_R to Control_L</name>
+        <appendix>(+ When you type Command_R only, send KANA)</appendix>
+        <identifier>remap.jis_commandR2controlL</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, KeyCode::CONTROL_L, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Command_R to Option_R</name>
+        <appendix>(+ When you type Command_R only, send KANA)</appendix>
+        <appendix>(+ When you type Shift+Command_R only, send Return)</appendix>
+        <identifier>remap.jis_commandR2optionR_kana_return</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::OPTION_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::RETURN</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, KeyCode::OPTION_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Command_R x2 to KANA</name>
+        <identifier>remap.jis_commandR_x2_to_kana</identifier>
+        <autogen>__DoublePressModifier__ KeyCode::COMMAND_R, KeyCode::COMMAND_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Command_R x2 to KANA x2 (for Kotoeri Users)</name>
+        <identifier>remap.jis_commandR_x2_to_kana_x2</identifier>
+        <autogen>__DoublePressModifier__ KeyCode::COMMAND_R, KeyCode::COMMAND_R, KeyCode::JIS_KANA, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Use Command_R as KANA/EISUU (toggle)</name>
+        <identifier>remap.jis_unify_kana_eisuu_to_commandR</identifier>
+        <autogen>__KeyToKey__ KeyCode::COMMAND_R, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Delete Key</name>
+      <item>
+        <name>Delete to KANA</name>
+        <identifier>remap.jis_delete2kana</identifier>
+        <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::JIS_KANA</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Eject Key</name>
+      <appendix>*** We recommend you to use "NoEjectDelay" together when you change eject key.</appendix>
+      <appendix>*** &#8594; https://pqrs.org/osx/karabiner/noejectdelay.html</appendix>
+      <item>
+        <name>Eject to EISUU,F13 (if no modifiers pressed)</name>
+        <identifier>remap.jis_eject2eisuuf13_withoutmodifiers</identifier>
+        <autogen>__KeyToKey__ ConsumerKeyCode::EJECT, ModifierFlag::NONE, KeyCode::JIS_EISUU, KeyCode::F13</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Escape Key</name>
+      <item>
+        <name>Escape to EISUU+Escape</name>
+        <identifier>remap.jis_escape2eisuuAndEscape</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::ESCAPE, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Option_L Key</name>
+      <item>
+        <name>Option_L to Option_L</name>
+        <appendix>(+ When you type Option_L only, send EISUU)</appendix>
+        <identifier>remap.jis_optionL2optionL_eisuu</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_L, KeyCode::OPTION_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Option_R Key</name>
+      <item>
+        <name>Option_R to Option_R</name>
+        <appendix>(+ When you type Option_R only, send KANA)</appendix>
+        <identifier>remap.jis_optionR2optionR_kana</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_R, KeyCode::OPTION_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Option_R to EISUU</name>
+        <identifier>remap.jis_optionR2eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Option_R to KANA</name>
+        <identifier>remap.jis_optionR2kana</identifier>
+        <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Use Option_R as KANA/EISUU (toggle)</name>
+        <identifier>remap.jis_unify_kana_eisuu_to_optionR</identifier>
+        <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Return Key</name>
+      <item>
+        <name>Return to KANA</name>
+        <identifier>remap.jis_return2kana</identifier>
+        <autogen>__KeyToKey__ KeyCode::RETURN, KeyCode::JIS_KANA</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Right Bracket(]) Key</name>
+      <item>
+        <name>Right Bracket(]) to Backquote(`)</name>
+        <identifier>remap.jis_rightbracket2backquote</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_BRACKET_RIGHT, KeyCode::BACKQUOTE</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Semicolon(;) Key</name>
+      <item>
+        <name>Semicolon to Sticky Shift_L</name>
+        <appendix>(effective only when input source is Japanese)</appendix>
+        <identifier>remap.jis_semicolon2stickyshiftL</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <autogen>__KeyOverlaidModifier__ KeyCode::SEMICOLON, KeyCode::SHIFT_L, KeyCode::VK_STICKY_SHIFT_L</autogen>
+      </item>
+      <item>
+        <name>セミコロン(;)は常に半角</name>
+        <identifier>remap.jis_semicolon_roman</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE, KeyCode::SEMICOLON,
+          Option::KEYTOKEY_BEFORE_KEYDOWN, KeyCode::JIS_EISUU,
+          Option::KEYTOKEY_AFTER_KEYUP, KeyCode::JIS_KANA
+        </autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Space Key</name>
+      <item>
+        <name>Command+Space to KANA/EISUU (toggle)</name>
+        <identifier>remap.jis_commandSpace2toggle_kana_eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+      <item>
+        <name>「左コマンド+スペース」を「英数」、「右コマンド+スペース」を「かな」</name>
+        <appendix>(Command_L+Space to EISUU, Command_R+Space to KANA)</appendix>
+        <identifier>remap.jis_commandLspace2eisuu_commandRspace2kana</identifier>
+        <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::COMMAND_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>Shift+Space to KANA/EISUU (toggle)</name>
+        <identifier>remap.jis_shiftSpace2toggle_kana_eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+      <item>
+        <name>Shift+Space to KANA/EISUU (toggle) (except Emacs.app)</name>
+        <identifier>remap.jis_shiftSpace2toggle_kana_eisuu_ex_emacs</identifier>
+        <not>EMACS</not>
+        <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+      <item>
+        <name>Shift+Space to Equal</name>
+        <appendix>(日本語入力時には無効)</appendix>
+        <identifier>remap.jis_shiftSpace2equal</identifier>
+        <inputsource_not>JAPANESE</inputsource_not>
+        <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::EQUAL</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Tab Key</name>
+      <item>
+        <name>Tab to EISUU</name>
+        <identifier>remap.jis_tab2eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::TAB, KeyCode::JIS_EISUU</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change EISUU Key</name>
+      <item>
+        <name>EISUU to Command_L</name>
+        <identifier>remap.jis_eisuu2commandL</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::COMMAND_L</autogen>
+      </item>
+      <item>
+        <name>EISUU to Command_L</name>
+        <appendix>(+ When you type EISUU only, send EISUU)</appendix>
+        <identifier>remap.jis_eisuu2commandL_eisuu</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>EISUU to Command_L (except Terminal)</name>
+        <appendix>(+ When you type EISUU only, send EISUU)</appendix>
+        <not>TERMINAL</not>
+        <identifier>remap.jis_eisuu2commandL_eisuu_ex_term</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>EISUU to Control_L</name>
+        <identifier>remap.jis_eisuu2controlL</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::CONTROL_L</autogen>
+      </item>
+      <item>
+        <name>EISUU to Control_L</name>
+        <appendix>(+ When you type EISUU only, send EISUU)</appendix>
+        <identifier>remap.jis_eisuu2controlL_eisuu</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::CONTROL_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>EISUU to Control_L</name>
+        <appendix>(+ When you type Shift+EISUU only, send Escape)</appendix>
+        <appendix>(+ When you type EISUU only, send EISUU)</appendix>
+        <identifier>remap.jis_eisuu2controlL_eisuu_escape</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::CONTROL_L, ModifierFlag::SHIFT_L, KeyCode::ESCAPE</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::CONTROL_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>EISUU to Fn</name>
+        <identifier>remap.jis_eisuu2fn</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::FN</autogen>
+      </item>
+      <item>
+        <name>EISUU to Option_L</name>
+        <identifier>remap.jis_eisuu2optionL</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::OPTION_L</autogen>
+      </item>
+      <item>
+        <name>EISUU to Option_L (only in Terminal)</name>
+        <appendix>(+ When you type EISUU only, send EISUU)</appendix>
+        <only>TERMINAL</only>
+        <identifier>remap.jis_eisuu2optionL_eisuu_term</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::OPTION_L, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>EISUU to Shift_L</name>
+        <identifier>remap.jis_eisuu2shiftL</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::SHIFT_L</autogen>
+      </item>
+      <item>
+        <name>EISUU to ModifierFlag::EXTRA1</name>
+        <identifier>remap.jis_eisuu2modextra1</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1</autogen>
+      </item>
+      <item>
+        <name>EISUU to Delete</name>
+        <identifier>remap.jis_eisuu2delete</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::DELETE</autogen>
+      </item>
+      <item>
+        <name>Command+EISUU to EISUU</name>
+        <identifier>remap.jis_commandEisuu2eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>EISUU to Escape</name>
+        <identifier>remap.jis_eisuu2escape</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
+      </item>
+      <item>
+        <name>EISUU to Escape （入力ソースが日本語以外の場合のみ）</name>
+        <identifier>remap.jis_eisuu2escape_onlyroman</identifier>
+        <inputsource_not>JAPANESE</inputsource_not>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
+      </item>
+      <item>
+        <name>EISUU to Control_L+F2 (= Move focus to the menu bar)</name>
+        <identifier>remap.jis_eisuu2controlLf2</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::F2, ModifierFlag::CONTROL_L</autogen>
+      </item>
+      <item>
+        <name>EISUU to Space</name>
+        <identifier>remap.jis_eisuu2space</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::SPACE</autogen>
+      </item>
+      <item>
+        <name>EISUU to Space</name>
+        <appendix>(+ 英数キー長押しで通常の英数キーにする)</appendix>
+        <identifier>remap.jis_eisuu2space_holdingeisuu2eisuu</identifier>
+        <autogen>__HoldingKeyToKey__ KeyCode::JIS_EISUU, KeyCode::SPACE, KeyCode::VK_NONE, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>EISUU to Tab</name>
+        <identifier>remap.jis_eisuu2tab</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::TAB</autogen>
+      </item>
+      <item>
+        <name>EISUU to MiddleClick</name>
+        <identifier>remap.jis_eisuu2middleclick</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, PointingButton::MIDDLE</autogen>
+      </item>
+      <item>
+        <name>EISUU to RightClick</name>
+        <identifier>remap.jis_eisuu2rightclick</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, PointingButton::RIGHT</autogen>
+      </item>
+      <item>
+        <name>Use EISUU as KANA/EISUU (toggle)</name>
+        <identifier>remap.jis_unify_kana_to_eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+      <item>
+        <name>Ignore the multiple press of EISUU</name>
+        <identifier>remap.jis_ignore_multiple_eisuu</identifier>
+        <autogen>__IgnoreMultipleSameKeyPress__ KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>EISUU symbol mode</name>
+        <appendix>(+ When you type EISUU only, send EISUU)</appendix>
+        <identifier>remap.eisuu_symbol</identifier>
+        <appendix>EISUU + WER for Shift + 123</appendix>
+        <appendix>EISUU + SDF for Shift + 456</appendix>
+        <appendix>EISUU + XCV for Shift + 789</appendix>
+        <autogen>__KeyOverlaidModifier__
+          KeyCode::JIS_EISUU,
+          KeyCode::VK_MODIFIER_EXTRA2, KeyCode::JIS_EISUU
+        </autogen>
+        <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::EXTRA2, KeyCode::KEY_1, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA2, KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::EXTRA2, KeyCode::KEY_3, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA2, KeyCode::KEY_4, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA2, KeyCode::KEY_5, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA2, KeyCode::KEY_6, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::EXTRA2, KeyCode::KEY_7, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::EXTRA2, KeyCode::KEY_8, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::EXTRA2, KeyCode::KEY_9, ModifierFlag::SHIFT_L</autogen>
+      </item>
+      <item>
+        <name>EISUU symbol mode (For Dvorak right user)</name>
+        <appendix>(+ When you type EISUU only, send EISUU)</appendix>
+        <identifier>remap.eisuu_symbol_dvorak_right</identifier>
+        <appendix>EISUU + WER for Shift + 123</appendix>
+        <appendix>EISUU + SDF for Shift + 456</appendix>
+        <appendix>EISUU + XCVB for Shift + 7890</appendix>
+        <autogen>__KeyOverlaidModifier__
+          KeyCode::JIS_EISUU,
+          KeyCode::VK_MODIFIER_EXTRA2, KeyCode::JIS_EISUU
+        </autogen>
+        <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::EXTRA2, KeyCode::KEY_1, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA2, KeyCode::KEY_2, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::EXTRA2, KeyCode::KEY_3, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA2, KeyCode::KEY_4, ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA2, KeyCode::Q,     ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA2, KeyCode::W,     ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::EXTRA2, KeyCode::A,     ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::EXTRA2, KeyCode::S,     ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::EXTRA2, KeyCode::Z,     ModifierFlag::SHIFT_L</autogen>
+        <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::EXTRA2, KeyCode::X,     ModifierFlag::SHIFT_L</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change KANA Key</name>
+      <item>
+        <name>KANA to Command_L</name>
+        <identifier>remap.jis_kana2commandL</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::COMMAND_L</autogen>
+      </item>
+      <item>
+        <name>KANA to Command_R</name>
+        <identifier>remap.jis_kana2commandR</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::COMMAND_R</autogen>
+      </item>
+      <item>
+        <name>KANA to Command_R</name>
+        <appendix>(+ When you type KANA only, send KANA)</appendix>
+        <identifier>remap.jis_kana2commandR_kana</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::COMMAND_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>KANA to Command_R</name>
+        <appendix>(+ When you type Shift+KANA only, send Return)</appendix>
+        <appendix>(+ When you type KANA only, send KANA)</appendix>
+        <identifier>remap.jis_kana2commandR_kana_return</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::COMMAND_R, ModifierFlag::SHIFT_L, KeyCode::RETURN</autogen>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::COMMAND_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>KANA to Control_L</name>
+        <identifier>remap.jis_kana2controlL</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::CONTROL_L</autogen>
+      </item>
+      <item>
+        <name>KANA to Control_L</name>
+        <appendix>(+ When you type KANA only, send KANA)</appendix>
+        <identifier>remap.jis_kana2controlL_kana</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::CONTROL_L, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>KANA to Fn</name>
+        <identifier>remap.jis_kana2fn</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::FN</autogen>
+      </item>
+      <item>
+        <name>KANA to Option_L</name>
+        <identifier>remap.jis_kana2optionL</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::OPTION_L</autogen>
+      </item>
+      <item>
+        <name>KANA to Option_L</name>
+        <appendix>(+ When you type KANA only, send KANA)</appendix>
+        <identifier>remap.jis_kana2optionL_kana</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::OPTION_L, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>KANA to Option_R</name>
+        <appendix>(+ When you type KANA only, send KANA)</appendix>
+        <identifier>remap.jis_kana2optionR_kana</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::OPTION_R, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>KANA to Shift_L</name>
+        <identifier>remap.jis_kana2shiftL</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::SHIFT_L</autogen>
+      </item>
+      <item>
+        <name>KANA to Shift_L</name>
+        <appendix>(+ When you type KANA only, send KANA)</appendix>
+        <identifier>remap.jis_kana2shiftL_kana</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_KANA, KeyCode::SHIFT_L, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>KANA to Control_L+F2 (= Move focus to the menu bar)</name>
+        <identifier>remap.jis_kana2controlLf2</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::F2, ModifierFlag::CONTROL_L</autogen>
+      </item>
+      <item>
+        <name>Command+KANA to KANA</name>
+        <identifier>remap.jis_commandKana2kana</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>KANA to Return</name>
+        <identifier>remap.jis_kana2return</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::RETURN</autogen>
+      </item>
+      <item>
+        <name>KANA to Space</name>
+        <identifier>remap.jis_kana2space</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::SPACE</autogen>
+      </item>
+      <item>
+        <name>KANA to MiddleClick</name>
+        <identifier>remap.jis_kana2middleclick</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, PointingButton::MIDDLE</autogen>
+      </item>
+      <item>
+        <name>KANA to RightClick</name>
+        <identifier>remap.jis_kana2rightclick</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, PointingButton::RIGHT</autogen>
+      </item>
+      <item>
+        <name>Shift+KANA to EISUU</name>
+        <identifier>remap.jis_shiftKana2eisuu</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::JIS_EISUU</autogen>
+      </item>
+      <item>
+        <name>Use KANA as KANA/EISUU (toggle)</name>
+        <identifier>remap.jis_unify_eisuu_to_kana</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_KANA, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+      <item>
+        <name>Ignore the multiple press of KANA</name>
+        <identifier>remap.jis_ignore_multiple_kana</identifier>
+        <autogen>__IgnoreMultipleSameKeyPress__ KeyCode::JIS_KANA</autogen>
+      </item>
+      <item>
+        <name>KANA 10-key mode</name>
+        <appendix>(+ When you type KANA only, send KANA)</appendix>
+        <identifier>remap.kana_10key</identifier>
+        <appendix>KANA + YUIOP for 0123=</appendix>
+        <appendix>KANA + HJKL; for +456*</appendix>
+        <appendix>KANA + NM,./ for -789/</appendix>
+        <autogen>__KeyOverlaidModifier__
+          KeyCode::JIS_KANA,
+          KeyCode::VK_MODIFIER_EXTRA1, KeyCode::JIS_KANA
+        </autogen>
+        <autogen>__KeyToKey__ KeyCode::U,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_1       </autogen>
+        <autogen>__KeyToKey__ KeyCode::I,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_2       </autogen>
+        <autogen>__KeyToKey__ KeyCode::O,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_3       </autogen>
+        <autogen>__KeyToKey__ KeyCode::J,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_4       </autogen>
+        <autogen>__KeyToKey__ KeyCode::K,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_5       </autogen>
+        <autogen>__KeyToKey__ KeyCode::L,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_6       </autogen>
+        <autogen>__KeyToKey__ KeyCode::M,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_7       </autogen>
+        <autogen>__KeyToKey__ KeyCode::COMMA,     ModifierFlag::EXTRA1, KeyCode::KEYPAD_8       </autogen>
+        <autogen>__KeyToKey__ KeyCode::DOT,       ModifierFlag::EXTRA1, KeyCode::KEYPAD_9       </autogen>
+        <autogen>__KeyToKey__ KeyCode::Y,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_0       </autogen>
+        <autogen>__KeyToKey__ KeyCode::H,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_PLUS    </autogen>
+        <autogen>__KeyToKey__ KeyCode::N,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_MINUS   </autogen>
+        <autogen>__KeyToKey__ KeyCode::P,         ModifierFlag::EXTRA1, KeyCode::KEYPAD_EQUAL   </autogen>
+        <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::EXTRA1, KeyCode::KEYPAD_MULTIPLY</autogen>
+        <autogen>__KeyToKey__ KeyCode::SLASH,     ModifierFlag::EXTRA1, KeyCode::KEYPAD_SLASH   </autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Underscore(Ro) Key</name>
+      <item>
+        <name>Underscore(Ro) to Shift_R</name>
+        <identifier>remap.jis_underscore2shiftR</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, KeyCode::SHIFT_R</autogen>
+      </item>
+      <item>
+        <name>Underscore(Ro) to Backslash(\)</name>
+        <identifier>remap.jis_underscore2backslash</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, ModifierFlag::NONE, KeyCode::VK_JIS_BACKSLASH</autogen>
+      </item>
+      <item>
+        <name>Underscore(Ro) to Delete</name>
+        <identifier>remap.jis_underscore2delete</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, KeyCode::DELETE</autogen>
+      </item>
+      <item>
+        <name>Underscore(Ro) to JIS Yen(¥)</name>
+        <identifier>remap.jis_underscore2jis_yen</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, ModifierFlag::NONE, KeyCode::JIS_YEN</autogen>
+      </item>
+      <item>
+        <name>Underscore(Ro) to JIS Yen(¥) (if no modifiers pressed)</name>
+        <identifier>remap.jis_underscore2jis_yen_nomods</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, ModifierFlag::NONE, KeyCode::JIS_YEN</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Yen(¥) Key</name>
+      <item>
+        <name>JIS Yen(¥) to Backslash(\)</name>
+        <appendix>(except virtual machine, X11, RDC)</appendix>
+        <identifier>remap.jis_yen2backslash</identifier>
+        <not>VIRTUALMACHINE, X11, REMOTEDESKTOPCONNECTION</not>
+        <autogen>__KeyToKey__ KeyCode::JIS_YEN, KeyCode::VK_JIS_BACKSLASH</autogen>
+      </item>
+      <item>
+        <name>JIS Yen(¥) to Backslash(\)</name>
+        <identifier>remap.jis_yen2backslash_always</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_YEN, KeyCode::VK_JIS_BACKSLASH</autogen>
+      </item>
+      <item>
+        <name>JIS Yen(¥) to Forward Delete</name>
+        <identifier>remap.jis_yen2forwarddelete</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_YEN, KeyCode::FORWARD_DELETE</autogen>
+      </item>
+      <item>
+        <name>JIS Yen(¥) to Forward Delete</name>
+        <appendix>(+ Shift+JIS Yen to Pipe(|))</appendix>
+        <identifier>remap.jis_yen2forwarddelete_pipe</identifier>
+        <autogen>__KeyToKey__ KeyCode::JIS_YEN, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE, KeyCode::JIS_YEN, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::JIS_YEN, KeyCode::FORWARD_DELETE</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Zero(0) Key</name>
+      <item>
+        <name>Shift+0 to Backslash(\)</name>
+        <identifier>remap.jis_shift0_to_backslash</identifier>
+        <autogen>__KeyToKey__ KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_JIS_BACKSLASH</autogen>
+      </item>
+      <item>
+        <name>Shift+0 to JIS Yen(¥)</name>
+        <identifier>remap.jis_shift0_to_yen</identifier>
+        <autogen>__KeyToKey__ KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::JIS_YEN</autogen>
+      </item>
+      <item>
+        <name>Shift+0 to Underscore(Ro)</name>
+        <identifier>remap.jis_shift0_to_underscore</identifier>
+        <autogen>__KeyToKey__ KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::JIS_UNDERSCORE</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Emacs Mode</name>
+      <item>
+        <name>Control+[ to Escape at Japanese Keyboard</name>
+        <identifier>option.jis_emacsmode_controlLeftbracket</identifier>
+        <not>{{EMACS_MODE_IGNORE_APPS}}</not>
+        <autogen>__KeyToKey__ KeyCode::JIS_BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::ESCAPE</autogen>
+      </item>
+      <item>
+        <name>[ex] Option+{|} to Command+{|}</name>
+        <identifier>option.jis_emacsmode_ex_option_tab_change</identifier>
+        <not>{{EMACS_MODE_IGNORE_APPS}}</not>
+        <autogen>__KeyToKey__ KeyCode::JIS_BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::JIS_BRACKET_RIGHT, ModifierFlag::COMMAND_L | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::JIS_BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::JIS_BRACKET_LEFT, ModifierFlag::COMMAND_L | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+      </item>
+      <item>
+        <name>Behavior in Emacs, Terminal, X11, VMware, Parallels, RDC</name>
+        <item>
+          <name>Force change C-[ to Escape</name>
+          <item>
+            <name>In Emacs, Terminal</name>
+            <identifier>option.jis_emacsmode_force_controlLeftbracket_term</identifier>
+            <only>EMACS, TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::JIS_BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::ESCAPE</autogen>
+          </item>
+          <item>
+            <name>In X11</name>
+            <identifier>option.jis_emacsmode_force_controlLeftbracket_x11</identifier>
+            <only>X11</only>
+            <autogen>__KeyToKey__ KeyCode::JIS_BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::ESCAPE</autogen>
+          </item>
+          <item>
+            <name>In VMware Fusion, Parallels Desktop, Remote Desktop Connection</name>
+            <identifier>option.jis_emacsmode_force_controlLeftbracket_vm</identifier>
+            <only>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</only>
+            <autogen>__KeyToKey__ KeyCode::JIS_BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::ESCAPE</autogen>
+          </item>
+        </item>
+      </item>
+    </item>
+    <item>
+      <name>enthumble (http://www.enthumble.com/)</name>
+      <item>
+        <name>英数+「スペース/かなキー」で「Return/ESC」</name>
+        <identifier>remap.jis_enthumble_default</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyToKey__KeyCode::SPACE,ModifierFlag::EXTRA1,
+          KeyCode::RETURN</autogen>
+        <autogen>__KeyToKey__KeyCode::JIS_KANA,ModifierFlag::EXTRA1,
+          KeyCode::ESCAPE</autogen>
+      </item>
+      <item>
+        <name>英数+「N,M/",","."」で「BackSpace/Delete」</name>
+        <identifier>remap.jis_enthumble_NC</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyToKey__KeyCode::N,ModifierFlag::EXTRA1,
+          KeyCode::DELETE</autogen>
+        <autogen>__KeyToKey__KeyCode::M,ModifierFlag::EXTRA1,
+          KeyCode::DELETE</autogen>
+        <autogen>__KeyToKey__KeyCode::DOT,ModifierFlag::EXTRA1,
+          KeyCode::FORWARD_DELETE</autogen>
+        <autogen>__KeyToKey__KeyCode::COMMA,ModifierFlag::EXTRA1,
+          KeyCode::FORWARD_DELETE</autogen>
+      </item>
+      <item>
+        <name>英数+「Y,U/I,O」で「BackSpace/Delete」</name>
+        <identifier>remap.jis_enthumble_YI</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyToKey__KeyCode::Y,ModifierFlag::EXTRA1,
+          KeyCode::DELETE</autogen>
+        <autogen>__KeyToKey__KeyCode::U,ModifierFlag::EXTRA1,
+          KeyCode::DELETE</autogen>
+        <autogen>__KeyToKey__KeyCode::I,ModifierFlag::EXTRA1,
+          KeyCode::FORWARD_DELETE</autogen>
+        <autogen>__KeyToKey__KeyCode::O,ModifierFlag::EXTRA1,
+          KeyCode::FORWARD_DELETE</autogen>
+      </item>
+      <item>
+        <name>英数+IJKLを移動キーへ</name>
+        <identifier>remap.jis_enthumble_IJKL</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::EXTRA1, KeyCode::CURSOR_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::EXTRA1, KeyCode::CURSOR_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
+      </item>
+      <item>
+        <name>英数+HJKLを移動キーへ</name>
+        <identifier>remap.jis_enthumble_HJKL</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA1, KeyCode::CURSOR_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::EXTRA1, KeyCode::CURSOR_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
+      </item>
+      <item>
+        <name>英数+FBNPを移動キーへ</name>
+        <identifier>remap.jis_enthumble_FBNP</identifier>
+        <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::JIS_EISUU</autogen>
+        <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::EXTRA1, KeyCode::CURSOR_LEFT</autogen>
+        <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::EXTRA1, KeyCode::CURSOR_DOWN</autogen>
+        <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::EXTRA1, KeyCode::CURSOR_UP</autogen>
+        <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA1, KeyCode::CURSOR_RIGHT</autogen>
+      </item>
+      <item>
+        <name>英数キーボード対応版（＋英数キーをコマンドキーに変更）</name>
+        <item>
+          <name>この設定を使用するときは、上のenthumble関連の設定はオフにしてください。</name>
+          <appendix></appendix>
+          <appendix>・英数キーを左コマンドキーに変更。（英数キーの空打ちで英数キーとして動作）</appendix>
+          <appendix>・英数キー（左コマンドキー）を押しながら「スペースキー」で「リターン」</appendix>
+          <appendix>・英数キー（左コマンドキー）を押しながら「かなキー」で「エスケープ」</appendix>
+          <appendix>・英数キー（左コマンドキー）を押しながら「右コマンドキー」で「エスケープ」</appendix>
+          <identifier>remap.jis_enthumble</identifier>
+          <autogen>__KeyOverlaidModifier__ KeyCode::JIS_EISUU,
+            KeyCode::COMMAND_L, KeyCode::JIS_EISUU</autogen>
+          <autogen>__KeyToKey__KeyCode::SPACE,ModifierFlag::COMMAND_L,
+            KeyCode::RETURN</autogen>
+          <autogen>__KeyToKey__KeyCode::JIS_KANA,ModifierFlag::COMMAND_L,
+            KeyCode::ESCAPE</autogen>
+          <autogen>__KeyToKey__KeyCode::COMMAND_R,ModifierFlag::COMMAND_L,
+            KeyCode::ESCAPE</autogen>
+        </item>
+      </item>
+    </item>
+
+    <item>
+      <name>For Unix Users</name>
+      <item>
+        <name>Control+O to KANA/EISUU (toggle)</name>
+        <appendix>(Except in Virtual Machine, RDC)</appendix>
+        <identifier>remap.jis_controlO2kanaeisuu</identifier>
+        <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+        <autogen>__KeyToKey__ KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+      <item>
+        <name>Control+Backslash(\) to KANA/EISUU (toggle)</name>
+        <appendix>(Except in Virtual Machine, RDC)</appendix>
+        <identifier>remap.jis_controlbackslash2kanaeisuu</identifier>
+        <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+        <autogen>__KeyToKey__ KeyCode::BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+      <item>
+        <name>Control+JIS_YEN(¥) to KANA/EISUU (toggle)</name>
+        <appendix>(Except in Virtual Machine, RDC)</appendix>
+        <identifier>remap.jis_controljisyen2kanaeisuu</identifier>
+        <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+        <autogen>__KeyToKey__ KeyCode::JIS_YEN, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+      </item>
+    </item>
+    <item>
+      <name>For Applications</name>
+      <item>
+        <name>Enable at only Terminal</name>
+        <item>
+          <name>Command_L to Option_L</name>
+          <appendix>(+ When you type Command_L only, send EISUU)</appendix>
+          <only>TERMINAL</only>
+          <identifier>remap.jis_app_commandL2optionL_eisuu</identifier>
+          <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::OPTION_L, KeyCode::JIS_EISUU</autogen>
+        </item>
+        <item>
+          <name>Command_L to Option_L</name>
+          <appendix>(+ When you type Command_L only, send EISUU)</appendix>
+          <appendix>(Pass-Through Tab and Backquote)</appendix>
+          <only>TERMINAL</only>
+          <identifier>remap.jis_app_commandL2optionL_eisuu_except_tab</identifier>
+          <autogen>__KeyToKey__ KeyCode::TAB, ModifierFlag::OPTION_L, KeyCode::TAB, ModifierFlag::COMMAND_L</autogen>
+          <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::OPTION_L, KeyCode::BACKQUOTE, ModifierFlag::COMMAND_L</autogen>
+          <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::OPTION_L, KeyCode::JIS_EISUU</autogen>
+        </item>
+        <item>
+          <name>JIS Yen(¥) to F18 (if no modifiers pressed)</name>
+          <only>TERMINAL</only>
+          <identifier>remap.jis_app_term_yen2f18</identifier>
+          <autogen>__KeyToKey__ KeyCode::JIS_YEN, ModifierFlag::NONE, KeyCode::F18</autogen>
+        </item>
+        <item>
+          <name>Underscore(Ro) to F18</name>
+          <appendix>(+ Underscore to JIS Yen(¥) except Terminal)</appendix>
+          <identifier>remap.jis_app_term_underscore2f18</identifier>
+          <block>
+            <only>TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, ModifierFlag::NONE, KeyCode::F18</autogen>
+          </block>
+          <block>
+            <not>TERMINAL</not>
+            <autogen>__KeyToKey__ KeyCode::JIS_UNDERSCORE, ModifierFlag::NONE, KeyCode::JIS_YEN</autogen>
+          </block>
+        </item>
+        <item>
+          <name>Shift+0 to F18</name>
+          <appendix>(+ Shift+0 to JIS Yen(¥) except Terminal)</appendix>
+          <identifier>remap.jis_app_term_shift0_to_f18</identifier>
+          <block>
+            <only>TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::F18</autogen>
+          </block>
+          <block>
+            <not>TERMINAL</not>
+            <autogen>__KeyToKey__ KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::JIS_YEN</autogen>
+          </block>
+        </item>
+        <item>
+          <name>For Screen Users</name>
+          <item>
+            <name>cmd+t to ctrl+a,c (create window)</name>
+            <identifier>remap.app_term_screen_c</identifier>
+            <only>TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::COMMAND_L, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::C</autogen>
+            <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::COMMAND_R, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::C</autogen>
+          </item>
+          <item>
+            <name>cmd+w to ctrl+a,k (kill window)</name>
+            <identifier>remap.app_term_screen_k</identifier>
+            <only>TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::COMMAND_L, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::K</autogen>
+            <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::COMMAND_R, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::K</autogen>
+          </item>
+          <item>
+            <name>cmd+w to ctrl+a,k,y (kill window without confirming)</name>
+            <identifier>remap.app_term_screen_ky</identifier>
+            <only>TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::COMMAND_L, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::K, KeyCode::Y</autogen>
+            <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::COMMAND_R, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::K, KeyCode::Y</autogen>
+          </item>
+          <item>
+            <name>cmd+r to ctrl+a,A (rename window)</name>
+            <identifier>remap.app_term_screen_a</identifier>
+            <only>TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::COMMAND_L, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::A, ModifierFlag::SHIFT_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::COMMAND_R, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::A, ModifierFlag::SHIFT_L</autogen>
+          </item>
+          <item>
+            <name>cmd+alt+left/right to ctrl+a,n/p (switch windows)</name>
+            <identifier>remap.app_term_screen_switch</identifier>
+            <only>TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::N</autogen>
+            <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::OPTION_L, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::P</autogen>
+          </item>
+        </item>
+        <item>
+          <name>cmd+left/right to begining/end</name>
+          <item>
+            <name>normal (ctrl+a / ctrl+e)</name>
+            <identifier>remap.app_term_begend</identifier>
+            <only>TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, KeyCode::E, ModifierFlag::CONTROL_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L, KeyCode::A, ModifierFlag::CONTROL_L</autogen>
+          </item>
+          <item>
+            <name>using screen (ctrl+a,a / ctrl+e)</name>
+            <identifier>remap.app_term_begend_screen</identifier>
+            <only>TERMINAL</only>
+            <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, KeyCode::E, ModifierFlag::CONTROL_L</autogen>
+            <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L, KeyCode::A, ModifierFlag::CONTROL_L, KeyCode::A</autogen>
+          </item>
+        </item>
+        <item>
+          <name>cmd+delete/fwd_delete to ctrl+w/k</name>
+          <identifier>remap.app_term_cmddel</identifier>
+          <only>TERMINAL</only>
+          <autogen>__KeyToKey__ KeyCode::DELETE, ModifierFlag::COMMAND_L, KeyCode::W, ModifierFlag::CONTROL_L</autogen>
+          <autogen>__KeyToKey__ KeyCode::FORWARD_DELETE, ModifierFlag::COMMAND_L, KeyCode::K, ModifierFlag::CONTROL_L</autogen>
+        </item>
+      </item>
+      <item>
+        <name>Enable at only Vim</name>
+        <item>
+          <name>Change EISUU to EISUU &amp; Escape</name>
+          <only>VI</only>
+          <identifier>remap.jis_app_vi_eisuu2eisuu_escape</identifier>
+          <autogen>__KeyToKey__ KeyCode::JIS_EISUU, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
+        </item>
+      </item>
+      <item>
+        <name>Quicksilver Mode for Japanese</name>
+        <item>
+          <name>What's Quicksilver Mode?</name>
+          <appendix>This mode is designed for Quicksilver.app.</appendix>
+          <appendix>- Control+M to Return (&amp; exit mode)</appendix>
+          <appendix>- Control+I to Tab</appendix>
+          <appendix>- Escape to Escape (&amp; exit mode)</appendix>
+          <appendix>- Return to Return (&amp; exit mode)</appendix>
+          <appendix></appendix>
+          <identifier vk_config="true">notsave.jis_quicksilver_mode</identifier>
+          <autogen>__ShowStatusMessage__ Quicksilver(J)</autogen>
+          <block>
+            <autogen>__KeyToKey__ KeyCode::I,            MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::TAB</autogen>
+            <!-- ================================================== -->
+            <block>
+              <config_not>option.jis_quicksilver_mode_recovery_input_source</config_not>
+              <autogen>__KeyToKey__ KeyCode::M,            MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::RETURN, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode</autogen>
+              <autogen>__KeyToKey__ KeyCode::ESCAPE,                   KeyCode::ESCAPE, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode</autogen>
+              <autogen>__KeyToKey__ KeyCode::RETURN,                   KeyCode::RETURN, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode</autogen>
+            </block>
+            <block>
+              <config_only>option.jis_quicksilver_mode_recovery_input_source</config_only>
+              <block>
+                <config_only>notsave.jis_quicksilver_mode_back_to_roman</config_only>
+                <autogen>__KeyToKey__ KeyCode::M,            MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::RETURN, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_EISUU</autogen>
+                <autogen>__KeyToKey__ KeyCode::ESCAPE,                   KeyCode::ESCAPE, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_EISUU</autogen>
+                <autogen>__KeyToKey__ KeyCode::RETURN,                   KeyCode::RETURN, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_EISUU</autogen>
+              </block>
+              <block>
+                <config_not>notsave.jis_quicksilver_mode_back_to_roman</config_not>
+                <autogen>__KeyToKey__ KeyCode::M,            MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::RETURN, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_KANA</autogen>
+                <autogen>__KeyToKey__ KeyCode::ESCAPE,                   KeyCode::ESCAPE, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_KANA</autogen>
+                <autogen>__KeyToKey__ KeyCode::RETURN,                   KeyCode::RETURN, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_KANA</autogen>
+              </block>
+            </block>
+            <!-- ================================================== -->
+          </block>
+          <block>
+            <config_only>remap.jis_doublecontrol_to_quicksilver_mode_eisuu</config_only>
+            <!-- ================================================== -->
+            <block>
+              <config_not>option.jis_quicksilver_mode_recovery_input_source</config_not>
+              <autogen>__DoublePressModifier__ KeyCode::CONTROL_L, KeyCode::CONTROL_L, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode</autogen>
+              <autogen>__DoublePressModifier__ KeyCode::CONTROL_R, KeyCode::CONTROL_R, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode</autogen>
+            </block>
+            <block>
+              <config_only>option.jis_quicksilver_mode_recovery_input_source</config_only>
+              <block>
+                <config_only>notsave.jis_quicksilver_mode_back_to_roman</config_only>
+                <autogen>__DoublePressModifier__ KeyCode::CONTROL_L, KeyCode::CONTROL_L, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_EISUU</autogen>
+                <autogen>__DoublePressModifier__ KeyCode::CONTROL_R, KeyCode::CONTROL_R, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_EISUU</autogen>
+              </block>
+              <block>
+                <config_not>notsave.jis_quicksilver_mode_back_to_roman</config_not>
+                <autogen>__DoublePressModifier__ KeyCode::CONTROL_L, KeyCode::CONTROL_L, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_KANA</autogen>
+                <autogen>__DoublePressModifier__ KeyCode::CONTROL_R, KeyCode::CONTROL_R, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode, KeyCode::JIS_KANA</autogen>
+              </block>
+            </block>
+            <!-- ================================================== -->
+          </block>
+        </item>
+        <item>
+          <name>Double Control to Quicksilver Mode (&amp; 入力ソースを英字にする)</name>
+          <include path="../snippets/quicksilver_mode_doublepressmodifier_appendix.xml" />
+          <identifier>remap.jis_doublecontrol_to_quicksilver_mode_eisuu</identifier>
+          <block>
+            <inputsource_only>JAPANESE</inputsource_only>
+            <autogen>__DoublePressModifier__ KeyCode::CONTROL_L, KeyCode::CONTROL_L,
+              KeyCode::VK_CONFIG_FORCE_ON_notsave_jis_quicksilver_mode, KeyCode::JIS_EISUU, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode_back_to_roman</autogen>
+            <autogen>__DoublePressModifier__ KeyCode::CONTROL_R, KeyCode::CONTROL_R,
+              KeyCode::VK_CONFIG_FORCE_ON_notsave_jis_quicksilver_mode, KeyCode::JIS_EISUU, KeyCode::VK_CONFIG_FORCE_OFF_notsave_jis_quicksilver_mode_back_to_roman</autogen>
+          </block>
+          <block>
+            <inputsource_not>JAPANESE</inputsource_not>
+            <autogen>__DoublePressModifier__ KeyCode::CONTROL_L, KeyCode::CONTROL_L,
+              KeyCode::VK_CONFIG_FORCE_ON_notsave_jis_quicksilver_mode, KeyCode::JIS_EISUU, KeyCode::VK_CONFIG_FORCE_ON_notsave_jis_quicksilver_mode_back_to_roman</autogen>
+            <autogen>__DoublePressModifier__ KeyCode::CONTROL_R, KeyCode::CONTROL_R,
+              KeyCode::VK_CONFIG_FORCE_ON_notsave_jis_quicksilver_mode, KeyCode::JIS_EISUU, KeyCode::VK_CONFIG_FORCE_ON_notsave_jis_quicksilver_mode_back_to_roman</autogen>
+          </block>
+        </item>
+        <item hidden="true">
+          <name></name>
+          <identifier vk_config="true">notsave.jis_quicksilver_mode_back_to_roman</identifier>
+        </item>
+        <item>
+          <name>[Option] モードから抜けるときに入力ソースを元に戻す</name>
+          <identifier>option.jis_quicksilver_mode_recovery_input_source</identifier>
+        </item>
+      </item>
+    </item>
+
+    <include path="japanese/keyboard_layouts.xml" />
+
+    <item>
+      <name>Simultaneous Key Presses</name>
+      <item>
+        <name>Simultaneous Key Presses [EISUU+KANA] to Return</name>
+        <appendix>(We can change the key once again)</appendix>
+        <identifier>remap.simultaneouskeypresses_eisuukana2return</identifier>
+        <autogen>__SimultaneousKeyPresses__ KeyCode::JIS_EISUU, KeyCode::JIS_KANA, KeyCode::RETURN, SimultaneousKeyPresses::Option::RAW</autogen>
+      </item>
+      <item>
+        <name>日本語入力時にF、Jキーの同時押しをSticky Shiftにする</name>
+        <appendix>（SKKと一緒に使うと便利です。）</appendix>
+        <identifier>remap.japanese_FJ_to_sticky_shift_l</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <autogen>
+          __SimultaneousKeyPresses__
+          KeyCode::F, KeyCode::J,
+          KeyCode::VK_STICKY_SHIFT_L
+        </autogen>
+      </item>
+      <item>
+        <name>(7), 8, 9, 0 for IME</name>
+        <item>
+          <name>8+9 for Shift+Left</name>
+          <identifier>remap.key8_plus_key9_for_shift_left</identifier>
+          <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_8, KeyCode::KEY_9,
+            KeyCode::CURSOR_LEFT, ModifierFlag::SHIFT_L</autogen>
+        </item>
+
+        <item>
+          <name>9+0 for Shift+Right</name>
+          <identifier>remap.key9_plus_key0_for_shift_right</identifier>
+          <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_9, KeyCode::KEY_0,
+            KeyCode::CURSOR_RIGHT, ModifierFlag::SHIFT_L</autogen>
+        </item>
+
+        <item>
+          <name>8+0 for Right</name>
+          <identifier>remap.key8_plus_key0_for_right</identifier>
+          <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_8, KeyCode::KEY_0, KeyCode::CURSOR_RIGHT</autogen>
+        </item>
+
+        <item>
+          <name>7+9 for Left</name>
+          <identifier>remap.key7_plus_key9_for_right</identifier>
+          <autogen>__SimultaneousKeyPresses__ KeyCode::KEY_7, KeyCode::KEY_9, KeyCode::CURSOR_LEFT</autogen>
+        </item>
+
+        <item>
+          <name>Optional Cursors</name>
+          <item>
+            <name>Y+U for Up</name>
+            <identifier>remap.u_plus_u</identifier>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::Y, KeyCode::U, KeyCode::CURSOR_UP</autogen>
+          </item>
+          <item>
+            <name>N+M for Down</name>
+            <identifier>remap.n_plus_m_for_right</identifier>
+            <autogen>__SimultaneousKeyPresses__ KeyCode::N, KeyCode::M, KeyCode::CURSOR_DOWN</autogen>
+          </item>
+        </item>
+      </item>
+    </item>
+    <item>
+      <name>Kotoeri Hacks</name>
+      <item>
+        <name>Control+I to Control+K (Control+I でカタカナ変換)</name>
+        <appendix>(Except in Virtual Machine, RDC)</appendix>
+        <identifier>remap.jis_controlItocontrolK</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+        <autogen>__KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE, KeyCode::K, ModifierFlag::CONTROL_L</autogen>
+      </item>
+      <item>
+        <name>Control+I to F7 (Control+I でカタカナ変換)</name>
+        <appendix>(Except in Virtual Machine, RDC)</appendix>
+        <identifier>remap.jis_controlItof7</identifier>
+        <inputsource_only>JAPANESE</inputsource_only>
+        <not>VIRTUALMACHINE, REMOTEDESKTOPCONNECTION</not>
+        <autogen>__KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE, KeyCode::F7</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Hack for bugs of OS X</name>
+      <item>
+        <name>Disable Command/Control/Option/Shift+EISUU, Command/Control/Option/Shift+KANA</name>
+        <appendix>* This setting prevents app hang up that is caused by option+kana.</appendix>
+        <appendix>* This setting prevents unintended up-arrow injection that is caused by control+kana.</appendix>
+        <identifier>option.jis_drop_eisuukana_with_modifiers</identifier>
+        <autogen>__DropKeyAfterRemap__ KeyCode::JIS_EISUU, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+        <autogen>__DropKeyAfterRemap__ KeyCode::JIS_KANA,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+        <autogen>__DropKeyAfterRemap__ KeyCode::JIS_EISUU, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+        <autogen>__DropKeyAfterRemap__ KeyCode::JIS_KANA,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+        <autogen>__DropKeyAfterRemap__ KeyCode::JIS_EISUU, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+        <autogen>__DropKeyAfterRemap__ KeyCode::JIS_KANA,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+        <autogen>__DropKeyAfterRemap__ KeyCode::JIS_EISUU, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+        <autogen>__DropKeyAfterRemap__ KeyCode::JIS_KANA,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+      </item>
+    </item>
+  </item>
+</root>

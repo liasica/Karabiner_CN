@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change Minus Key</name>
+    <item>
+      <name>Change Minus to Semicolon</name>
+      <identifier>remap.minus2semicolon</identifier>
+      <autogen>__KeyToKey__ KeyCode::MINUS, KeyCode::SEMICOLON</autogen>
+    </item>
+    <item>
+      <name>Swap Minus and Underscore</name>
+      <identifier>remap.swap_minus_and_underscore</identifier>
+      <autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::NONE,
+        KeyCode::MINUS, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::MINUS, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE,
+        KeyCode::MINUS,
+      </autogen>
+    </item>
+  </item>
+</root>

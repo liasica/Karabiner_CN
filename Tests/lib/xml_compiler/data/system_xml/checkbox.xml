@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Pass Through Mode (Disable all settings temporarily)</name>
+    <item>
+      <!-- Pass Through Mode Core -->
+      <name>What is Pass Through Mode?</name>
+      <appendix>You can disable all settings temporarily.</appendix>
+      <appendix>Turn on a setting below, and toggle "Pass Through Mode".</appendix>
+      <identifier vk_config="true">notsave.passthrough</identifier>
+      <autogen>__ShowStatusMessage__ Pass Through</autogen>
+    </item>
+  </item>
+  <item>
+    <name>Return to Tab</name>
+    <identifier>remap.return2tab</identifier>
+    <autogen>__KeyToKey__ KeyCode::RETURN, KeyCode::TAB</autogen>
+  </item>
+  <item>
+    <name>ShowStatusMessage</name>
+    <identifier>remap.showstatusmessage</identifier>
+    <autogen>__ShowStatusMessage__ A B C D E F G -- </autogen>
+  </item>
+  <item>
+    <name>ShowStatusMessage</name>
+    <identifier>remap.showstatusmessage_old_style</identifier>
+    <autogen>--ShowStatusMessage-- O L D 1 2 3 4 - -- </autogen>
+  </item>
+
+  <item>
+    <name>notsave</name>
+    <identifier>notsave.remap_sample</identifier>
+    <only>SPACE_ IS_ IGNORED</only>
+    <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::RETURN</autogen>
+  </item>
+
+  <item>
+    <name>separator</name>
+    <identifier>remap.use_separator</identifier>
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::SPACE,
+
+      KeyCode::RETURN, KeyCode::TAB,
+
+      Option::SEPARATOR,
+
+      KeyCode::SPACE,
+    </autogen>
+  </item>
+
+  <item>
+    <name>separator</name>
+    <identifier>remap.without_separator</identifier>
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::SPACE,
+
+      KeyCode::RETURN,
+
+      KeyCode::TAB, KeyCode::SPACE,
+    </autogen>
+  </item>
+
+  <item>
+    <name>backward compatibility</name>
+    <identifier>remap.backward_compatibility</identifier>
+    <autogen>--KeyToKey-- KeyCode::RETURN, KeyCode::TAB</autogen>
+    <autogen>--KeyToConsumer-- KeyCode::RETURN, ConsumerKeyCode::BRIGHTNESS_UP</autogen>
+    <autogen>--KeyToPointingButton-- KeyCode::RETURN, PointingButton::LEFT</autogen>
+    <autogen>--DoublePressModifier-- KeyCode::RETURN</autogen>
+    <autogen>--HoldingKeyToKey--</autogen>
+    <autogen>--IgnoreMultipleSameKeyPress--</autogen>
+    <autogen>--KeyOverlaidModifier--</autogen>
+    <autogen>--ConsumerToConsumer--</autogen>
+    <autogen>--ConsumerToKey--</autogen>
+    <autogen>--PointingButtonToPointingButton--</autogen>
+    <autogen>--PointingButtonToKey--</autogen>
+    <autogen>--PointingRelativeToScroll--</autogen>
+    <autogen>--DropKeyAfterRemap--</autogen>
+    <autogen>--SetKeyboardType--</autogen>
+    <autogen>--ForceNumLockOn--</autogen>
+    <autogen>--DropPointingRelativeCursorMove--</autogen>
+    <autogen>--DropScrollWheel--</autogen>
+    <autogen>--ScrollWheelToScrollWheel--</autogen>
+    <autogen>--ScrollWheelToKey--</autogen>
+  </item>
+</root>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Settings</name>
+    <appendix>At least "Enable Vim Emulation" must be enabled.</appendix>
+    <appendix>Then, choose mode change keyes as you like.</appendix>
+    <appendix>Note: Simultaneous jk/qw/sd must be used with</appendix>
+    <appendix>one of ChangeKey 1, 3, 4, 6, 10-12</appendix>
+    <appendix>to leave such Virtual mode.</appendix>
+    <appendix>ChangeKey 3 or 6 are useful if you want to use</appendix>
+    <appendix>ESC/Ctrl-[ as is in modes other than Insert Mode.</appendix>
+    <appendix></appendix>
+    <appendix>Currently, all {count} operator is disabled (such 3w to move 3 words).</appendix>
+    <appendix>This feature makes too many remaps (9 times for most of moving),</appendix>
+    <appendix>and even the mouse moving is affected if you enable these feature.</appendix>
+    <appendix>(It makes the response too slow.)</appendix>
+    <appendix>If you would try this feature,</appendix>
+    <appendix>please remove comment out line in vim_emu/vim_emu_repeat.xml.</appendix>
+    <appendix></appendix>
+    <appendix>Only APPs {{VIM_EMU_ONLY_APPS}} </appendix>
+    <appendix>Ignore APPs {{VIM_EMU_IGNORE_APPS}}</appendix>
+  </item>
+  <include path="vim_emu_core_ck.xml"></include>
+  <include path="vim_emu_core_emu.xml"></include>
+  <include path="vim_emu_core_rm.xml"></include>
+  <include path="vim_emu_core_disable.xml"></include>
+  <include path="vim_emu_core_lb.xml"></include>
+  <include path="vim_emu_core_reset.xml"></include>
+  <include path="vim_emu_core_insert.xml"></include>
+  <!--
+  <include path="vim_emu_core_vb.xml"></include>
+  <include path="vim_emu_core_rep.xml"></include>
+  -->
+</root>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<root>
+
+  <!--
+      regex syntax: http://www.cplusplus.com/reference/regex/ECMAScript/
+  -->
+
+  <windownamedef>
+    <name>Chrome_Remote_Desktop</name>
+    <regex>^Chrome Remote Desktop$</regex>
+  </windownamedef>
+
+  <windownamedef>
+    <name>Gmail</name>
+    <regex> - Gmail$</regex>
+  </windownamedef>
+
+  <windownamedef>
+    <name>Google_Translate</name>
+    <regex>^Google Translate$</regex>
+    <regex>^Google Übersetzer$</regex> <!-- https://translate.google.co.jp/?hl=de -->
+    <regex>^Google Traduction$</regex> <!-- https://translate.google.co.jp/?hl=fr -->
+    <regex>^Google Traduttore$</regex> <!-- https://translate.google.co.jp/?hl=it -->
+    <regex>^Google 翻訳$</regex> <!-- https://translate.google.co.jp/?hl=ja -->
+    <regex>^Переводчик Google$</regex> <!-- https://translate.google.co.jp/?hl=ru -->
+  </windownamedef>
+
+  <windownamedef>
+    <name>Google_Calendar</name>
+    <regex>^Google Calendar</regex>   <!-- https://www.google.com/calendar?hl=en -->
+    <regex>^Google Kalender</regex>   <!-- https://www.google.com/calendar?hl=de -->
+    <regex>^Google Agenda</regex>     <!-- https://www.google.com/calendar?hl=fr -->
+    <regex>^Google Calendar</regex>   <!-- https://www.google.com/calendar?hl=it -->
+    <regex>^Google カレンダー</regex> <!-- https://www.google.com/calendar?hl=ja -->
+    <regex>^Календарь Google</regex>  <!-- https://www.google.com/calendar?hl=ru -->
+  </windownamedef>
+
+  <windownamedef>
+    <name>Launchpad</name>
+    <regex>^Launchpad$</regex>
+  </windownamedef>
+
+</root>

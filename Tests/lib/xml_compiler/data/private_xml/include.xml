@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<root>
+  <include path="keycode.xml" />
+
+  <replacementdef>
+    <replacementname>MY_INCLUDE_TEST2</replacementname>
+    <replacementvalue>{{ MY_INCLUDE_TEST }}_2</replacementvalue>
+  </replacementdef>
+
+  <item>
+    <name>Swap Space and Tab</name>
+    <include path="appendix.xml" />
+    <identifier>private.include_test</identifier>
+    <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::TAB</autogen>
+    <autogen>__KeyToKey__ KeyCode::TAB, KeyCode::SPACE</autogen>
+  </item>
+</root>

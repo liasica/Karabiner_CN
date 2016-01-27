@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<root>
+
+  <devicevendordef>
+    <vendorname>APPLE_INC</vendorname>
+    <vendorid>0x05ac</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>APPLE_COMPUTER</vendorname>
+    <vendorid>0x05ac</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Apple_Bluetooth</vendorname>
+    <vendorid>0x004c</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>TYPEMATRIX</vendorname>
+    <vendorid>0x1e54</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>FILCO</vendorname>
+    <vendorid>0x04d9</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>KENSINGTON</vendorname>
+    <vendorid>0x047d</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>PSEUDO</vendorname>
+    <vendorid>0x0000</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>CHESEN</vendorname>
+    <vendorid>0x0a81</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>LOGITECH</vendorname>
+    <vendorid>0x046d</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>PFU</vendorname>
+    <vendorid>0x04fe</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>UC_TECHNOLOGY</vendorname>
+    <vendorid>0x0853</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>FUJITSU</vendorname>
+    <vendorid>0x0430</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>SUN_MICROSYSTEMS</vendorname>
+    <vendorid>0x0430</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>CHICONY_0x0472</vendorname>
+    <vendorid>0x0472</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>MICROSOFT</vendorname>
+    <vendorid>0x045e</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>TARGUS</vendorname>
+    <vendorid>0x1048</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Unicomp_Inc</vendorname>
+    <vendorid>0x17f6</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Chic_Technology_Corp</vendorname>
+    <vendorid>0x05fe</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Tenx_Technology_Inc</vendorname>
+    <vendorid>0x1130</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Megawin_Technology_Co_Ltd</vendorname>
+    <vendorid>0x0e6a</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Pixart_Imaging_Inc</vendorname>
+    <vendorid>0x093a</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Ideazon</vendorname>
+    <vendorid>0x1038</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Lite_On_Technology_Corp</vendorname>
+    <vendorid>0x17ef</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Riitek</vendorname>
+    <vendorid>0x1997</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>YUBICO</vendorname>
+    <vendorid>0x1050</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Satechi</vendorname>
+    <vendorid>0x05AC</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Kinesis</vendorname>
+    <vendorid>0x05f3</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Corsair</vendorname>
+    <vendorid>0x1b1c</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Cooler_Master</vendorname>
+    <vendorid>0x2516</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Razer</vendorname>
+    <vendorid>0x1532</vendorid>
+  </devicevendordef>
+
+  <devicevendordef>
+    <vendorname>Mionix</vendorname>
+    <vendorid>0x22d4</vendorid>
+  </devicevendordef>
+
+</root>

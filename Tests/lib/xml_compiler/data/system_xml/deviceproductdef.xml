@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<root>
+  {{ DEVICEPRODUCTDEF_REPLACEMENT }}
+
+  <deviceproductdef>
+    <productname>PSEUDO</productname>
+    <productid>0x0000</productid>
+  </deviceproductdef>
+
+  <deviceproductdef>
+    <productname>ANY</productname>
+    <productid>0x0000</productid>
+  </deviceproductdef>
+
+  <deviceproductdef>
+    <productname>SPACE_   IS_   IGNORED</productname>
+    <productid>0x9999</productid>
+  </deviceproductdef>
+</root>

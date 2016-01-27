@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<root>
+  <item hidden="true">
+    <name>Conflicted applications are detected: keyboard device</name>
+    <!-- Ignore devices unless notsave.automatically_enable_* is set. -->
+    <!-- (We need to ignore devices when set_essential_config is failed.) -->
+    <identifier essential="true">notsave.automatically_enable_keyboard_device</identifier>
+  </item>
+  <item hidden="true">
+    <name>Conflicted applications are detected: pointing device</name>
+    <!-- See description of notsave.automatically_enable_keyboard_device -->
+    <identifier essential="true">notsave.automatically_enable_pointing_device</identifier>
+  </item>
+
+  <item>
+    <name>Karabiner core settings</name>
+    <item>
+      <name>Exclude devices</name>
+      <item>
+        <name>Don't remap an internal keyboard</name>
+        <identifier essential="true">general.dont_remap_internal</identifier>
+      </item>
+      <item>
+        <name>Don't remap external keyboards</name>
+        <identifier essential="true">general.dont_remap_external</identifier>
+      </item>
+      <item>
+        <name>Don't remap any pointing devices</name>
+        <identifier essential="true">general.dont_remap_any_pointing</identifier>
+      </item>
+      <item>
+        <name>Don't remap Apple's keyboards</name>
+        <identifier essential="true">general.dont_remap_apple_keyboard</identifier>
+      </item>
+      <item>
+        <name>Don't remap Apple's pointing devices</name>
+        <identifier essential="true">general.dont_remap_apple_pointing</identifier>
+      </item>
+      <item>
+        <name>Don't remap non-Apple's keyboards</name>
+        <appendix>(For example: Generic USB keyboard)</appendix>
+        <identifier essential="true">general.dont_remap_non_apple_keyboard</identifier>
+      </item>
+      <item>
+        <name>Don't remap non-Apple's pointing devices</name>
+        <appendix>(For example: Generic USB mouse)</appendix>
+        <identifier essential="true">general.dont_remap_non_apple_pointing</identifier>
+      </item>
+      <item>
+        <name>Don't remap keyboards which have third vendor's driver</name>
+        <appendix>(Logitech, Microsoft, Kensington, ...)</appendix>
+        <identifier essential="true">general.dont_remap_thirdvendor_keyboard</identifier>
+      </item>
+      <item>
+        <name>Don't remap pointing devices which has third vendor's driver</name>
+        <appendix>(Logitech, Microsoft, Kensington, ...)</appendix>
+        <identifier essential="true">general.dont_remap_thirdvendor_pointing</identifier>
+      </item>
+    </item>
+    <item>
+      <name>Disable an internal keyboard while external keyboards are connected.</name>
+
+      <item>
+        <name>Disable an internal keyboard while external keyboards are connected.</name>
+        <appendix></appendix>
+        <appendix>Note for Logitech Unifying Receiver users:</appendix>
+        <appendix>The receiver is detected as a composite device of keyboard and mouse.</appendix>
+        <appendix>So, the receiver always disables an internal keyboard even if you are using only mouse.</appendix>
+        <appendix>If you are not using Unifying keyboard devices, please enable a following option.</appendix>
+        <identifier essential="true">general.disable_internal_keyboard_if_external_keyboard_exsits</identifier>
+      </item>
+
+      <item>
+        <name>Options</name>
+
+        <item>
+          <name>Treat Logitech Unifying Receiver as pointing device.</name>
+          <identifier essential="true">general.treat_unifying_as_pointing_device</identifier>
+        </item>
+        <item>
+          <name>Treat Bluetooth USB Host Controller (Broadcom Corp.) as pointing device.</name>
+          <identifier essential="true">general.treat_bluetooth_usb_host_controller_broadcom_as_pointing_device</identifier>
+        </item>
+        <item>
+          <name>Ignore devices that do not have valid Vendor ID and Product ID.</name>
+          <appendix>(Vendor ID == 0x0000 and Product ID == 0x0000)</appendix>
+          <identifier essential="true">general.ignore_invalid_devices_from_external_keyboard</identifier>
+        </item>
+      </item>
+    </item>
+    <item>
+      <name>Pointing device core settings</name>
+      <item>
+        <name>Mouse Keys scroll direction: not natural</name>
+        <appendix>(Enable this setting if your scroll direction of trackpad/mouse is not natural.)</appendix>
+        <identifier essential="true">parameter.mouse_key_scroll_not_natural_direction</identifier>
+      </item>
+      <item>
+        <name>Options for "CursorMove to ScrollWheel"</name>
+        <item>
+          <name>Enable dynamic scrollwheel direction fixation. (horizontal and vertical)</name>
+          <identifier essential="true">option.pointing_enable_scrollwheel_fixation</identifier>
+        </item>
+        <item>
+          <name>Disable momentum (inertia) scroll.</name>
+          <identifier essential="true">option.pointing_disable_momentum_scroll</identifier>
+        </item>
+        <item>
+          <name>Reverse scroll direction vertically.</name>
+          <identifier essential="true">option.pointing_reverse_vertical_scrolling</identifier>
+        </item>
+        <item>
+          <name>Reverse scroll direction horizontally.</name>
+          <identifier essential="true">option.pointing_reverse_horizontal_scrolling</identifier>
+        </item>
+        <item>
+          <name>Disable vertical scroll.</name>
+          <identifier essential="true">option.pointing_disable_vertical_scroll</identifier>
+        </item>
+        <item>
+          <name>Disable horizontal scroll.</name>
+          <identifier essential="true">option.pointing_disable_horizontal_scroll</identifier>
+        </item>
+      </item>
+    </item>
+    <item>
+      <name>Advanced configurations</name>
+      <item>
+        <name>Ignore bouncing (chattering) events.</name>
+        <appendix>(Please adjust threshold in Parameters tab.)</appendix>
+        <identifier essential="true">general.ignore_bouncing_events</identifier>
+      </item>
+      <item>
+        <name>Allow devices which Vendor ID and Product ID are zero.</name>
+        <appendix>(Be careful enabling this option.</appendix>
+        <appendix>These devices might cause system crash with Karabiner.)</appendix>
+        <identifier essential="true">general.allow_devices_vendor_id_product_id_are_zero</identifier>
+      </item>
+      <item>
+        <name>Allow devices which has a multiple same key.</name>
+        <appendix>(For example, enable this option when you use a keyboard which has two left shift keys.)</appendix>
+        <identifier essential="true">general.allow_devices_multiple_same_key</identifier>
+      </item>
+      <item>
+        <name>Don't leave any modes automatically when the machine wakes from sleep.</name>
+        <appendix>(Pass Through Mode, Browsing Mode, etc.)</appendix>
+        <appendix></appendix>
+        <appendix>Karabiner turns off these modes automatically because</appendix>
+        <appendix>these modes are not suitable for password input.</appendix>
+        <appendix></appendix>
+        <appendix>This setting allows you to keep these modes's states.</appendix>
+        <identifier essential="true">general.keep_notsave_at_wake</identifier>
+      </item>
+      <item>
+        <name>Pass-Through caps lock LED status</name>
+        <appendix></appendix>
+        <appendix>Karabiner manipulates caps lock LED according to internal caps lock state.</appendix>
+        <appendix>(For example, if you changed right option key to caps lock,</appendix>
+        <appendix>LED will be toggled each time the right option key is pressed.)</appendix>
+        <appendix></appendix>
+        <appendix>However, some devices may become unstable by this LED manipulation.</appendix>
+        <appendix>Therefore, we provide an option to suppress this behavior.</appendix>
+        <appendix></appendix>
+        <appendix>Please turn on this option if your device does not work properly</appendix>
+        <appendix>when you changed a key to caps lock.</appendix>
+        <identifier essential="true">general.passthrough_capslock_led_status</identifier>
+      </item>
+      <item>
+        <name>Don't restore modifiers in the mouse event</name>
+        <appendix></appendix>
+        <appendix>For example, when you use Option+Tab to Command+Tab,</appendix>
+        <appendix>we send "Command+Click" when you did a mouse click while</appendix>
+        <appendix>pushing the Option key after you pushed Option+Tab.</appendix>
+        <appendix>"Option+Click" should be output, but this option changes this behavior.</appendix>
+        <identifier essential="true">general.lazy_modifiers_with_mouse_event</identifier>
+      </item>
+    </item>
+  </item>
+</root>

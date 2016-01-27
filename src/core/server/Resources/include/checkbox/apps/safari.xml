@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Enable at only Safari</name>
+    <item>
+      <name>Firefox-like hotkey (Control+PgUp/PgDown) to switch tabs in Safari</name>
+      <identifier>remap.firefox_style_tab_switching_in_safari</identifier>
+      <only>SAFARI</only>
+      <autogen>__KeyToKey__ FROMKEYCODE_PAGEDOWN, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE,
+        KeyCode::TAB, ModifierFlag::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ FROMKEYCODE_PAGEUP,   MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE,
+        KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L</autogen>
+    </item>
+    <item>
+      <name>Tilt Wheel to Back/Forward (Command+[, Command+])</name>
+      <identifier>remap.app_safari_tilt_to_back_forward</identifier>
+      <only>SAFARI</only>
+      <autogen>__ScrollWheelToKey__ ScrollWheel::LEFT, ModifierFlag::NONE,
+        KeyCode::BRACKET_LEFT, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__ScrollWheelToKey__ ScrollWheel::RIGHT, ModifierFlag::NONE,
+        KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L</autogen>
+    </item>
+  </item>
+</root>

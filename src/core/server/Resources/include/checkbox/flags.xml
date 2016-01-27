@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+  <item hidden="true">
+    <item>
+      <identifier vk_config="true">notsave.modifier_tab_to_command_tab</identifier>
+    </item>
+    <item>
+      <identifier vk_config="true">notsave.modifier_tab_to_command_tab_tab_mode</identifier>
+      <autogen>__ShowStatusMessage__ Command-Tab</autogen>
+    </item>
+  </item>
+</root>

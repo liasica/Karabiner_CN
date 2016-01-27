@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<root>
+  <autogen>
+    __KeyOverlaidModifier__
+    KeyCode::FN,
+    KeyCode::FN,
+    KeyCode::VK_STICKY_ACTIVE_MODIFIERS_FORCE_ON,
+    KeyCode::VK_STICKY_FN,
+  </autogen>
+</root>

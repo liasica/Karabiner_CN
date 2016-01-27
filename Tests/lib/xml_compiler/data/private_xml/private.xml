@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<root>
+  <!-- ============================================================ -->
+  <!-- include -->
+  <include path="include.xml" once="true">
+    <replacementdef>
+      <replacementname>MY_INCLUDE_TEST</replacementname>
+      <replacementvalue>123</replacementvalue>
+    </replacementdef>
+  </include>
+
+  <include path="include.xml" once="true" />
+
+  <replacementdef>
+    <replacementname>MY_INCLUDE_TEST</replacementname>
+    <replacementvalue>456</replacementvalue>
+  </replacementdef>
+
+  <include path="include1.xml" />
+  <include path="include/child.xml" />
+
+  <symbol_map type="KeyCode" name="MY_INCLUDE_TEST_456" value="{{ MY_INCLUDE_TEST }}" />
+
+  <!-- ============================================================ -->
+  <!-- style -->
+  <item>
+    <name style="important">style test: important</name>
+    <identifier>private.style_test_important</identifier>
+  </item>
+
+  <item>
+    <name style="caution">style test: caution</name>
+    <identifier>private.style_test_caution</identifier>
+  </item>
+
+  <!-- ============================================================ -->
+  <!-- symbol_map -->
+
+  <include path="symbol_map.xml" />
+
+  <!-- ============================================================ -->
+  <!-- appdef -->
+
+  <appdef>
+    <appname>  APPSTORE  </appname>
+    <equal>  com.apple.appstore  </equal>
+  </appdef>
+
+  <appdef>
+    <appname>TERMINAL_APPLE</appname>
+    <equal>com.apple.Terminal</equal>
+  </appdef>
+
+  <!-- overwrite system value -->
+  <appdef>
+    <appname>TERMINAL</appname>
+    <equal>com.apple.Terminal</equal>
+  </appdef>
+
+  <appdef>
+    <appname>EMACS</appname>
+    <equal>org.gnu.Emacs</equal>
+  </appdef>
+
+  <!-- ============================================================ -->
+  <!-- devicevendordef, deviceproductdef -->
+
+  <!-- ==================== -->
+  <devicevendordef>
+    <vendorname>  HEWLETT_PACKARD  </vendorname>
+    <vendorid>  0x03f0  </vendorid>
+  </devicevendordef>
+
+  <!-- Definition is ignored if name is already exists. -->
+  <devicevendordef>
+    <vendorname>  HEWLETT_PACKARD  </vendorname>
+    <vendorid>  0x1234  </vendorid>
+  </devicevendordef>
+
+  <!-- ==================== -->
+  <deviceproductdef>
+    <productname>  MY_HP_KEYBOARD  </productname>
+    <productid>  0x0224  </productid>
+  </deviceproductdef>
+
+  <!-- Definition is ignored if name is already exists. -->
+  <deviceproductdef>
+    <productname>  MY_HP_KEYBOARD  </productname>
+    <productid>  0x9876  </productid>
+  </deviceproductdef>
+
+  <!-- ==================== -->
+  <!-- overwrite system value -->
+  <devicevendordef>
+    <vendorname>APPLE_COMPUTER</vendorname>
+    <vendorid>0x05ac</vendorid>
+  </devicevendordef>
+
+  <!-- overwrite system value -->
+  <deviceproductdef>
+    <productname>MAGIC_MOUSE</productname>
+    <productid>0x030d</productid>
+  </deviceproductdef>
+
+  <!-- ============================================================ -->
+  <!-- inputsourcedef -->
+
+  <!-- overwrite -->
+  <inputsourcedef>
+    <name>MY_ENGLISH</name>
+    <inputsourceid_equal>com.apple.keylayout.US</inputsourceid_equal>
+  </deviceproductdef>
+
+  <!-- ============================================================ -->
+  <!-- replacementdef -->
+
+  <replacementdef>
+    <replacementname>MY_REPLACEMENT</replacementname>
+    <replacementvalue>__________sample replacement________________________________________</replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>JAPANESE_OYAYUBISHIFT_EXTRA</replacementname>
+    <replacementvalue>
+      <![CDATA[
+<not>REMOTEDESKTOPCONNECTION,VIRTUALMACHINE</not>
+]]>
+    </replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>MY_XML</replacementname>
+    <replacementvalue>
+      <![CDATA[
+        <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::TAB</autogen>
+      ]]>
+    </replacementvalue>
+  </replacementdef>
+
+  <item>
+    <name>{{MY_REPLACEMENT}}</name>
+    <identifier>private.replacement</identifier>
+    {{MY_XML}}
+  </item>
+
+  <item>
+    <name>{{MY_REPLACEMENT}}</name>
+    <identifier>
+      private.space_ is_ ignored
+    </identifier>
+    {{MY_XML}}
+  </item>
+
+  <!-- ============================================================ -->
+  <item>
+    <name>Swap Space and Tab</name>
+    <identifier>private.swap_space_and_tab</identifier>
+    <only>APPSTORE</only>
+    <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::TAB</autogen>
+    <autogen>__KeyToKey__ KeyCode::TAB, KeyCode::SPACE</autogen>
+  </item>
+
+  <item>
+    <name>notsave</name>
+    <identifier>notsave.private_sample</identifier>
+    <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::RETURN</autogen>
+  </item>
+</root>

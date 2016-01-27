@@ -1,0 +1,322 @@
+<?xml version="1.0"?>
+<root>
+  <!-- ============================================================ -->
+  <!--
+      Environment variables which you can use without replacementdef:
+      * You can use {{ ENV_HOME }} to specify home directory.
+      * You can use {{ ENV_Karabiner_Resources }} to specify "Karabiner.app/Contents/Resources" directory.
+  -->
+
+  <!-- ============================================================ -->
+  <!-- Common -->
+  <replacementdef>
+    <replacementname>VI_H</replacementname>
+    <replacementvalue>KeyCode::H</replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>VI_J</replacementname>
+    <replacementvalue>KeyCode::J</replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>VI_K</replacementname>
+    <replacementvalue>KeyCode::K</replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>VI_L</replacementname>
+    <replacementvalue>KeyCode::L</replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>UIELEMENTROLES_EDITING_IN_FINDER</replacementname>
+    <!-- editing file name: AXTextField -->
+    <!-- editing command:   AXTextArea -->
+    <replacementvalue>AXTextField, AXTextArea</replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>BROWSING_MODE_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>EXPOSE_MODE_2_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>MOUSE_KEYS_MODE_2_CONDITION</replacementname>
+    <replacementvalue>
+      <![CDATA[
+               <!-- Disable Mouse Keys Mode v2 when any modifiers are pressed in order to keep control-D key repeat. -->
+               <modifier_not>
+                 ModifierFlag::COMMAND_L,
+                 ModifierFlag::COMMAND_R,
+                 ModifierFlag::CONTROL_L,
+                 ModifierFlag::CONTROL_R,
+                 ModifierFlag::FN,
+                 ModifierFlag::OPTION_L,
+                 ModifierFlag::OPTION_R,
+                 ModifierFlag::SHIFT_L,
+                 ModifierFlag::SHIFT_R,
+               </modifier_not>
+               ]]>
+    </replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>MOUSE_KEYS_MODE_2_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>THUMBSENSE_EXTRA</replacementname>
+    <replacementvalue>
+      <![CDATA[
+               <autogen>__ShowStatusMessage__ ThumbSense</autogen>
+      ]]>
+    </replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>THUMBSENSE_COPYANDPASTE_EXTRA</replacementname>
+    <replacementvalue>
+      <![CDATA[
+               <autogen>__ShowStatusMessage__ Copy&amp;Paste</autogen>
+      ]]>
+    </replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>COMMAND_L_TO_OPTION_L_EXCEPT_TAB_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>EMACS_MODE_IGNORE_APPS</replacementname>
+    <replacementvalue>
+      EMACS,
+      REMOTEDESKTOPCONNECTION,
+      TERMINAL,
+      VI,
+      VIRTUALMACHINE,
+      X11,
+    </replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>EMACS_MODE_C_X_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>EMACS_MODE_MARKSET_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>SIMPLE_VI_MODE_CONDITION</replacementname>
+    <replacementvalue>
+      <![CDATA[
+               <!-- Disable Simple Vi Mode v2 when any modifiers are pressed in order to keep shift-S key repeat. -->
+               <modifier_not>
+                 ModifierFlag::COMMAND_L,
+                 ModifierFlag::COMMAND_R,
+                 ModifierFlag::CONTROL_L,
+                 ModifierFlag::CONTROL_R,
+                 ModifierFlag::FN,
+                 ModifierFlag::OPTION_L,
+                 ModifierFlag::OPTION_R,
+                 ModifierFlag::SHIFT_L,
+                 ModifierFlag::SHIFT_R,
+               </modifier_not>
+               ]]>
+    </replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>SIMPLE_VI_MODE_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>HJKL_ARROW_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>COMPLETE_VI_MODE_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>SIMULTANEOUS_VI_MODE_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>UBIQUITOUS_VIM_BINDINGS_IGNORE_APPS</replacementname>
+    <replacementvalue>TERMINAL, VI, PASSWORD, FIREFOX, EMACS</replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>UBIQUITOUS_VIM_BINDINGS_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!--
+      Do not overwrite UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING in private.xml.
+  -->
+  <replacementdef>
+    <replacementname>UBIQUITOUS_VIM_BINDINGS_CANCEL_OPERATOR_PENDING</replacementname>
+    <replacementvalue>
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_c_operator_pending,
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_d_operator_pending,
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_g_operator_pending,
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_r_operator_pending,
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_R_operator_pending,
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_c_w_operator_pending,
+    </replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <include path="include/checkbox/vim_emu/vim_emu_replacementdef.xml" />
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>LAUNCHER_MODE_V2_KEY</replacementname>
+    <!-- You can change the start key. -->
+    <replacementvalue>KeyCode::O</replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>LAUNCHER_MODE_V2_CONDITION</replacementname>
+    <replacementvalue>
+      <![CDATA[
+               <pressingphysicalkeys_lessthan>2</pressingphysicalkeys_lessthan>
+               <modifier_not>
+                 ModifierFlag::COMMAND_L,
+                 ModifierFlag::COMMAND_R,
+                 ModifierFlag::CONTROL_L,
+                 ModifierFlag::CONTROL_R,
+                 ModifierFlag::FN,
+                 ModifierFlag::OPTION_L,
+                 ModifierFlag::OPTION_R,
+                 ModifierFlag::SHIFT_L,
+                 ModifierFlag::SHIFT_R,
+               </modifier_not>
+      ]]>
+    </replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>LAUNCHER_MODE_V2_EXTRA</replacementname>
+    <replacementvalue>
+      <![CDATA[
+               <!-- Put your own definition by overwriting in private.xml. -->
+      ]]>
+    </replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>PC_STYLE_BINDINGS_IGNORE_APPS</replacementname>
+    <replacementvalue>
+      VIRTUALMACHINE,
+      REMOTEDESKTOPCONNECTION,
+      VNC,
+      TEAMVIEWER,
+      EMACS,
+      TERMINAL,
+      X11,
+      CITRIX_XEN_APP_VIEWER,
+    </replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>PC_STYLE_BINDINGS_IGNORE_EXTRA</replacementname>
+    <replacementvalue>
+      <![CDATA[
+               <windowname_not>Chrome_Remote_Desktop</windowname_not>
+               ]]>
+    </replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>PC_STYLE_BINDINGS_IGNORE_APPS_DESCRIPTION</replacementname>
+    <replacementvalue>
+      (Except in Virtual Machine, RDC, VNC, TeamViewer, EMACS, TERMINAL, X11, Citrix Viewer)
+    </replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>PC_STYLE_BINDINGS_AZERTY_INPUT_SOURCES</replacementname>
+    <replacementvalue>
+      FRENCH,
+    </replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <replacementdef>
+    <replacementname>LOGITECH_N305_EQUAL</replacementname>
+    <replacementvalue>KeyCode::KEYPAD_EQUAL</replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>LOGITECH_N305_LEFT_PARENTHES</replacementname>
+    <replacementvalue>KeyCode::KEY_9, ModifierFlag::SHIFT_L</replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>LOGITECH_N305_RIGHT_PARENTHES</replacementname>
+    <replacementvalue>KeyCode::KEY_0, ModifierFlag::SHIFT_L</replacementvalue>
+  </replacementdef>
+
+  <replacementdef>
+    <replacementname>LOGITECH_N305_EXTRA_MODIFIERS</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <!-- Language/Japanese -->
+  <replacementdef>
+    <replacementname>JAPANESE_OYAYUBISHIFT_EXTRA</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+
+  <!-- ============================================================ -->
+  <!-- Language/Korean -->
+  <replacementdef>
+    <replacementname>HANENG_AT_MAC</replacementname>
+    <replacementvalue>KeyCode::SPACE, ModifierFlag::COMMAND_L, Option::NOREPEAT</replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>HANJA_AT_MAC</replacementname>
+    <replacementvalue>KeyCode::RETURN, ModifierFlag::OPTION_L, Option::NOREPEAT</replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>HANENG_AT_WIN</replacementname>
+    <!-- <replacementvalue>KeyCode::SPACE, ModifierFlag::SHIFT_L, Option::NOREPEAT</replacementvalue> -->
+    <replacementvalue>KeyCode::JIS_KANA, Option::NOREPEAT</replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>HANJA_AT_WIN</replacementname>
+    <!-- <replacementvalue>KeyCode::SPACE, ModifierFlag::CONTROL_L, Option::NOREPEAT</replacementvalue> -->
+    <replacementvalue>KeyCode::JIS_EISUU, Option::NOREPEAT</replacementvalue>
+  </replacementdef>
+
+</root>

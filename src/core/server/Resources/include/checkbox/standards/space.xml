@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change Space Key</name>
+    <item>
+      <name>Space to Control_L</name>
+      <identifier>remap.space2controlL</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::CONTROL_L</autogen>
+    </item>
+    <item>
+      <name>Space to Control_L</name>
+      <appendix>(+ When you type Space only, send Space)</appendix>
+      <identifier>remap.space2controlL_space</identifier>
+      <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::CONTROL_L, KeyCode::SPACE</autogen>
+    </item>
+    <item>
+      <name>Space to Control_L</name>
+      <appendix>(+ When you type Space only, send Space) + [KeyRepeat]</appendix>
+      <identifier>remap.space2controlL_space_keyrepeat</identifier>
+      <autogen>__KeyOverlaidModifierWithRepeat__ KeyCode::SPACE, KeyCode::CONTROL_L, KeyCode::SPACE</autogen>
+    </item>
+
+    <item>
+      <name>Use the space key as left command key when you press keys while holding space key.</name>
+      <appendix></appendix>
+      <appendix>For example:</appendix>
+      <appendix><![CDATA[  Space down -> T down -> T up => Command-T  ]]></appendix>
+      <appendix><![CDATA[  Space down -> T down -> Space up => Space,T  ]]></appendix>
+      <identifier>remap.space_to_command</identifier>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::SPACE,
+
+        KeyCode::VK_LAZY_COMMAND_L, ModifierFlag::SPACE_TO_COMMAND,
+
+        KeyCode::SPACE,
+      </autogen>
+
+      <block>
+        <modifier_only>ModifierFlag::SPACE_TO_COMMAND</modifier_only>
+        <autogen>__BlockUntilKeyUp__ KeyCode::SPACE</autogen>
+      </block>
+    </item>
+
+    <item>
+      <name>Space to Option_L</name>
+      <identifier>remap.space2optionL</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::OPTION_L</autogen>
+    </item>
+    <item>
+      <name>Space to Option_L</name>
+      <appendix>(+ When you type Space only, send Space)</appendix>
+      <identifier>remap.space2optionL_space</identifier>
+      <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::OPTION_L, KeyCode::SPACE</autogen>
+    </item>
+    <item>
+      <name>Control+Space to Option_L</name>
+      <identifier>remap.controlSpace2optionL</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::OPTION_L</autogen>
+    </item>
+    <item>
+      <name>Space to Shift_L</name>
+      <identifier>remap.space2shiftL</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::SHIFT_L</autogen>
+    </item>
+    <item>
+      <name>Space to Shift_L</name>
+      <appendix>(+ When you type Space only, send Space)</appendix>
+      <identifier>remap.space2shiftL_space</identifier>
+      <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::SHIFT_L, KeyCode::SPACE</autogen>
+    </item>
+    <item>
+      <name>Space to Shift_L</name>
+      <appendix>(+ When you type Space only, send Space) + [KeyRepeat]</appendix>
+      <identifier>remap.space2shiftL_space_keyrepeat</identifier>
+      <autogen>__KeyOverlaidModifierWithRepeat__ KeyCode::SPACE, KeyCode::SHIFT_L, KeyCode::SPACE</autogen>
+    </item>
+    <item>
+      <name>Space to Shift_L</name>
+      <appendix>(+ When you type Space only, send Space) (Disable on Adobe Softwares)</appendix>
+      <not>ADOBE, PHOTOSHOP, ILLUSTRATOR</not>
+      <identifier>remap.space2shiftL_space_not_adobe</identifier>
+      <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::SHIFT_L, KeyCode::SPACE</autogen>
+    </item>
+    <item>
+      <name>Space to Shift_L</name>
+      <appendix>(+ When you type Space only, send Space)</appendix>
+      <appendix>Fn+Space to Space</appendix>
+      <identifier>remap.space2shiftL_space_fnspace</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::FN, KeyCode::SPACE</autogen>
+      <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::SHIFT_L, KeyCode::SPACE</autogen>
+    </item>
+    <item>
+      <name>Control+Space to Shift_L_Lock</name>
+      <identifier>remap.controlSpace2shiftL_lock</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::VK_LOCK_SHIFT_L</autogen>
+    </item>
+    <item>
+      <name>Swap Space and Option+Space</name>
+      <item>
+        <!-- Swap Mode Core -->
+        <name>You can swap Space and Option+Space temporarily.</name>
+        <appendix>Turn on a setting below, and toggle "Swap Mode".</appendix>
+        <identifier vk_config="true">notsave.swap_space_optionspace</identifier>
+        <autogen>__ShowStatusMessage__ Swap Mode</autogen>
+        <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | ModifierFlag::NONE, KeyCode::SPACE</autogen>
+        <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::NONE, KeyCode::SPACE, ModifierFlag::OPTION_L</autogen>
+      </item>
+      <item>
+        <name>Fn+Escape to toggle "Swap Space and Option+Space" Mode</name>
+        <identifier>remap.swap_space_optionspace_toggle_fnescape</identifier>
+        <autogen>__KeyToKey__ KeyCode::ESCAPE, ModifierFlag::FN, KeyCode::VK_CONFIG_TOGGLE_notsave_swap_space_optionspace</autogen>
+      </item>
+      <item>
+        <name>Fn+Space to toggle "Swap Space and Option+Space" Mode</name>
+        <identifier>remap.swap_space_optionspace_toggle_fnspace</identifier>
+        <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::FN, KeyCode::VK_CONFIG_TOGGLE_notsave_swap_space_optionspace</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Space to Return</name>
+      <identifier>remap.space2return</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::RETURN</autogen>
+    </item>
+    <item>
+      <name>Command+Space to Command+Shift+Space</name>
+      <identifier>remap.commandSpace2commandLshiftLspace</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE, KeyCode::SPACE, ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L</autogen>
+    </item>
+    <item>
+      <name>Shift+Space to Command_L+Space</name>
+      <identifier>remap.shiftSpace2commandLSpace</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::SPACE, ModifierFlag::COMMAND_L,
+      </autogen>
+    </item>
+    <item>
+      <name>Control+Space to Option_L+Enter (except Emacs)</name>
+      <not>EMACS</not>
+      <identifier>remap.controlSpace2optionLEnter</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::ENTER, ModifierFlag::OPTION_L</autogen>
+    </item>
+    <item>
+      <name>Non-Breaking Space to Normal Space</name>
+      <appendix>(Option+Space to Space)</appendix>
+      <appendix>(Option+Shift+Space to Space)</appendix>
+      <identifier>remap.option_space_to_space</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | ModifierFlag::NONE, KeyCode::SPACE</autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE,
+        KeyCode::SPACE,
+      </autogen>
+    </item>
+    <item>
+      <name>Holding Space to LeftClick</name>
+      <identifier>remap.holding_space_to_left_click</identifier>
+      <autogen>
+        __HoldingKeyToKey__
+        KeyCode::SPACE,
+        KeyCode::SPACE,
+        KeyCode::VK_NONE,
+        KeyCode::VK_MOUSEKEY_BUTTON_LEFT,
+      </autogen>
+    </item>
+    <item>
+      <name>Fn+Space to LeftClick</name>
+      <identifier>remap.fn_space_to_left_click</identifier>
+      <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::FN, PointingButton::LEFT</autogen>
+    </item>
+
+    <item>
+      <name>SandS</name>
+      <appendix>* Change the space key to the left shift key.</appendix>
+      <appendix>* Send a space key event when the space key is pressed alone.</appendix>
+
+      <identifier>remap.sands</identifier>
+      <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::SHIFT_L, KeyCode::SPACE</autogen>
+    </item>
+
+    <item>
+      <name>SandS (another version)</name>
+      <appendix>This version keeps the space key behavior while fast typing.</appendix>
+      <appendix></appendix>
+      <appendix>* Change the space key to the left shift key.</appendix>
+      <appendix>* Send a space key event when the space key is pressed alone.</appendix>
+      <appendix></appendix>
+      <appendix>* Send a space key event when the space key is released before another key is released.</appendix>
+      <appendix>For example:</appendix>
+      <appendix><![CDATA[  Space down -> T down -> T up => Shift+T  ]]></appendix>
+      <appendix><![CDATA[  Space down -> T down -> Space up => Space,T  ]]></appendix>
+      <identifier>remap.sands2</identifier>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::SPACE,
+
+        KeyCode::SHIFT_L, ModifierFlag::SANDS2,
+
+        KeyCode::SPACE,
+      </autogen>
+
+      <block>
+        <modifier_only>ModifierFlag::SANDS2</modifier_only>
+        <autogen>__BlockUntilKeyUp__ KeyCode::SPACE</autogen>
+      </block>
+    </item>
+  </item>
+</root>

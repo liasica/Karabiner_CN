@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>For Canadian</name>
+    <item>
+      <name>Space to Option_L (when Input Source == Canadian)</name>
+      <identifier>remap.canadian_space2optionL</identifier>
+      <inputsource_only>CANADIAN</inputsource_only>
+      <autogen>__KeyToKey__ KeyCode::SPACE, KeyCode::OPTION_L</autogen>
+    </item>
+    <item>
+      <name>Space to Option_L (when Input Source == Canadian)</name>
+      <appendix>(+ When you type Space only, send Space)</appendix>
+      <identifier>remap.canadian_space2optionL_space</identifier>
+      <inputsource_only>CANADIAN</inputsource_only>
+      <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::OPTION_L, KeyCode::SPACE</autogen>
+    </item>
+    <item>
+      <name>Synchronize the sign of the keyboard and an input letter</name>
+      <appendix>using "U.S. International - PC" as Input Source on Canadian French keyboard.</appendix>
+      <appendix>(For example, change Shift+6 to ?)</appendix>
+      <identifier>remap.use_us_international_on_canadian_french_keyboard</identifier>
+      <!-- / -->
+      <autogen>__KeyToKey__ KeyCode::UK_SECTION, ModifierFlag::NONE,           KeyCode::SLASH</autogen>
+      <!-- \ -->
+      <autogen>__KeyToKey__ KeyCode::UK_SECTION, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,  KeyCode::BACKSLASH</autogen>
+      <!-- | -->
+      <autogen>__KeyToKey__ KeyCode::UK_SECTION, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKSLASH, ModifierFlag::SHIFT_L</autogen>
+
+      <!-- ? -->
+      <autogen>__KeyToKey__ KeyCode::KEY_6,      ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,  KeyCode::SLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+      <!-- { -->
+      <autogen>__KeyToKey__ KeyCode::KEY_7,      ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L</autogen>
+      <!-- } -->
+      <autogen>__KeyToKey__ KeyCode::KEY_8,      ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L</autogen>
+      <!-- [ -->
+      <autogen>__KeyToKey__ KeyCode::KEY_9,      ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BRACKET_LEFT</autogen>
+      <!-- ] -->
+      <autogen>__KeyToKey__ KeyCode::KEY_0,      ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BRACKET_RIGHT</autogen>
+      <!-- ¬ -->
+      <autogen>__KeyToKey__ KeyCode::EQUAL,      ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::L, ModifierFlag::OPTION_L</autogen>
+
+      <!-- ============================================================ -->
+
+      <!-- ^ (accent) -->
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::NONE,           KeyCode::I, ModifierFlag::OPTION_L</autogen>
+      <!-- " (accent) -->
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,  KeyCode::U, ModifierFlag::OPTION_L</autogen>
+      <!-- ` (accent) -->
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKQUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+
+      <!-- ============================================================ -->
+
+      <!-- ° -->
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON,     ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::KEY_8, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | ModifierFlag::SHIFT_L</autogen>
+
+      <!-- ç -->
+      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE,           KeyCode::C, ModifierFlag::OPTION_L</autogen>
+      <!-- Ç -->
+      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,  KeyCode::C, ModifierFlag::OPTION_L | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+      <!-- ~ -->
+      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKQUOTE, ModifierFlag::SHIFT_L</autogen>
+
+      <!-- è -->
+      <autogen>__KeyToKey__ KeyCode::QUOTE,         ModifierFlag::NONE,          KeyCode::BACKQUOTE, KeyCode::E</autogen>
+      <!-- È -->
+      <autogen>__KeyToKey__ KeyCode::QUOTE,         ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::BACKQUOTE, KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+
+      <!-- à -->
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH,     ModifierFlag::NONE, KeyCode::BACKQUOTE, KeyCode::A</autogen>
+      <!-- à -->
+      <autogen>__KeyToKey__ KeyCode::BACKSLASH,     ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::BACKQUOTE, KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+
+      <!-- ============================================================ -->
+
+      <!-- ù -->
+      <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::NONE,          KeyCode::BACKQUOTE, KeyCode::U</autogen>
+      <!-- Ù -->
+      <autogen>__KeyToKey__ KeyCode::BACKQUOTE, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::BACKQUOTE, KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+
+      <!-- « -->
+      <autogen>__KeyToKey__ KeyCode::Z,     ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+
+      <!-- » -->
+      <autogen>__KeyToKey__ KeyCode::X,     ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | ModifierFlag::SHIFT_L</autogen>
+
+      <!-- ' -->
+      <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::BRACKET_RIGHT, ModifierFlag::OPTION_L</autogen>
+      <!-- < -->
+      <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::COMMA, ModifierFlag::SHIFT_L</autogen>
+
+      <!-- " -->
+      <autogen>__KeyToKey__ KeyCode::DOT,   ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::QUOTE, ModifierFlag::SHIFT_L</autogen>
+
+      <!-- > -->
+      <autogen>__KeyToKey__ KeyCode::DOT,   ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::DOT, ModifierFlag::SHIFT_L</autogen>
+
+      <!-- é -->
+      <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::NONE,          KeyCode::QUOTE, KeyCode::E</autogen>
+      <!-- é -->
+      <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::NONE|MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::QUOTE, KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    </item>
+  </item>
+</root>

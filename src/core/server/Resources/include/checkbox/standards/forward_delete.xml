@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change Forward Delete Key</name>
+    <item>
+      <name>Forward Delete to Delete</name>
+      <identifier>remap.forwarddelete2delete</identifier>
+      <autogen>__KeyToKey__ FROMKEYCODE_FORWARD_DELETE, KeyCode::DELETE</autogen>
+    </item>
+    <item>
+      <name>Command+Forward Delete to Option_L+Forward Delete</name>
+      <identifier>remap.commandForwardDelete2optionLforwarddelete</identifier>
+      <autogen>__KeyToKey__ FROMKEYCODE_FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::FORWARD_DELETE, ModifierFlag::OPTION_L</autogen>
+    </item>
+    <item>
+      <name>Control+Forward Delete to Command_L+Forward Delete</name>
+      <identifier>remap.controlForwardDelete2commandLforwarddelete</identifier>
+      <autogen>__KeyToKey__ FROMKEYCODE_FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::FORWARD_DELETE, ModifierFlag::COMMAND_L</autogen>
+    </item>
+    <item>
+      <name>Option+Forward Delete to Command_L+Forward Delete</name>
+      <identifier>remap.optionForwardDelete2commandLforwarddelete</identifier>
+      <autogen>__KeyToKey__ FROMKEYCODE_FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::FORWARD_DELETE, ModifierFlag::COMMAND_L</autogen>
+    </item>
+  </item>
+</root>

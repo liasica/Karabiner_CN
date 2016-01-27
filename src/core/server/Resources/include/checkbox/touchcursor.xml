@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<root>
+
+  <item>
+    <name>TouchCursor</name>
+
+    <item>
+      <name>TouchCursor: http://touchcursor.sourceforge.net/</name>
+      <identifier vk_config="true">notsave.touchcursor</identifier>
+
+      <!-- IKJL -->
+      <autogen>__KeyToKey__ KeyCode::I, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::CURSOR_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, KeyCode::CURSOR_RIGHT</autogen>
+
+      <!-- U: beginning-of-line -->
+      <autogen>__KeyToKey__ KeyCode::U, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L</autogen>
+      <!-- O: end-of-line -->
+      <autogen>__KeyToKey__ KeyCode::O, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+
+      <!-- P: delete -->
+      <autogen>__KeyToKey__ KeyCode::P, KeyCode::DELETE</autogen>
+      <!-- M: forward delete -->
+      <autogen>__KeyToKey__ KeyCode::M, KeyCode::FORWARD_DELETE</autogen>
+
+      <!-- H: page up -->
+      <autogen>__KeyToKey__ KeyCode::H, KeyCode::PAGEUP</autogen>
+      <!-- N: page down -->
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::PAGEDOWN</autogen>
+    </item>
+
+    <item>
+      <name>Activate TouchCursor by Space</name>
+      <appendix>(Please adjust "[Key Overlaid Modifier] Initial Modifier Wait" in Parameters tab</appendix>
+      <appendix>in order to avoid mis-detection of space key if your typing speed is fast.)</appendix>
+      <identifier>remap.touchcursor</identifier>
+      <autogen>
+        __KeyOverlaidModifier__
+        KeyCode::SPACE,
+        KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_touchcursor,
+        KeyCode::SPACE
+      </autogen>
+
+      <block>
+        <config_only>notsave.touchcursor</config_only>
+        <autogen>__BlockUntilKeyUp__ KeyCode::SPACE</autogen>
+      </block>
+    </item>
+
+  </item>
+
+</root>

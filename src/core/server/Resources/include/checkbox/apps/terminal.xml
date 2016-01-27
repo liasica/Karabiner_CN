@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Enable at only Terminal</name>
+    <item>
+      <name>Swap Command_L with Control_L</name>
+      <identifier>remap.app_term_commandL2controlL</identifier>
+      <only>TERMINAL</only>
+      <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::CONTROL_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::COMMAND_L</autogen>
+    </item>
+    <item>
+      <name>Change Command_L to Option_L</name>
+      <identifier>remap.app_term_commandL2optionL</identifier>
+      <only>TERMINAL</only>
+      <autogen>__KeyToKey__ KeyCode::COMMAND_L, KeyCode::OPTION_L</autogen>
+    </item>
+    <item>
+      <name>Change Command_L to Option_L</name>
+      <appendix>(Pass-Through Tab and Backquote)</appendix>
+      <identifier>remap.app_term_commandL2optionL_except_tab</identifier>
+      <only>TERMINAL</only>
+      <include path="../snippets/modifier_tab_to_command_tab_backquote.xml">
+        <replacementdef>
+          <replacementname>FROM_MODIFIER</replacementname>
+          <replacementvalue>COMMAND_L</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>TO_MODIFIER</replacementname>
+          <replacementvalue>OPTION_L</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Change Command_L to Option_L</name>
+      <appendix>(Pass-Through Tab, Backquote and Space)</appendix>
+      <identifier>remap.app_term_commandL2optionL_except_tab_space</identifier>
+      <only>TERMINAL</only>
+      <include path="../snippets/modifier_tab_to_command_tab_backquote_space.xml">
+        <replacementdef>
+          <replacementname>FROM_MODIFIER</replacementname>
+          <replacementvalue>COMMAND_L</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>TO_MODIFIER</replacementname>
+          <replacementvalue>OPTION_L</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Change Delete Key</name>
+      <item>
+        <name>Delete to Control_L+H</name>
+        <identifier>remap.app_term_delete2controlLh</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::DELETE, KeyCode::H, ModifierFlag::CONTROL_L</autogen>
+      </item>
+      <item>
+        <name>Control+Delete to Control_L+H</name>
+        <identifier>remap.app_term_controldelete2controlLh</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::H, ModifierFlag::CONTROL_L</autogen>
+      </item>
+      <item>
+        <name>Option+Delete to Control_L+H</name>
+        <identifier>remap.app_term_optiondelete2controlLh</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::H, ModifierFlag::CONTROL_L</autogen>
+      </item>
+      <item>
+        <name>Shift+Delete to Control_L+H</name>
+        <identifier>remap.app_term_shiftdelete2controlLh</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::H, ModifierFlag::CONTROL_L</autogen>
+      </item>
+      <item>
+        <name>Control+Delete to Delete</name>
+        <identifier>remap.app_term_controldelete2delete</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::DELETE</autogen>
+      </item>
+      <item>
+        <name>Option+Delete to Delete</name>
+        <identifier>remap.app_term_optiondelete2delete</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::DELETE</autogen>
+      </item>
+      <item>
+        <name>Shift+Delete to Delete</name>
+        <identifier>remap.app_term_shiftdelete2delete</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
+      </item>
+    </item>
+    <item>
+      <name>Change Option_L to Command_L</name>
+      <identifier>remap.app_term_optionL2commandL</identifier>
+      <only>TERMINAL</only>
+      <autogen>__KeyToKey__ KeyCode::OPTION_L, KeyCode::COMMAND_L</autogen>
+    </item>
+    <item>
+      <name>Change Option_R to Control_R</name>
+      <identifier>remap.app_term_optionR2controlR</identifier>
+      <only>TERMINAL</only>
+      <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::CONTROL_R</autogen>
+    </item>
+    <item>
+      <name>Change Slash(/) Key</name>
+      <item>
+        <name>Control+Shift+Slash(/) to Delete</name>
+        <identifier>remap.app_term_controlshiftslash2delete</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::SLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DELETE</autogen>
+      </item>
+      <item>
+        <name>Control+Slash(/) to Control+Underscore(_)</name>
+        <identifier>remap.app_term_controlslash2controlshiftunderscore</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::CONTROL_L, KeyCode::MINUS, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L</autogen>
+      </item>
+    </item>
+
+    <item>
+      <name>Command Arrows to line ends in Terminal</name>
+      <identifier>remap.terminalarrows.appdef</identifier>
+      <only>TERMINAL</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+        KeyCode::A, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND | ModifierFlag::NONE,
+        KeyCode::E, ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+
+    <item>
+      <name>Change Functional Keys to F1...F12</name>
+      <appendix>(For keyboards of F10 == Volume Mute and F4 == DASHBOARD)</appendix>
+      <identifier>remap.app_term_functional2function</identifier>
+      <only>TERMINAL</only>
+      <autogen>__KeyToKey__ ConsumerKeyCode::BRIGHTNESS_DOWN, KeyCode::F1</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::BRIGHTNESS_UP, KeyCode::F2</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRIGHTNESS_DOWN, KeyCode::F1</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRIGHTNESS_UP, KeyCode::F2</autogen>
+      <autogen>__KeyToKey__ KeyCode::EXPOSE_ALL, KeyCode::F3</autogen>
+      <autogen>__KeyToKey__ KeyCode::DASHBOARD, KeyCode::F4</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::KEYBOARDLIGHT_LOW, KeyCode::F5</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::KEYBOARDLIGHT_HIGH, KeyCode::F6</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_PREV, KeyCode::F7</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_PLAY, KeyCode::F8</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_NEXT, KeyCode::F9</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::VOLUME_MUTE, KeyCode::F10</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::VOLUME_DOWN, KeyCode::F11</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::VOLUME_UP, KeyCode::F12</autogen>
+    </item>
+
+    <item>
+      <name>Change Functional Keys to F1...F12 (MacBook late 2013 with Launchpad on F4 key)</name>
+      <appendix>(For keyboards of F10 == Volume Mute and F4 == Launchpad)</appendix>
+      <identifier>remap.app_term_functional2function2</identifier>
+      <only>TERMINAL</only>
+      <autogen>__KeyToKey__ ConsumerKeyCode::BRIGHTNESS_DOWN, KeyCode::F1</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::BRIGHTNESS_UP, KeyCode::F2</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRIGHTNESS_DOWN, KeyCode::F1</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRIGHTNESS_UP, KeyCode::F2</autogen>
+      <autogen>__KeyToKey__ KeyCode::EXPOSE_ALL, KeyCode::F3</autogen>
+      <autogen>__KeyToKey__ KeyCode::LAUNCHPAD, KeyCode::F4</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::KEYBOARDLIGHT_LOW, KeyCode::F5</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::KEYBOARDLIGHT_HIGH, KeyCode::F6</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_PREV, KeyCode::F7</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_PLAY, KeyCode::F8</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::MUSIC_NEXT, KeyCode::F9</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::VOLUME_MUTE, KeyCode::F10</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::VOLUME_DOWN, KeyCode::F11</autogen>
+      <autogen>__KeyToKey__ ConsumerKeyCode::VOLUME_UP, KeyCode::F12</autogen>
+    </item>
+
+    <item>
+      <name>Change Option+y to F18</name>
+      <only>TERMINAL</only>
+      <identifier>remap.app_term_optionY2f18</identifier>
+      <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::F18</autogen>
+    </item>
+    <item>
+      <name>Switch next and prev tab in terminal with shift and arrows (like Gnome term)</name>
+      <appendix>(Shift+left|right to Command+{|})</appendix>
+      <identifier>remap.app_term_shift_arrow_terminal_tab_change</identifier>
+      <only>TERMINAL</only>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE, KeyCode::BRACKET_RIGHT, ModifierFlag::COMMAND_L | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE, KeyCode::BRACKET_LEFT,  ModifierFlag::COMMAND_L | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    </item>
+    <item>
+      <name>Enable meta keys movement (command/option + left,right,delete,backspace)</name>
+      <appendix>- cmd+left to ctrl+a (move to beginning of line)</appendix>
+      <appendix>- cmd+right to ctrl+e (move to end of line)</appendix>
+      <appendix>- option+left to esc+b (move backward one word)</appendix>
+      <appendix>- option+right to esc+f (move forward one word)</appendix>
+      <appendix>- cmd+backspace to ctrl+u (delete to the beginning of the line)</appendix>
+      <appendix>- cmd+delete to ctrl+k (delete to the end of the line)</appendix>
+      <appendix>- option+backspace to ctrl+w (delete to the beginning of the word)</appendix>
+      <appendix>- option+delete to esc+d (delete to the end of the word)</appendix>
+      <appendix>- delete to ctrl+d (delete forwards)</appendix>
+      <identifier>remap.app_term_meta_movement</identifier>
+      <only>TERMINAL</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::A, ModifierFlag::CONTROL_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::E, ModifierFlag::CONTROL_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+        KeyCode::ESCAPE, KeyCode::B,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::CURSOR_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+        KeyCode::ESCAPE, KeyCode::F,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        FROMKEYCODE_FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::K, ModifierFlag::CONTROL_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        FROMKEYCODE_FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+        KeyCode::ESCAPE, KeyCode::D,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        FROMKEYCODE_FORWARD_DELETE,
+        KeyCode::D, ModifierFlag::CONTROL_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::U, ModifierFlag::CONTROL_L,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION,
+        KeyCode::W, ModifierFlag::CONTROL_L,
+      </autogen>
+    </item>
+    <item>
+      <name>Meta Modifier Key</name>
+      <appendix>Sending escape key event before pressed keys</appendix>
+      <appendix>when you press keys with holding Meta Modifier Key.</appendix>
+      <item>
+        <name>PC Application Key to Meta Modifier Key in Terminal</name>
+        <only>TERMINAL</only>
+        <identifier>remap.app_term_append_escape_for_keys</identifier>
+        <autogen>__KeyToKey__ KeyCode::PC_APPLICATION, KeyCode::VK_MODIFIER_EXTRA1</autogen>
+        <include path="terminal/meta_modifier_key.xml">
+          <replacementdef>
+            <replacementname>BEFORE</replacementname>
+            <replacementvalue>KeyCode::ESCAPE</replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>AFTER</replacementname>
+            <replacementvalue></replacementvalue>
+          </replacementdef>
+        </include>
+      </item>
+    </item>
+    <item>
+      <name>Disable Bigger (⌘+) &amp; Smaller (⌘-)</name>
+      <identifier>remap.app_term_disable_bigger_and_smaller</identifier>
+      <only>TERMINAL</only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::EQUAL, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::VK_NONE,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::MINUS, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::VK_NONE,
+      </autogen>
+    </item>
+    <item>
+      <name>Extra settings</name>
+      <item>
+        <name>Change Control_L to Option_L in Terminal</name>
+        <appendix>(Change Option_L+Tab to Command+Tab)</appendix>
+        <appendix>(Change Option_L+Backquote to Command+Backquote)</appendix>
+        <appendix>(Change Option_L+Arrow to Control+Arrow)</appendix>
+        <appendix></appendix>
+        <appendix>This setting is useful when you exchange Control+Tab and Command+Tab.</appendix>
+        <identifier>remap.app_term_controlL2optionL_except_tab</identifier>
+        <only>TERMINAL</only>
+        <autogen>__KeyToKey__ KeyCode::CONTROL_L, KeyCode::OPTION_L</autogen>
+
+        <autogen>__KeyToKey__
+          KeyCode::TAB,          ModifierFlag::OPTION_L,
+          KeyCode::TAB,          ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__
+          KeyCode::BACKQUOTE,    ModifierFlag::OPTION_L,
+          KeyCode::BACKQUOTE,    ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__
+          KeyCode::CURSOR_LEFT,  ModifierFlag::OPTION_L,
+          KeyCode::CURSOR_LEFT,  ModifierFlag::CONTROL_L</autogen>
+        <autogen>__KeyToKey__
+          KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L,
+          KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L</autogen>
+        <autogen>__KeyToKey__
+          KeyCode::CURSOR_UP,    ModifierFlag::OPTION_L,
+          KeyCode::CURSOR_UP,    ModifierFlag::CONTROL_L</autogen>
+        <autogen>__KeyToKey__
+          KeyCode::CURSOR_DOWN,  ModifierFlag::OPTION_L,
+          KeyCode::CURSOR_DOWN,  ModifierFlag::CONTROL_L</autogen>
+      </item>
+    </item>
+  </item>
+</root>

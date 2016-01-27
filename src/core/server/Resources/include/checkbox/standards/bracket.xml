@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change Bracket([,]) Keys</name>
+    <item>
+      <name>Swap Bracket([]) and Shift+Bracket({})</name>
+      <identifier>remap.swap_bracket_and_shiftbracket</identifier>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::NONE,
+        KeyCode::BRACKET_LEFT, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::NONE,
+        KeyCode::BRACKET_RIGHT, ModifierFlag::SHIFT_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE,
+        KeyCode::BRACKET_LEFT,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT | ModifierFlag::NONE,
+        KeyCode::BRACKET_RIGHT,
+      </autogen>
+    </item>
+    <item>
+      <name>Left Bracket([) to L</name>
+      <identifier>remap.leftbracket2l</identifier>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::L</autogen>
+    </item>
+    <item>
+      <name>Right Bracket(]) to CapsLock</name>
+      <identifier>remap.rightbracket2capslock</identifier>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, KeyCode::CAPSLOCK</autogen>
+    </item>
+    <item>
+      <name>Fn+Right Bracket(]) to Backslash(\)</name>
+      <identifier>remap.fnrightbracket2backslash</identifier>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, ModifierFlag::FN, KeyCode::BACKSLASH</autogen>
+    </item>
+  </item>
+</root>

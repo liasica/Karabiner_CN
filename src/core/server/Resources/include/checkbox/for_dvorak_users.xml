@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>For Dvorak Users</name>
+    <item>
+      <name>──────────────────────────────</name>
+      <appendix>For Dvorak Input Source</appendix>
+    </item>
+    <item>
+      <name>Dvorak's Control+PNBF to Up/Down/Left/Right</name>
+      <appendix>(except Emacs, Terminal, Virtual, RDC, X11, Eclipse)</appendix>
+      <identifier>option.dvorak_emacsmode_controlPNBF</identifier>
+      <not>EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE</not>
+      <autogen>__KeyToKey__ KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_UP</autogen>
+      <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_RIGHT</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_DOWN</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_LEFT</autogen>
+    </item>
+    <item>
+      <name>Dvorak's Control+H to Delete</name>
+      <identifier>remap.dvorak_controlJ</identifier>
+      <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::CONTROL_L, KeyCode::DELETE</autogen>
+    </item>
+    <item>
+      <name>Dvorak's Control+D to Forward Delete</name>
+      <identifier>remap.dvorak_controlH</identifier>
+      <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::CONTROL_L, KeyCode::FORWARD_DELETE</autogen>
+    </item>
+    <item>
+      <name>Dvorak's Control+W to Option+Delete</name>
+      <appendix>(except Emacs, Terminal, X11, virtual machine, RDC, Eclipse)</appendix>
+      <identifier>option.dvorak_emacsmode_ex_controlW</identifier>
+      <not>EMACS, TERMINAL, VIRTUALMACHINE, REMOTEDESKTOPCONNECTION, X11, ECLIPSE</not>
+      <autogen>__KeyToKey__ KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::DELETE, ModifierFlag::OPTION_L</autogen>
+    </item>
+
+    <item>
+      <name>Swap U and I (== Swap Qwerty::F and Qwerty::G)</name>
+      <identifier>remap.dvorak_u2i</identifier>
+      <!-- Dvorak:U == Qwerty:F, Dvorak:I == Qwerty:G -->
+      <autogen>__KeyToKey__ KeyCode::F, KeyCode::G</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::F</autogen>
+    </item>
+
+    <item>
+      <name>Make Cut, Quit work on Mac OS X using Dvorak layout in the same position as on QWERTY</name>
+      <appendix>Change Command_L+Q to Command_L+X (X in DV - i.e. Cut) </appendix>
+      <appendix>Change Command_L+' to Command_L+Q (Q in DV - i.e. Quit) </appendix>
+      <identifier>remap.cut_quit_dvorak_as_QWERTY</identifier>
+
+      <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::COMMAND_L, KeyCode::B, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::COMMAND_L, KeyCode::X, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Make Undo work on Mac OS X using Dvorak layout in the same position as on QWERTY (;)</name>
+      <appendix>Change Command_L+; to Command_L+Z (Z in DV - i.e. Undo) </appendix>
+      <identifier>remap.undo_dvorak_as_QWERTY</identifier>
+      <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::COMMAND_L, KeyCode::SLASH, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>Make Cut, Copy, Paste, Quit and Undo work on Mac OS X using Dvorak layout</name>
+      <appendix>in the same position as on QWERTY</appendix>
+      <appendix></appendix>
+      <appendix>Change Command_L+Q to Command_L+X (X in DV - i.e. Cut) </appendix>
+      <appendix>Change Command_L+J to Command_L+C (C in DV - i.e. Copy) </appendix>
+      <appendix>Change Command_L+K to Command_L+V (V in DV - i.e. Paste) </appendix>
+      <appendix>Change Command_L+; to Command_L+Z (Z in DV - i.e. Undo) </appendix>
+      <appendix>Change Command_L+' to Command_L+Q (Q in DV - i.e. Quit) </appendix>
+
+      <identifier>remap.cut_copy_paste_quit_undo_dvorak_as_QWERTY</identifier>
+
+      <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::COMMAND_L, KeyCode::B, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::COMMAND_L, KeyCode::I, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::COMMAND_L, KeyCode::DOT, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::COMMAND_L, KeyCode::X, ModifierFlag::COMMAND_L</autogen>
+      <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::COMMAND_L, KeyCode::SLASH, ModifierFlag::COMMAND_L</autogen>
+    </item>
+
+    <item>
+      <name>──────────────────────────────</name>
+      <appendix>For U.S. Input Source</appendix>
+    </item>
+
+    <!-- ============================================================ -->
+    <!-- We must put "Use Dvorak Keyboard Layout" in the tail of Dvorak settings. -->
+    <item>
+      <name>Use Dvorak Keyboard Layout</name>
+      <appendix>(QWERTY to Dvorak)</appendix>
+      <identifier>remap.qwerty2dvorak</identifier>
+      <include path="snippets/dvorak.xml" />
+    </item>
+
+    <item>
+      <name>Use Dvorak (No Yubikeys)</name>
+      <appendix>(QWERTY to Dvorak)</appendix>
+      <appendix>(ignores Yubikeys)</appendix>
+      <identifier>remap.dvorak2qwerty_qwerty2dvoraknoyubico</identifier>
+      <device_not>DeviceVendor::YUBICO</device_not>
+      <include path="snippets/dvorak.xml" />
+    </item>
+
+    <item>
+      <name>Use Dvorak-Qwerty⌘</name>
+      <appendix>(QWERTY to Dvorak)</appendix>
+      <appendix>(+ Command+Keys to Qwerty)</appendix>
+      <identifier>remap.dvorak2qwerty_qwertycommand</identifier>
+      <modifier_not>
+        ModifierFlag::COMMAND_L,
+        ModifierFlag::COMMAND_R
+      </modifier_not>
+      <include path="snippets/dvorak.xml" />
+    </item>
+
+    <item>
+      <name>Use Dvorak - Qwerty Keyboard Layout</name>
+      <appendix>(QWERTY to Dvorak)</appendix>
+      <appendix>(+ Command,Control,Option+Keys to Qwerty)</appendix>
+      <identifier>remap.qwerty2dvorak_qwerty</identifier>
+      <modifier_not>
+        ModifierFlag::COMMAND_L,
+        ModifierFlag::COMMAND_R,
+        ModifierFlag::CONTROL_L,
+        ModifierFlag::CONTROL_R,
+        ModifierFlag::OPTION_L,
+        ModifierFlag::OPTION_R
+      </modifier_not>
+      <include path="snippets/dvorak.xml" />
+    </item>
+
+    <item>
+      <name>Use Dvorak Keyboard Layout</name>
+      <appendix>(QWERTY to Dvorak, except in password dialogue boxes)</appendix>
+      <identifier>remap.qwerty2dvorak_ex_password</identifier>
+      <not>PASSWORD</not>
+      <include path="snippets/dvorak.xml" />
+    </item>
+
+    <item>
+      <name>Use Dvorak - Qwerty Keyboard Layout</name>
+      <appendix>(QWERTY to Dvorak)</appendix>
+      <appendix>(+ Command,Control,Option+Keys to Qwerty)</appendix>
+      <appendix>(Except in password dialogue boxes)</appendix>
+      <identifier>remap.qwerty2dvorak_qwerty_ex_password</identifier>
+      <modifier_not>
+        ModifierFlag::COMMAND_L,
+        ModifierFlag::COMMAND_R,
+        ModifierFlag::CONTROL_L,
+        ModifierFlag::CONTROL_R,
+        ModifierFlag::OPTION_L,
+        ModifierFlag::OPTION_R,
+        ModifierFlag::FN
+      </modifier_not>
+      <not>PASSWORD</not>
+      <include path="snippets/dvorak.xml" />
+    </item>
+
+    <item>
+      <name>Use Dvorak Keyboard Layout</name>
+      <appendix>(QWERTY to Dvorak)</appendix>
+      <appendix>(+ Swap U and I)</appendix>
+      <identifier>remap.qwerty2dvorak_swap_ui</identifier>
+      <autogen>__KeyToKey__ KeyCode::Q, KeyCode::QUOTE</autogen>
+      <autogen>__KeyToKey__ KeyCode::W, KeyCode::COMMA</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, KeyCode::DOT</autogen>
+      <autogen>__KeyToKey__ KeyCode::R, KeyCode::P</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, KeyCode::Y</autogen>
+      <autogen>__KeyToKey__ KeyCode::Y, KeyCode::F</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, KeyCode::G</autogen>
+      <autogen>__KeyToKey__ KeyCode::I, KeyCode::C</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, KeyCode::R</autogen>
+      <autogen>__KeyToKey__ KeyCode::P, KeyCode::L</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, KeyCode::SLASH</autogen>
+      <autogen>__KeyToKey__ KeyCode::BRACKET_RIGHT, KeyCode::EQUAL</autogen>
+      <autogen>__KeyToKey__ KeyCode::S, KeyCode::O</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, KeyCode::E</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, KeyCode::I</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::U</autogen>
+      <autogen>__KeyToKey__ KeyCode::H, KeyCode::D</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::H</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::T</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, KeyCode::N</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::S</autogen>
+      <autogen>__KeyToKey__ KeyCode::QUOTE, KeyCode::MINUS</autogen>
+      <autogen>__KeyToKey__ KeyCode::Z, KeyCode::SEMICOLON</autogen>
+      <autogen>__KeyToKey__ KeyCode::X, KeyCode::Q</autogen>
+      <autogen>__KeyToKey__ KeyCode::C, KeyCode::J</autogen>
+      <autogen>__KeyToKey__ KeyCode::V, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::B, KeyCode::X</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::B</autogen>
+      <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::W</autogen>
+      <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::V</autogen>
+      <autogen>__KeyToKey__ KeyCode::SLASH, KeyCode::Z</autogen>
+      <autogen>__KeyToKey__ KeyCode::MINUS, KeyCode::BRACKET_LEFT</autogen>
+      <autogen>__KeyToKey__ KeyCode::EQUAL, KeyCode::BRACKET_RIGHT</autogen>
+    </item>
+
+    <item>
+      <name>Use Programmer Dvorak Keyboard Layout</name>
+      <appendix>(Change QWERTY to Programmer Dvorak)</appendix>
+      <identifier>remap.qwerty_to_programmer_dvorak</identifier>
+      <include path="snippets/programmer_dvorak.xml" />
+    </item>
+    <item>
+      <name>Use Programmer Dvorak - Qwerty Keyboard Layout</name>
+      <appendix>(Change QWERTY to Programmer Dvorak)</appendix>
+      <appendix>(+ Command, Control, Option + Keys to QWERTY)</appendix>
+      <identifier>remap.qwerty_to_programmer_dvorak_qwerty</identifier>
+
+      <modifier_not>
+        ModifierFlag::COMMAND_L,
+        ModifierFlag::COMMAND_R,
+        ModifierFlag::CONTROL_L,
+        ModifierFlag::CONTROL_R,
+        ModifierFlag::OPTION_L,
+        ModifierFlag::OPTION_R
+      </modifier_not>
+
+      <include path="snippets/programmer_dvorak.xml" />
+    </item>
+  </item>
+</root>

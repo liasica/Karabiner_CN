@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<root>
+  <replacementdef>
+    <replacementname>VKCHANGEINPUTSOURCEDEF_REPLACEMENT</replacementname>
+    <replacementvalue>
+      <![CDATA[
+        <vkchangeinputsourcedef>
+          <name></name>
+          <languagecode>en</languagecode>
+        </vkchangeinputsourcedef>
+        ]]>
+    </replacementvalue>
+  </replacementdef>
+</root>

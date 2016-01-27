@@ -1,0 +1,34 @@
+.DS_Store
+*.pkg/
+*.zip
+*.dmg
+*.o
+*.tmp
+a.out
+pkgroot/
+build/
+xcuserdata/
+*.mode1
+*.mode1v3
+*.pbxuser
+*.xccheckout
+src/bridge/output
+src/core/server/Resources/symbol_map.xml
+pkginfo/Info.plist
+pkginfo/Distribution.xml
+src/core/kext/Info.plist
+src/core/server/Info.plist
+src/util/AXNotifier/Karabiner_AXNotifier/Info.plist
+src/util/EventViewer/Info.plist
+src/util/cli/Info.plist
+src/util/multitouchextension/Info.plist
+src/util/prefpane/Info.plist
+src/util/uninstaller/Info.plist
+src/util/updater/Info.plist
+
+### CocoaPods ###
+Pods/
+
+### Emacs ###
+# flymake-mode
+*_flymake.*

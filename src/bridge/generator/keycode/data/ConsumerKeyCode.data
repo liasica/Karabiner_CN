@@ -1,0 +1,33 @@
+BRIGHTNESS_DOWN    0x3
+BRIGHTNESS_UP      0x2
+
+KEYBOARDLIGHT_OFF  0x17
+KEYBOARDLIGHT_LOW  0x16
+KEYBOARDLIGHT_HIGH 0x15
+
+MUSIC_PREV         0x14
+MUSIC_PLAY         0x10
+MUSIC_NEXT         0x13
+
+// Kinesis Freestyle USB keyboard sends 18,17 at music prev,music next.
+MUSIC_PREV_18      0x12
+MUSIC_PREV_0x12    0x12
+MUSIC_NEXT_17      0x11
+MUSIC_NEXT_0x11    0x11
+
+VOLUME_MUTE        0x7
+VOLUME_DOWN        0x1
+VOLUME_UP          0x0
+
+EJECT              0xe
+POWER              0x6
+
+NUMLOCK            0xa
+VIDEO_MIRROR       0xf
+
+// Virtual KeyCode
+VK__BEGIN__        0x10000000
+
+// For KeyToConsumer
+VK_PSEUDO_KEY --AUTO--
+VK_NONE --AUTO--

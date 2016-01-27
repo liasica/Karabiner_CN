@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change QWERTY to QWKRFY layout</name>
+    <item>
+      <name>Basic QWKRFY layout</name>
+      <identifier>remap.qwerty2qwkrfy</identifier>
+      <include path="common/keypad_redefinition.xml" />
+
+      <block>
+        <config_only>option.qwkrfy_p_and_semicolon</config_only>
+        <autogen>__KeyToKey__ KeyCode::P, KeyCode::SEMICOLON</autogen>
+        <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::P</autogen>
+      </block>
+
+      <block>
+        <config_only>option.qwkrfy_u_and_g</config_only>
+        <autogen>__KeyToKey__ KeyCode::N, KeyCode::U</autogen>
+        <autogen>__KeyToKey__ KeyCode::U, KeyCode::G</autogen>
+      </block>
+
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::E</autogen>
+      <autogen>__KeyToKey__ KeyCode::E, KeyCode::K</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::O</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, KeyCode::J</autogen>
+      <autogen>__KeyToKey__ KeyCode::F, KeyCode::T</autogen>
+      <autogen>__KeyToKey__ KeyCode::T, KeyCode::F</autogen>
+      <autogen>__KeyToKey__ KeyCode::D, KeyCode::A</autogen>
+      <autogen>__KeyToKey__ KeyCode::A, KeyCode::D</autogen>
+      <autogen>__KeyToKey__ KeyCode::G, KeyCode::N</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::G</autogen>
+    </item>
+    <item>
+      <name>Swap P and ;</name>
+      <appendix>(Please use this setting with "Basic QWKRFY layout".)</appendix>
+      <identifier>option.qwkrfy_p_and_semicolon</identifier>
+    </item>
+    <item>
+      <name>Swap U and G (qwkrfy mod for "ou")</name>
+      <appendix>(Please use this setting with "Basic QWKRFY layout".)</appendix>
+      <identifier>option.qwkrfy_u_and_g</identifier>
+    </item>
+  </item>
+</root>

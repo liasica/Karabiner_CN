@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34010018192C63AA00B0A3A5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34010017192C63AA00B0A3A5 /* Cocoa.framework */; };
+		34010022192C63AA00B0A3A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34010020192C63AA00B0A3A5 /* InfoPlist.strings */; };
+		34010024192C63AA00B0A3A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34010023192C63AA00B0A3A5 /* main.m */; };
+		3401002B192C63AA00B0A3A5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3401002A192C63AA00B0A3A5 /* AppDelegate.m */; };
+		3401002E192C63AA00B0A3A5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3401002C192C63AA00B0A3A5 /* MainMenu.xib */; };
+		3403B0811930EF1F003E0CC1 /* KarabinerClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403B07F1930EF1F003E0CC1 /* KarabinerClient.m */; };
+		342BFA7E1936DC7900DA93EC /* KarabinerUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 342BFA7D1936DC7900DA93EC /* KarabinerUtilities.m */; };
+		342C9FBA1960534F00B4C740 /* AXApplicationObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C9FB71960534F00B4C740 /* AXApplicationObserver.m */; };
+		342C9FBB1960534F00B4C740 /* WindowObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C9FB91960534F00B4C740 /* WindowObserver.m */; };
+		347A86EB194B0BC7009A6CDA /* MigrationUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 347A86E8194B0BC7009A6CDA /* MigrationUtilities.m */; };
+		347A86EC194B0BC7009A6CDA /* StartAtLoginUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 347A86EA194B0BC7009A6CDA /* StartAtLoginUtilities.m */; };
+		349909BF196069D200058C5F /* AXApplicationObserverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 349909BE196069D200058C5F /* AXApplicationObserverManager.m */; };
+		34BD67F31956AFFD00587BE7 /* Relauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BD67F21956AFFD00587BE7 /* Relauncher.m */; };
+		34D05539192C6962001A4F4F /* app.icns in Resources */ = {isa = PBXBuildFile; fileRef = 34D05538192C6962001A4F4F /* app.icns */; };
+		34E3507E1932FC690036B0D3 /* FrontmostWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E3507D1932FC690036B0D3 /* FrontmostWindow.m */; };
+		34FB0ED6192F97FB0038C1D5 /* AXUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FB0ED5192F97FB0038C1D5 /* AXUtilities.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		34010014192C63AA00B0A3A5 /* Karabiner_AXNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karabiner_AXNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34010017192C63AA00B0A3A5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3401001A192C63AA00B0A3A5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3401001B192C63AA00B0A3A5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3401001C192C63AA00B0A3A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3401001F192C63AA00B0A3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34010021192C63AA00B0A3A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		34010023192C63AA00B0A3A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34010025192C63AA00B0A3A5 /* Karabiner_AXNotifier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Karabiner_AXNotifier-Prefix.pch"; sourceTree = "<group>"; };
+		34010029192C63AA00B0A3A5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3401002A192C63AA00B0A3A5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3401002D192C63AA00B0A3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3403B07E1930EF1F003E0CC1 /* KarabinerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KarabinerClient.h; path = ../../../share/KarabinerClient.h; sourceTree = "<group>"; };
+		3403B07F1930EF1F003E0CC1 /* KarabinerClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KarabinerClient.m; path = ../../../share/KarabinerClient.m; sourceTree = "<group>"; };
+		3403B0801930EF1F003E0CC1 /* KarabinerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KarabinerProtocol.h; path = ../../../share/KarabinerProtocol.h; sourceTree = "<group>"; };
+		342BFA7C1936DC7900DA93EC /* KarabinerUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KarabinerUtilities.h; path = ../../../share/KarabinerUtilities.h; sourceTree = "<group>"; };
+		342BFA7D1936DC7900DA93EC /* KarabinerUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KarabinerUtilities.m; path = ../../../share/KarabinerUtilities.m; sourceTree = "<group>"; };
+		342C9FB61960534F00B4C740 /* AXApplicationObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXApplicationObserver.h; path = Classes/AXApplicationObserver.h; sourceTree = "<group>"; };
+		342C9FB71960534F00B4C740 /* AXApplicationObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXApplicationObserver.m; path = Classes/AXApplicationObserver.m; sourceTree = "<group>"; };
+		342C9FB81960534F00B4C740 /* WindowObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WindowObserver.h; path = Classes/WindowObserver.h; sourceTree = "<group>"; };
+		342C9FB91960534F00B4C740 /* WindowObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WindowObserver.m; path = Classes/WindowObserver.m; sourceTree = "<group>"; };
+		347A86E7194B0BC7009A6CDA /* MigrationUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MigrationUtilities.h; path = ../../../share/MigrationUtilities.h; sourceTree = "<group>"; };
+		347A86E8194B0BC7009A6CDA /* MigrationUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MigrationUtilities.m; path = ../../../share/MigrationUtilities.m; sourceTree = "<group>"; };
+		347A86E9194B0BC7009A6CDA /* StartAtLoginUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartAtLoginUtilities.h; path = ../../../share/StartAtLoginUtilities.h; sourceTree = "<group>"; };
+		347A86EA194B0BC7009A6CDA /* StartAtLoginUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartAtLoginUtilities.m; path = ../../../share/StartAtLoginUtilities.m; sourceTree = "<group>"; };
+		34850A0D19605391006489BE /* NotificationKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NotificationKeys.h; path = Classes/NotificationKeys.h; sourceTree = "<group>"; };
+		348BBE611931839E00934FB7 /* PreferencesKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesKeys.h; path = Classes/PreferencesKeys.h; sourceTree = "<group>"; };
+		349909BD196069D200058C5F /* AXApplicationObserverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXApplicationObserverManager.h; path = Classes/AXApplicationObserverManager.h; sourceTree = "<group>"; };
+		349909BE196069D200058C5F /* AXApplicationObserverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXApplicationObserverManager.m; path = Classes/AXApplicationObserverManager.m; sourceTree = "<group>"; };
+		34BD67F11956AFFD00587BE7 /* Relauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Relauncher.h; path = ../../../share/Relauncher.h; sourceTree = "<group>"; };
+		34BD67F21956AFFD00587BE7 /* Relauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Relauncher.m; path = ../../../share/Relauncher.m; sourceTree = "<group>"; };
+		34D05538192C6962001A4F4F /* app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = app.icns; path = ../../../share/Resources/app.icns; sourceTree = "<group>"; };
+		34D0553A192C6E98001A4F4F /* KarabinerKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KarabinerKeys.h; path = ../../../share/KarabinerKeys.h; sourceTree = "<group>"; };
+		34E3507C1932FC690036B0D3 /* FrontmostWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FrontmostWindow.h; path = ../../../share/FrontmostWindow.h; sourceTree = "<group>"; };
+		34E3507D1932FC690036B0D3 /* FrontmostWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FrontmostWindow.m; path = ../../../share/FrontmostWindow.m; sourceTree = "<group>"; };
+		34FB0ED4192F97FB0038C1D5 /* AXUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AXUtilities.h; path = Classes/AXUtilities.h; sourceTree = "<group>"; };
+		34FB0ED5192F97FB0038C1D5 /* AXUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AXUtilities.m; path = Classes/AXUtilities.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34010011192C63AA00B0A3A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34010018192C63AA00B0A3A5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3401000B192C63AA00B0A3A5 = {
+			isa = PBXGroup;
+			children = (
+				3401001D192C63AA00B0A3A5 /* Karabiner_AXNotifier */,
+				34010016192C63AA00B0A3A5 /* Frameworks */,
+				34010015192C63AA00B0A3A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34010015192C63AA00B0A3A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34010014192C63AA00B0A3A5 /* Karabiner_AXNotifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34010016192C63AA00B0A3A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34010017192C63AA00B0A3A5 /* Cocoa.framework */,
+				34010019192C63AA00B0A3A5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34010019192C63AA00B0A3A5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3401001A192C63AA00B0A3A5 /* AppKit.framework */,
+				3401001B192C63AA00B0A3A5 /* CoreData.framework */,
+				3401001C192C63AA00B0A3A5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3401001D192C63AA00B0A3A5 /* Karabiner_AXNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				34010029192C63AA00B0A3A5 /* AppDelegate.h */,
+				3401002A192C63AA00B0A3A5 /* AppDelegate.m */,
+				34FB0ED3192F97EC0038C1D5 /* Classes */,
+				3401002C192C63AA00B0A3A5 /* MainMenu.xib */,
+				3403B07D1930EF0A003E0CC1 /* share */,
+				3401001E192C63AA00B0A3A5 /* Supporting Files */,
+			);
+			path = Karabiner_AXNotifier;
+			sourceTree = "<group>";
+		};
+		3401001E192C63AA00B0A3A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34D05538192C6962001A4F4F /* app.icns */,
+				3401001F192C63AA00B0A3A5 /* Info.plist */,
+				34010020192C63AA00B0A3A5 /* InfoPlist.strings */,
+				34010025192C63AA00B0A3A5 /* Karabiner_AXNotifier-Prefix.pch */,
+				34010023192C63AA00B0A3A5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3403B07D1930EF0A003E0CC1 /* share */ = {
+			isa = PBXGroup;
+			children = (
+				34E3507C1932FC690036B0D3 /* FrontmostWindow.h */,
+				34E3507D1932FC690036B0D3 /* FrontmostWindow.m */,
+				3403B07E1930EF1F003E0CC1 /* KarabinerClient.h */,
+				3403B07F1930EF1F003E0CC1 /* KarabinerClient.m */,
+				34D0553A192C6E98001A4F4F /* KarabinerKeys.h */,
+				3403B0801930EF1F003E0CC1 /* KarabinerProtocol.h */,
+				342BFA7C1936DC7900DA93EC /* KarabinerUtilities.h */,
+				342BFA7D1936DC7900DA93EC /* KarabinerUtilities.m */,
+				347A86E7194B0BC7009A6CDA /* MigrationUtilities.h */,
+				347A86E8194B0BC7009A6CDA /* MigrationUtilities.m */,
+				34BD67F11956AFFD00587BE7 /* Relauncher.h */,
+				34BD67F21956AFFD00587BE7 /* Relauncher.m */,
+				347A86E9194B0BC7009A6CDA /* StartAtLoginUtilities.h */,
+				347A86EA194B0BC7009A6CDA /* StartAtLoginUtilities.m */,
+			);
+			name = share;
+			sourceTree = "<group>";
+		};
+		34FB0ED3192F97EC0038C1D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				342C9FB61960534F00B4C740 /* AXApplicationObserver.h */,
+				342C9FB71960534F00B4C740 /* AXApplicationObserver.m */,
+				349909BD196069D200058C5F /* AXApplicationObserverManager.h */,
+				349909BE196069D200058C5F /* AXApplicationObserverManager.m */,
+				34FB0ED4192F97FB0038C1D5 /* AXUtilities.h */,
+				34FB0ED5192F97FB0038C1D5 /* AXUtilities.m */,
+				34850A0D19605391006489BE /* NotificationKeys.h */,
+				348BBE611931839E00934FB7 /* PreferencesKeys.h */,
+				342C9FB81960534F00B4C740 /* WindowObserver.h */,
+				342C9FB91960534F00B4C740 /* WindowObserver.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34010013192C63AA00B0A3A5 /* Karabiner_AXNotifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34010045192C63AA00B0A3A5 /* Build configuration list for PBXNativeTarget "Karabiner_AXNotifier" */;
+			buildPhases = (
+				34010010192C63AA00B0A3A5 /* Sources */,
+				34010011192C63AA00B0A3A5 /* Frameworks */,
+				34010012192C63AA00B0A3A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Karabiner_AXNotifier;
+			productName = Karabiner_AXNotifier;
+			productReference = 34010014192C63AA00B0A3A5 /* Karabiner_AXNotifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3401000C192C63AA00B0A3A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Takayama Fumihiko";
+			};
+			buildConfigurationList = 3401000F192C63AA00B0A3A5 /* Build configuration list for PBXProject "Karabiner_AXNotifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3401000B192C63AA00B0A3A5;
+			productRefGroup = 34010015192C63AA00B0A3A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34010013192C63AA00B0A3A5 /* Karabiner_AXNotifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34010012192C63AA00B0A3A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34D05539192C6962001A4F4F /* app.icns in Resources */,
+				34010022192C63AA00B0A3A5 /* InfoPlist.strings in Resources */,
+				3401002E192C63AA00B0A3A5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34010010192C63AA00B0A3A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3403B0811930EF1F003E0CC1 /* KarabinerClient.m in Sources */,
+				349909BF196069D200058C5F /* AXApplicationObserverManager.m in Sources */,
+				3401002B192C63AA00B0A3A5 /* AppDelegate.m in Sources */,
+				342C9FBB1960534F00B4C740 /* WindowObserver.m in Sources */,
+				347A86EC194B0BC7009A6CDA /* StartAtLoginUtilities.m in Sources */,
+				342C9FBA1960534F00B4C740 /* AXApplicationObserver.m in Sources */,
+				342BFA7E1936DC7900DA93EC /* KarabinerUtilities.m in Sources */,
+				347A86EB194B0BC7009A6CDA /* MigrationUtilities.m in Sources */,
+				34BD67F31956AFFD00587BE7 /* Relauncher.m in Sources */,
+				34E3507E1932FC690036B0D3 /* FrontmostWindow.m in Sources */,
+				34010024192C63AA00B0A3A5 /* main.m in Sources */,
+				34FB0ED6192F97FB0038C1D5 /* AXUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34010020192C63AA00B0A3A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34010021192C63AA00B0A3A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3401002C192C63AA00B0A3A5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3401002D192C63AA00B0A3A5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34010044192C63AA00B0A3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		34010047192C63AA00B0A3A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Karabiner_AXNotifier/Karabiner_AXNotifier-Prefix.pch";
+				INFOPLIST_FILE = Karabiner_AXNotifier/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.pqrs.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3401000F192C63AA00B0A3A5 /* Build configuration list for PBXProject "Karabiner_AXNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34010044192C63AA00B0A3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34010045192C63AA00B0A3A5 /* Build configuration list for PBXNativeTarget "Karabiner_AXNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34010047192C63AA00B0A3A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3401000C192C63AA00B0A3A5 /* Project object */;
+}

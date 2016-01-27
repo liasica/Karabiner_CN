@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<root>
+
+  <item>
+    <name>For Hebrew</name>
+
+    <item>
+      <name>Swap command-brackets([]) shortcut direction in Hebrew on Google Chrome</name>
+      <identifier>remap.hebrew_brackets_chrome</identifier>
+      <only>GOOGLE_CHROME</only>
+      <inputsource_only>HEBREW</inputsource_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::BRACKET_LEFT,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::BRACKET_LEFT,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+        KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND,
+      </autogen>
+    </item>
+
+    <item>
+      <name>Option+Shift to switch between English and Hebrew</name>
+      <appendix>The side of the shift chooses the layout: Shift_L switches to English, Shift_R switches to Hebrew</appendix>
+      <identifier>remap.hebrew_opt_shift_change_he_en</identifier>
+
+      <autogen>__KeyToKey__ KeyCode::OPTION_L, ModifierFlag::SHIFT_L,  KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH</autogen>
+      <autogen>__KeyToKey__ KeyCode::SHIFT_L,  ModifierFlag::OPTION_L, KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH</autogen>
+      <autogen>__KeyToKey__ KeyCode::OPTION_R, ModifierFlag::SHIFT_L,  KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH</autogen>
+      <autogen>__KeyToKey__ KeyCode::SHIFT_L,  ModifierFlag::OPTION_R, KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH</autogen>
+
+      <autogen>__KeyToKey__ KeyCode::OPTION_R, ModifierFlag::SHIFT_R,  KeyCode::VK_CHANGE_INPUTSOURCE_HEBREW</autogen>
+      <autogen>__KeyToKey__ KeyCode::SHIFT_R,  ModifierFlag::OPTION_R, KeyCode::VK_CHANGE_INPUTSOURCE_HEBREW</autogen>
+      <autogen>__KeyToKey__ KeyCode::OPTION_L, ModifierFlag::SHIFT_R,  KeyCode::VK_CHANGE_INPUTSOURCE_HEBREW</autogen>
+      <autogen>__KeyToKey__ KeyCode::SHIFT_R,  ModifierFlag::OPTION_L, KeyCode::VK_CHANGE_INPUTSOURCE_HEBREW</autogen>
+    </item>
+
+    <item>
+      <name>Toggle English and Hebrew by f19 key.</name>
+      <appendix>(This setting allows you to toggle input source by caps lock key by using Seil together.</appendix>
+      <appendix>Set caps lock key code to 80 in Seil.)</appendix>
+      <identifier>remap.toggle_he_en_by_f19</identifier>
+
+      <block>
+        <inputsource_only>HEBREW</inputsource_only>
+        <autogen>__KeyToKey__ KeyCode::F19, KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH</autogen>
+      </block>
+      <autogen>__KeyToKey__ KeyCode::F19, KeyCode::VK_CHANGE_INPUTSOURCE_HEBREW</autogen>
+    </item>
+  </item>
+
+</root>

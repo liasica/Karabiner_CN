@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<root>
+  <!--
+      You need to percent-encode in <url>.
+      For example, we need to encode space to %20 in the following case.
+
+        Correct: <url>file:///Applications/Utilities/Activity%20Monitor.app</url>
+        Wrong:   <url>file:///Applications/Utilities/Activity Monitor.app</url>
+
+      Or use <url type="file">.
+
+        Correct: <url type="file">/Applications/Utilities/Activity Monitor.app</url>
+
+    -->
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_WEB_facebook</name>
+    <url>https://www.facebook.com/</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_WEB_google</name>
+    <url>https://www.google.com/</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_WEB_koreankeyboard4macbook</name>
+    <url>https://github.com/niceview/KoreanKeyboard4MacBook</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_WEB_pqrs_org</name>
+    <url>https://pqrs.org/</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_WEB_pqrs_org_in_background</name>
+    <url>https://pqrs.org/</url>
+    <background />
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_WEB_twitter</name>
+    <url>https://twitter.com/</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_FILE_Desktop</name>
+    <url type="file">{{ ENV_HOME }}/Desktop</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_FILE_Documents</name>
+    <url type="file">{{ ENV_HOME }}/Documents</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_FILE_Home</name>
+    <url type="file">{{ ENV_HOME }}</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Activity_Monitor</name>
+    <url type="file">/Applications/Utilities/Activity Monitor.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Dictionary</name>
+    <url type="file">/Applications/Dictionary.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_DigitalColor_Meter</name>
+    <url type="file">/Applications/Utilities/Digital Color Meter.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Disk_Utility</name>
+    <url type="file">/Applications/Utilities/Disk Utility.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Finder</name>
+    <url type="file">/System/Library/CoreServices/Finder.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Karabiner</name>
+    <url type="file">/Applications/Karabiner.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Karabiner_EventViewer</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/EventViewer.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Karabiner_Profile0</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/Profile0.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Karabiner_Profile1</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/Profile1.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Karabiner_Profile2</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/Profile2.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Karabiner_Profile3</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/Profile3.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Karabiner_ReloadXML</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/ReloadXML.app</url>
+  </vkopenurldef>
+
+  <!-- for backward compatibility -->
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_KeyRemap4MacBook</name>
+    <url type="file">/Applications/Karabiner.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_KeyRemap4MacBook_EventViewer</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/EventViewer.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_KeyRemap4MacBook_Profile0</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/Profile0.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_KeyRemap4MacBook_Profile1</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/Profile1.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_KeyRemap4MacBook_Profile2</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/Profile2.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_KeyRemap4MacBook_Profile3</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/Profile3.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_KeyRemap4MacBook_ReloadXML</name>
+    <url type="file">/Applications/Karabiner.app/Contents/Applications/Utilities/ReloadXML.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Launchbar</name>
+    <url type="file">/Applications/LaunchBar.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Launchpad</name>
+    <url type="file">/Applications/Launchpad.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Mail</name>
+    <url type="file">/Applications/Mail.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_NetBeans_7.4</name>
+    <url type="file">/Applications/NetBeans/NetBeans 7.4.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Microsoft_Excel</name>
+    <url type="file">/Applications/Microsoft Excel.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Microsoft_Excel_2011</name>
+    <url type="file">/Applications/Microsoft Office 2011/Microsoft Excel.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Microsoft_PowerPoint</name>
+    <url type="file">/Applications/Microsoft PowerPoint.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Microsoft_PowerPoint_2011</name>
+    <url type="file">/Applications/Microsoft Office 2011/Microsoft PowerPoint.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Microsoft_Word</name>
+    <url type="file">/Applications/Microsoft Word.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Microsoft_Word_2011</name>
+    <url type="file">/Applications/Microsoft Office 2011/Microsoft Word.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Microsoft_Remote_Desktop</name>
+    <url type="file">/Applications/Microsoft Remote Desktop.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Mission_Control</name>
+    <url type="file">/Applications/Mission Control.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_iOS_Simulator</name>
+    <url type="file">/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_iPhoneSimulator</name>
+    <url type="file">/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_iTunes</name>
+    <url type="file">/Applications/iTunes.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Preview</name>
+    <url type="file">/Applications/Preview.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Safari</name>
+    <url type="file">/Applications/Safari.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_ScreenSaverEngine</name>
+    <url type="file">/System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Stickies</name>
+    <url type="file">/Applications/Stickies.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_System_Preferences</name>
+    <url type="file">/Applications/System Preferences.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Terminal</name>
+    <url type="file">/Applications/Utilities/Terminal.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_TextEdit</name>
+    <url type="file">/Applications/TextEdit.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_VirtualBox</name>
+    <url type="file">/Applications/VirtualBox.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_APP_Xcode</name>
+    <url type="file">/Applications/Xcode.app</url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_date_pbcopy</name>
+    <url type="shell">
+      <![CDATA[
+        /bin/date | /usr/bin/pbcopy;
+        /usr/bin/osascript -e 'display notification "pasteboard has been updated." with title "Karabiner"';
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_eject_disc</name>
+    <url type="shell">
+      <![CDATA[
+               /usr/bin/osascript -e 'display notification "Ejecting disc" with title "Karabiner"';
+               (/usr/bin/drutil status | /usr/bin/grep 'Type: No Media Inserted' > /dev/null) || /usr/bin/drutil eject
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_eject_disc_external</name>
+    <url type="shell">
+      <![CDATA[
+               /usr/bin/osascript -e 'display notification "Ejecting disc" with title "Karabiner"';
+               (/usr/bin/drutil -drive external status | /usr/bin/grep 'Type: No Media Inserted' > /dev/null) || /usr/bin/drutil -drive external eject
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_eject_volumes</name>
+    <url type="shell">
+      <![CDATA[
+               /usr/bin/osascript -e 'display notification "Ejecting volumes" with title "Karabiner"';
+               for f in /Volumes/*; do /usr/sbin/diskutil unmount "$f"; done
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_kill_EventViewer</name>
+    <url type="shell">
+      <![CDATA[    /usr/bin/killall EventViewer    ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_save_ps</name>
+    <url type="shell">
+      <![CDATA[    /bin/ps -a -v -w -x > ~/Desktop/ps.`date '+%s'`.txt    ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_sleep</name>
+    <url type="shell">
+      <![CDATA[
+        /usr/bin/osascript -e 'tell application "System Events" to sleep'
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_sleep_with_delay</name>
+    <url type="shell">
+      <![CDATA[
+        sleep 0.5 && /usr/bin/osascript -e 'tell application "System Events" to sleep'
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_toggle_bluetooth</name>
+    <url type="shell">
+      <![CDATA[
+        /usr/bin/osascript -e 'display notification "Toggle Bluetooth" with title "Karabiner"';
+        /Applications/Karabiner.app/Contents/Library/vendor/bin/blueutil toggle
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_toggle_wifi</name>
+    <url type="shell">
+      <![CDATA[
+        CURRENT_DEVICE=`/usr/sbin/networksetup -listallhardwareports | /usr/bin/awk '$3=="Wi-Fi" {getline; print $2}'`;
+        if [ -z "$CURRENT_DEVICE" ]; then
+          /usr/bin/osascript -e 'display notification "No Wi-Fi device" with title "Karabiner"';
+        else
+          if /usr/sbin/networksetup -getairportpower $CURRENT_DEVICE | /usr/bin/grep ': On'; then
+            /usr/sbin/networksetup -setairportpower $CURRENT_DEVICE off
+            /usr/bin/osascript -e 'display notification "Wi-Fi Off" with title "Karabiner"';
+          else
+            /usr/sbin/networksetup -setairportpower $CURRENT_DEVICE on
+            /usr/bin/osascript -e 'display notification "Wi-Fi On" with title "Karabiner"';
+          fi
+        fi
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_center</name>
+    <url type="shell">
+      <![CDATA[
+        /Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window middle 0 center 0
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_top_left</name>
+    <url type="shell">
+      <![CDATA[
+        /Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window top 0 left 0
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_front_window_top_right</name>
+    <url type="shell">
+      <![CDATA[
+        /Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position front_window top 0 right 0
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_screen_center_0</name>
+    <url type="shell">
+      <![CDATA[
+        /Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position screen 0 middle 0 center 0
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_screen_center_1</name>
+    <url type="shell">
+      <![CDATA[
+        /Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position screen 1 middle 0 center 0
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_screen_top_left_0</name>
+    <url type="shell">
+      <![CDATA[
+        /Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position screen 0 top 0 left 0
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_warp_mouse_cursor_position_screen_top_left_1</name>
+    <url type="shell">
+      <![CDATA[
+        /Applications/Karabiner.app/Contents/Library/utilities/bin/warp-mouse-cursor-position screen 1 top 0 left 0
+      ]]>
+    </url>
+  </vkopenurldef>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_JXA_keystroke_HelloWorld</name>
+    <url type="shell">
+      osascript -l JavaScript -e "Application('System Events').keystroke('Hello World');"
+    </url>
+  </vkopenurldef>
+
+</root>

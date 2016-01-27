@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>UpDown.EXTRA_Keys_mouse</name>
+    <identifier>remap.jis_UpDown_EXTRA_Keys_mouse</identifier>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, ModifierFlag::EXTRA5, PointingButton::LEFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, ModifierFlag::EXTRA5, PointingButton::RIGHT</autogen>
+  </item>
+
+  <item>
+    <name>UpDown.DvorakJP</name>
+    <identifier>remap.jis_UpDown_DvorakJP</identifier>
+    <inputsource_only>JAPANESE</inputsource_only>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::NONE, KeyCode::K, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::NONE, KeyCode::Y, ModifierFlag::NONE, KeyCode::I, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::NONE, KeyCode::Y, ModifierFlag::NONE, KeyCode::U, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::NONE, KeyCode::Y, ModifierFlag::NONE, KeyCode::E, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::NONE, KeyCode::Y, ModifierFlag::NONE, KeyCode::O, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::NONE, KeyCode::Y, ModifierFlag::NONE, KeyCode::A, ModifierFlag::NONE</autogen>
+  </item>
+
+  <item>
+    <name>UpDown.Remap.Dvorak</name>
+    <identifier>remap.jis_UpDown_Remap_Dvorak</identifier>
+    <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::NONE, KeyCode::CONTROL_R, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::NONE, KeyCode::SHIFT_R, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::NONE, KeyCode::SPACE, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::NONE, KeyCode::SHIFT_L, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::NONE, KeyCode::CONTROL_L, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::NONE, KeyCode::F4, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE, KeyCode::F5, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::NONE, KeyCode::F6, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::NONE, KeyCode::FORWARD_DELETE, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE, KeyCode::VK_JIS_TOGGLE_EISUU_KANA, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::NONE, KeyCode::F7, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::NONE, KeyCode::F8, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::NONE, KeyCode::F9, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::NONE, KeyCode::Z, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::NONE, KeyCode::V, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::NONE, KeyCode::W, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::NONE, KeyCode::M, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::NONE, KeyCode::B, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::NONE, KeyCode::X, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::NONE, KeyCode::K, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::NONE, KeyCode::J, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::NONE, KeyCode::Q, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::NONE, KeyCode::SEMICOLON, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::NONE, KeyCode::S, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::NONE, KeyCode::N, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::NONE, KeyCode::T, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::NONE, KeyCode::H, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::NONE, KeyCode::D, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::NONE, KeyCode::I, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::NONE, KeyCode::U, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::NONE, KeyCode::E, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::NONE, KeyCode::O, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE, KeyCode::A, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::NONE, KeyCode::L, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::NONE, KeyCode::R, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::NONE, KeyCode::C, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::NONE, KeyCode::G, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::NONE, KeyCode::F, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::NONE, KeyCode::Y, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::NONE, KeyCode::P, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::NONE, KeyCode::DOT, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::NONE, KeyCode::COMMA, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::NONE, KeyCode::QUOTE, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::NONE, KeyCode::TAB, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, ModifierFlag::NONE, KeyCode::ESCAPE, ModifierFlag::NONE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::CONTROL_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::SHIFT_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::SHIFT_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::CONTROL_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_1, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::F4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::F5, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_3, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::F6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::VK_JIS_TOGGLE_EISUU_KANA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::F7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::MINUS, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::F8, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::EQUAL, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::F9, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::QUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::TAB, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT, KeyCode::ESCAPE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CONTROL_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::SHIFT_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::SHIFT_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CONTROL_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_1, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::F4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::F5, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_3, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::F6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::VK_JIS_TOGGLE_EISUU_KANA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::F7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::MINUS, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::F8, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::EQUAL, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::F9, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::QUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::TAB, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::ESCAPE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::CONTROL_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::SHIFT_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::SHIFT_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::CONTROL_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_1, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::F4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::F5, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_3, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::F6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::VK_JIS_TOGGLE_EISUU_KANA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::F7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::MINUS, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::F8, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::EQUAL, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::F9, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::QUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::TAB, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::ESCAPE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::CONTROL_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::SHIFT_R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::SHIFT_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::CONTROL_L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_1, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::F4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::F5, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_3, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::F6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::FORWARD_DELETE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::VK_JIS_TOGGLE_EISUU_KANA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::F7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::MINUS, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::F8, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::EQUAL, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::F9, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::W, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::T, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::I, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::O, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::A, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::G, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::Y, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::P, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::QUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::SPACE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::ESCAPE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::FN, KeyCode::CONTROL_R, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::FN, KeyCode::SHIFT_R, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::FN, KeyCode::SPACE, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::FN, KeyCode::SHIFT_L, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::FN, KeyCode::CONTROL_L, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::FN, KeyCode::F4, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::FN, KeyCode::F5, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::FN, KeyCode::F6, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::FN, KeyCode::FORWARD_DELETE, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::FN, KeyCode::VK_JIS_TOGGLE_EISUU_KANA, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::FN, KeyCode::F7, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::FN, KeyCode::F8, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::FN, KeyCode::F9, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::FN, KeyCode::Z, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::FN, KeyCode::V, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::FN, KeyCode::W, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::FN, KeyCode::M, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::FN, KeyCode::B, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::FN, KeyCode::X, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::FN, KeyCode::K, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::FN, KeyCode::J, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::FN, KeyCode::Q, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::FN, KeyCode::SEMICOLON, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::FN, KeyCode::S, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::FN, KeyCode::N, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::FN, KeyCode::T, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::FN, KeyCode::H, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::FN, KeyCode::D, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::FN, KeyCode::I, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::FN, KeyCode::U, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::FN, KeyCode::E, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::FN, KeyCode::O, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::FN, KeyCode::A, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::FN, KeyCode::L, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::FN, KeyCode::R, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::FN, KeyCode::C, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::FN, KeyCode::G, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::FN, KeyCode::F, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::FN, KeyCode::Y, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::FN, KeyCode::P, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::FN, KeyCode::DOT, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::FN, KeyCode::COMMA, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::FN, KeyCode::QUOTE, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::FN, KeyCode::TAB, ModifierFlag::FN</autogen>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, ModifierFlag::FN, KeyCode::ESCAPE, ModifierFlag::FN</autogen>
+    <autogen>__KeyOverlaidModifier__ KeyCode::KEY_5, KeyCode::VK_MODIFIER_EXTRA1, KeyCode::DELETE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::EXTRA1, KeyCode::CONTROL_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::EXTRA1, KeyCode::SHIFT_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::EXTRA1, KeyCode::SPACE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::EXTRA1, KeyCode::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::EXTRA1, KeyCode::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::EXTRA1, KeyCode::VK_JIS_YEN</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::EXTRA1, KeyCode::KEYPAD_EQUAL</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA1, KeyCode::KEYPAD_PLUS</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::EXTRA1, KeyCode::KEYPAD_MULTIPLY</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::EXTRA1, KeyCode::BACKQUOTE, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::EXTRA1, KeyCode::BACKQUOTE</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::EXTRA1, KeyCode::KEY_1, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::EXTRA1, KeyCode::KEY_6, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::EXTRA1, KeyCode::SLASH</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::EXTRA1, KeyCode::SLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::EXTRA1, KeyCode::DOT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA1, KeyCode::COMMA, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA1, KeyCode::BRACKET_RIGHT</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA1, KeyCode::BRACKET_LEFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::EXTRA1, KeyCode::MINUS, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::EXTRA1, KeyCode::MINUS</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA1, KeyCode::BRACKET_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::EXTRA1, KeyCode::BRACKET_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::EXTRA1, KeyCode::KEY_0, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::EXTRA1, KeyCode::KEY_9, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::EXTRA1, KeyCode::DELETE</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::EXTRA1, KeyCode::RETURN</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::EXTRA1, KeyCode::BACKSLASH, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::EXTRA1, KeyCode::KEY_7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::EXTRA1, KeyCode::F12</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::EXTRA1, KeyCode::F11</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::EXTRA1, KeyCode::KEY_5, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::EXTRA1, KeyCode::KEY_4, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::EXTRA1, KeyCode::KEY_3, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::EXTRA1, KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, ModifierFlag::EXTRA1, KeyCode::ESCAPE</autogen>
+    <autogen>__KeyOverlaidModifier__ KeyCode::KEY_7, KeyCode::VK_MODIFIER_EXTRA2, KeyCode::RETURN</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::EXTRA2, KeyCode::CONTROL_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::EXTRA2, KeyCode::SHIFT_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::EXTRA2, KeyCode::SPACE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::EXTRA2, KeyCode::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::EXTRA2, KeyCode::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::EXTRA2, KeyCode::F10</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::EXTRA2, KeyCode::F9</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA2, KeyCode::F8</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::EXTRA2, KeyCode::F7</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::EXTRA2, KeyCode::F6</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::EXTRA2, KeyCode::F5</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::EXTRA2, KeyCode::F4</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::EXTRA2, KeyCode::F3</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::EXTRA2, KeyCode::F2</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::EXTRA2, KeyCode::F1</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::EXTRA2, KeyCode::KEY_0</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA2, KeyCode::KEY_9</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA2, KeyCode::KEY_8</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA2, KeyCode::KEY_7</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::EXTRA2, KeyCode::KEY_6</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::EXTRA2, KeyCode::KEY_5</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA2, KeyCode::KEY_4</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::EXTRA2, KeyCode::KEY_3</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::EXTRA2, KeyCode::KEY_2</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::EXTRA2, KeyCode::KEY_1</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::EXTRA2, KeyCode::PAGEDOWN</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::EXTRA2, KeyCode::PAGEUP</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::EXTRA2, KeyCode::END</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::EXTRA2, KeyCode::HOME</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::EXTRA2, KeyCode::CURSOR_UP</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::EXTRA2, KeyCode::CURSOR_DOWN</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::EXTRA2, KeyCode::CURSOR_RIGHT</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::EXTRA2, KeyCode::CURSOR_LEFT</autogen>
+    <autogen>__KeyOverlaidModifier__ KeyCode::KEY_8, KeyCode::VK_MODIFIER_EXTRA3, KeyCode::SPACE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::EXTRA3, KeyCode::CONTROL_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::EXTRA3, KeyCode::SHIFT_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::EXTRA3, KeyCode::SPACE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::EXTRA3, KeyCode::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::EXTRA3, KeyCode::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::EXTRA3, KeyCode::SEMICOLON</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::EXTRA3, KeyCode::Q</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA3, KeyCode::J</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::EXTRA3, KeyCode::K</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::EXTRA3, KeyCode::X</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::EXTRA3, KeyCode::B</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::EXTRA3, KeyCode::M</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::EXTRA3, KeyCode::W</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::EXTRA3, KeyCode::V</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::EXTRA3, KeyCode::Z</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::EXTRA3, KeyCode::A</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA3, KeyCode::O</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA3, KeyCode::E</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA3, KeyCode::U</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::EXTRA3, KeyCode::I</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::EXTRA3, KeyCode::D</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA3, KeyCode::H</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::EXTRA3, KeyCode::T</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::EXTRA3, KeyCode::N</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::EXTRA3, KeyCode::S</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::EXTRA3, KeyCode::QUOTE</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::EXTRA3, KeyCode::COMMA</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::EXTRA3, KeyCode::DOT</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::EXTRA3, KeyCode::P</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::EXTRA3, KeyCode::Y</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::EXTRA3, KeyCode::F</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::EXTRA3, KeyCode::G</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::EXTRA3, KeyCode::C</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::EXTRA3, KeyCode::R</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::EXTRA3, KeyCode::L</autogen>
+    <autogen>__KeyOverlaidModifier__ KeyCode::BRACKET_LEFT, KeyCode::VK_MODIFIER_EXTRA4, KeyCode::DELETE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::EXTRA4, KeyCode::CONTROL_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::EXTRA4, KeyCode::SHIFT_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::EXTRA4, KeyCode::SPACE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::EXTRA4, KeyCode::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::EXTRA4, KeyCode::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::EXTRA4, KeyCode::F4</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::EXTRA4, KeyCode::F5</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_3, ModifierFlag::EXTRA4, KeyCode::F6</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_4, ModifierFlag::EXTRA4, KeyCode::FORWARD_DELETE</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_6, ModifierFlag::EXTRA4, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_8, ModifierFlag::EXTRA4, KeyCode::VK_MODIFIER_EXTRA3</autogen>
+    <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::EXTRA4, KeyCode::F7</autogen>
+    <autogen>__KeyToKey__ KeyCode::MINUS, ModifierFlag::EXTRA4, KeyCode::F8</autogen>
+    <autogen>__KeyToKey__ KeyCode::EQUAL, ModifierFlag::EXTRA4, KeyCode::F9</autogen>
+    <autogen>__KeyToKey__ KeyCode::Q, ModifierFlag::EXTRA4, KeyCode::Z</autogen>
+    <autogen>__KeyToKey__ KeyCode::W, ModifierFlag::EXTRA4, KeyCode::V</autogen>
+    <autogen>__KeyToKey__ KeyCode::E, ModifierFlag::EXTRA4, KeyCode::W</autogen>
+    <autogen>__KeyToKey__ KeyCode::R, ModifierFlag::EXTRA4, KeyCode::M</autogen>
+    <autogen>__KeyToKey__ KeyCode::T, ModifierFlag::EXTRA4, KeyCode::B</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::EXTRA4, KeyCode::X</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::EXTRA4, KeyCode::K</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::EXTRA4, KeyCode::J</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::EXTRA4, KeyCode::Q</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::EXTRA4, KeyCode::SEMICOLON</autogen>
+    <autogen>__KeyToKey__ KeyCode::BRACKET_LEFT, ModifierFlag::EXTRA4, KeyCode::VK_MODIFIER_EXTRA4</autogen>
+    <autogen>__KeyToKey__ KeyCode::A, ModifierFlag::EXTRA4, KeyCode::S</autogen>
+    <autogen>__KeyToKey__ KeyCode::S, ModifierFlag::EXTRA4, KeyCode::N</autogen>
+    <autogen>__KeyToKey__ KeyCode::D, ModifierFlag::EXTRA4, KeyCode::T</autogen>
+    <autogen>__KeyToKey__ KeyCode::F, ModifierFlag::EXTRA4, KeyCode::H</autogen>
+    <autogen>__KeyToKey__ KeyCode::G, ModifierFlag::EXTRA4, KeyCode::D</autogen>
+    <autogen>__KeyToKey__ KeyCode::H, ModifierFlag::EXTRA4, KeyCode::I</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA4, KeyCode::U</autogen>
+    <autogen>__KeyToKey__ KeyCode::K, ModifierFlag::EXTRA4, KeyCode::E</autogen>
+    <autogen>__KeyToKey__ KeyCode::L, ModifierFlag::EXTRA4, KeyCode::O</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::EXTRA4, KeyCode::A</autogen>
+    <autogen>__KeyToKey__ KeyCode::QUOTE, ModifierFlag::EXTRA4, KeyCode::VK_MODIFIER_EXTRA5</autogen>
+    <autogen>__KeyToKey__ KeyCode::Z, ModifierFlag::EXTRA4, KeyCode::L</autogen>
+    <autogen>__KeyToKey__ KeyCode::X, ModifierFlag::EXTRA4, KeyCode::R</autogen>
+    <autogen>__KeyToKey__ KeyCode::C, ModifierFlag::EXTRA4, KeyCode::C</autogen>
+    <autogen>__KeyToKey__ KeyCode::V, ModifierFlag::EXTRA4, KeyCode::G</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::EXTRA4, KeyCode::F</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::EXTRA4, KeyCode::Y</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::EXTRA4, KeyCode::P</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::EXTRA4, KeyCode::DOT</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::EXTRA4, KeyCode::COMMA</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::EXTRA4, KeyCode::QUOTE</autogen>
+    <autogen>__KeyToKey__ KeyCode::SPACE, ModifierFlag::EXTRA4, KeyCode::TAB</autogen>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, ModifierFlag::EXTRA4, KeyCode::ESCAPE</autogen>
+    <autogen>__KeyOverlaidModifier__ KeyCode::QUOTE, KeyCode::VK_MODIFIER_EXTRA5, KeyCode::DELETE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F4, ModifierFlag::EXTRA5, KeyCode::CONTROL_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F5, ModifierFlag::EXTRA5, KeyCode::SHIFT_R</autogen>
+    <autogen>__KeyToKey__ KeyCode::F6, ModifierFlag::EXTRA5, KeyCode::SPACE</autogen>
+    <autogen>__KeyToKey__ KeyCode::F7, ModifierFlag::EXTRA5, KeyCode::SHIFT_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::F8, ModifierFlag::EXTRA5, KeyCode::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::Y, ModifierFlag::EXTRA5, KeyCode::KEY_0</autogen>
+    <autogen>__KeyToKey__ KeyCode::U, ModifierFlag::EXTRA5, KeyCode::KEY_9</autogen>
+    <autogen>__KeyToKey__ KeyCode::I, ModifierFlag::EXTRA5, KeyCode::KEY_8</autogen>
+    <autogen>__KeyToKey__ KeyCode::O, ModifierFlag::EXTRA5, KeyCode::KEY_7</autogen>
+    <autogen>__KeyToKey__ KeyCode::P, ModifierFlag::EXTRA5, KeyCode::KEY_6</autogen>
+    <autogen>__KeyToKey__ KeyCode::J, ModifierFlag::EXTRA5, KeyCode::VK_JIS_TOGGLE_EISUU_KANA</autogen>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::EXTRA5, KeyCode::ESCAPE</autogen>
+    <autogen>__KeyToKey__ KeyCode::B, ModifierFlag::EXTRA5, KeyCode::S, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::N, ModifierFlag::EXTRA5, KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT</autogen>
+    <autogen>__KeyToKey__ KeyCode::M, ModifierFlag::EXTRA5, KeyCode::V, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::EXTRA5, KeyCode::C, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::EXTRA5, KeyCode::X, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+    <autogen>__KeyToKey__ KeyCode::SLASH, ModifierFlag::EXTRA5, KeyCode::Z, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND</autogen>
+  </item>
+</root>

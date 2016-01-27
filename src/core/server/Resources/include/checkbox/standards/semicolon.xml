@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Change Semicolon(;) Key</name>
+    <item>
+      <name>Semicolon to Minus</name>
+      <identifier>remap.semicolon2minus</identifier>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::MINUS</autogen>
+    </item>
+    <item>
+      <name>Semicolon to Return</name>
+      <identifier>remap.semicolon2return</identifier>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::RETURN</autogen>
+    </item>
+    <item>
+      <name>Semicolon to Return</name>
+      <appendix>(+ Control+Semicolon to Semicolon)</appendix>
+      <identifier>remap.semicolon2return_controlsemicolon2semicolon</identifier>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::SEMICOLON</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::RETURN</autogen>
+    </item>
+    <item>
+      <name>Semicolon to Return (when there are not any modifiers)</name>
+      <appendix>(+ Control+Semicolon to Semicolon)</appendix>
+      <identifier>remap.semicolon2return_nomod</identifier>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | ModifierFlag::NONE, KeyCode::SEMICOLON</autogen>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, ModifierFlag::NONE, KeyCode::RETURN</autogen>
+    </item>
+    <item>
+      <name>Semicolon to Return (Only on WebIDE)</name>
+      <identifier>remap.semicolon2return_onlywebide</identifier>
+      <only>WEBIDE</only>
+      <autogen>__KeyToKey__ KeyCode::SEMICOLON, KeyCode::RETURN</autogen>
+    </item>
+    <item>
+      <name>Semicolon to Sticky Shift_L</name>
+      <identifier>remap.semicolon2stickyshiftL</identifier>
+      <autogen>__KeyOverlaidModifier__ KeyCode::SEMICOLON, KeyCode::SHIFT_L, KeyCode::VK_STICKY_SHIFT_L</autogen>
+    </item>
+    <item>
+      <name>Swap Semicolon and Colon</name>
+      <identifier>remap.swapcolons</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT,
+        KeyCode::SEMICOLON,
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON,
+        KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
+      </autogen>
+    </item>
+    <item>
+      <name>Input colon(:) by pressing semicolon(;) twice.</name>
+      <identifier>remap.semicolon_x2_to_colon</identifier>
+      <autogen>
+        __KeyToKey__
+        KeyCode::SEMICOLON, ModifierFlag::NONE,
+        KeyCode::VK_NONE,
+
+        Option::KEYTOKEY_DELAYED_ACTION,
+        KeyCode::SEMICOLON,
+
+        Option::KEYTOKEY_DELAYED_ACTION_CANCELED_BY, KeyCode::SEMICOLON,
+        KeyCode::SEMICOLON, ModifierFlag::SHIFT_L,
+        KeyCode::VK_KEYTOKEY_DELAYED_ACTION_DROP_EVENT,
+      </autogen>
+    </item>
+  </item>
+</root>

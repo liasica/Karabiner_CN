@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Enable at only Gruml</name>
+    <item>
+      <name>Change Option_R to Return</name>
+      <identifier>remap.app_gruml_optionR2return</identifier>
+      <only>GRUML</only>
+      <autogen>__KeyToKey__ KeyCode::OPTION_R, KeyCode::RETURN</autogen>
+    </item>
+  </item>
+</root>
